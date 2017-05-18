@@ -10,7 +10,7 @@
 a:link { color: black}
 a:visited {color: black}
 a:active {color: black}
-a:hover { color: red; background-color: gainsboro}
+a:hover { color: red; opacity: 0.7;}
 a:focus { color: red}
 
 /* class selector and grouped selector*/
@@ -24,6 +24,7 @@ h1, h3 {
 .shift_banner {margin-left: 500px;}
 .center_text {text-align: center; font-size: 40px}
 ._center {text-align: center}
+.center_img {align-content: center}
 
 /*line height is usually specified in percentage*/
 .line_spc_incr{line-height: 150%}
@@ -34,11 +35,11 @@ h1, h3 {
 .alphabetList {list-style-type: upper-alpha;}
 
 /*snippet text decor can remove underline under links*/
-a {	background-color: white;
-				display: inline;
-				padding: 5px 10px;
-				text-decoration: none;
-				font-weight: bold;
+a {		background-color: white;
+		display: inline;
+		padding: 5px 10px;
+		text-decoration: none;
+		font-weight: bold;
               	}
 
 
@@ -47,3 +48,7 @@ a {	background-color: white;
 #navigation {text-align: center; padding: 20px 20px; background-color: orange}
 #social_media { background-color:white;
 				padding: 5px 5px;}
+#bg_image {	margin-left: 70px}
+
+#wrapper{ width: 900px; margin: 20px auto;}
+
