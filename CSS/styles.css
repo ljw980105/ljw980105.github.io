@@ -4,9 +4,16 @@
 /*removes all the redundant spaces for the designer to customize later*/
 /*the asterisk indicate that the settings apply to the entire thing*/
 
-/** {margin: 0; padding: 0; border: 0;}
+/* * {margin: 0; padding: 0; border: 0;}*/
 
-/* class selector  and grouped selector*/
+/*5 states of a link: we want hover state to change color*/
+a:link { color: black}
+a:visited {color: black}
+a:active {color: black}
+a:hover { color: red; background-color: gainsboro}
+a:focus { color: red}
+
+/* class selector and grouped selector*/
 h1, h3 { 
 	color:#f00; font-family: "Roboto Thin", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	
@@ -25,6 +32,14 @@ h1, h3 {
 .medium_title{font-size: 20px}
 .yellow_color{background-color: #FFAE00; padding: 20px 20px;}
 .alphabetList {list-style-type: upper-alpha;}
+
+/*snippet text decor can remove underline under links*/
+a {	background-color: white;
+				display: inline;
+				padding: 5px 10px;
+				text-decoration: none;
+				font-weight: bold;
+              	}
 
 
 /* id selector : apply 4 values to padding to customzie top right bottom left; 2 values
