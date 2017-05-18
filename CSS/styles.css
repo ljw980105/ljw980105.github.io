@@ -4,7 +4,7 @@
 /*removes all the redundant spaces for the designer to customize later*/
 /*the asterisk indicate that the settings apply to the entire thing*/
 
-* {margin: 0; padding: 0; border: 0;}
+/** {margin: 0; padding: 0; border: 0;}
 
 /* class selector  and grouped selector*/
 h1, h3 { 
@@ -16,16 +16,19 @@ h1, h3 {
 .orange { color: #FFAE00;}
 .shift_banner {margin-left: 500px;}
 .center_text {text-align: center; font-size: 40px}
+._center {text-align: center}
 
 /*line height is usually specified in percentage*/
 .line_spc_incr{line-height: 150%}
 
 .sq_bracket {list-style-type: armenian;}
 .medium_title{font-size: 20px}
-.yellow_color{color: yellow}
+.yellow_color{background-color: #FFAE00; padding: 20px 20px;}
 .alphabetList {list-style-type: upper-alpha;}
 
 
 /* id selector : apply 4 values to padding to customzie top right bottom left; 2 values
    specify vertical and horizontal spacings*/
-#navigation {text-align: center; padding: 10px 10px 10px 10px;}
+#navigation {text-align: center; padding: 20px 20px; background-color: orange}
+#social_media { background-color:white;
+				padding: 5px 5px;}
