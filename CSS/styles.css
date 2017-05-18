@@ -1,0 +1,31 @@
+/* CSS Document */
+/* three selectors: type, class and id */
+
+/*removes all the redundant spaces for the designer to customize later*/
+/*the asterisk indicate that the settings apply to the entire thing*/
+
+* {margin: 0; padding: 0; border: 0;}
+
+/* class selector  and grouped selector*/
+h1, h3 { 
+	color:#f00; font-family: "Roboto Thin", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+}
+
+/* class selector */
+.orange { color: #FFAE00;}
+.shift_banner {margin-left: 500px;}
+.center_text {text-align: center; font-size: 40px}
+
+/*line height is usually specified in percentage*/
+.line_spc_incr{line-height: 150%}
+
+.sq_bracket {list-style-type: armenian;}
+.medium_title{font-size: 20px}
+.yellow_color{color: yellow}
+.alphabetList {list-style-type: upper-alpha;}
+
+
+/* id selector : apply 4 values to padding to customzie top right bottom left; 2 values
+   specify vertical and horizontal spacings*/
+#navigation {text-align: center; padding: 10px 10px 10px 10px;}
