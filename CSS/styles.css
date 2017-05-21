@@ -1,71 +1,80 @@
-/* CSS Document */
-/* three selectors: type, class and id */
-
-/*removes all the redundant spaces for the designer to customize later*/
-/*the asterisk indicate that the settings apply to the entire thing*/
-
-/* * {margin: 0; padding: 0; border: 0;}*/
-
-/*5 states of a link: we want hover state to change color*/
-a:link { color: black}
-a:visited {color: black}
-a:active {color: black}
-a:hover { color: red; opacity: 0.7; }
-a:focus { color: red}
-
-/* class selector and grouped selector*/
-h1, h3 { 
-	color:#f00; font-family: "Myriad Pro", "Gill Sans MT", "Roboto Thin", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	
+#nav ul {
+    display:inline;
+    
 }
 
-/* class selector */
-.orange { color: #FFAE00;}
-.shift_banner {margin-left: 500px;}
-.center_text {text-align: center; font-size: 40px}
-._center {text-align: center}
-.center_img {align-content: center}
 
-/*line height is usually specified in percentage*/
-.line_spc_incr{line-height: 150%}
+#bg {
+	float: right;
+    /*height: 70rem;*/
+    /*background-image: url("cover3.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+}
 
-.sq_bracket {}
-.medium_title{font-size: 20px}
-.yellow_color{background-color: #FFAE00; padding: 20px 20px;}
-.alphabetList {list-style-type: upper-alpha;}
+#nav {
+	text-align: center;
+	background-color: black;
+	padding: 15px 0 15px 0;
+}
 
-/*snippet text decor can remove underline under links*/
-#navigation a {		
-	    background-color: white;
+#nav a {		
+	    background-color: black;
 		display: inline;
-		padding: 5px 10px;
+		padding: 0px 10px;
 		text-decoration: none;
-		font-weight: bold;
-              	}
+		font-family: 'Roboto Thin', serif;
+       }
 
-body { }
+#nav a:link { color: white}
+#nav a:visited {color: white}
+#nav a:active {color: white}
+#nav a:hover { color: orange; opacity: 0.7; }
+#nav a:focus { color: orange;}
 
+#intro {
+	width: 50%;
+	margin-right: 60%;
+    margin-top: 18%;
+	margin-left: 18%;
+}
 
-/* id selector : apply 4 values to padding to customzie top right bottom left; 2 values
-   specify vertical and horizontal spacings*/
-#navigation {text-align: center; padding: 20px 20px; background-color: white;
-             }
-#social_media { background-color:orange;
-				padding: 2px 5px;}
-#bg_image {	margin-left: 70px}
+#intro h1 {
+	font-family: "Roboto", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 70px;
+	line-height: 70%;
+}
 
-/*the auto keyword centers webpage horizontally*/
-#wrapper{ width: 900px; margin: 20px auto;}
-#name {float: left; width: 400px; margin-left: 50px; margin-top: auto; 
-	font: "Myriad Pro", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	font-size: 30px;}
+#intro h2{
+	font-size: 35px;
+	margin-left: 3%;
+	font-family: "Roboto Thin", "serif";
+	line-height: 70%;
+}
 
-/*#BIO {background-color:  red;
-		padding: 10px 40px;
-		text-align: center;}
-#BIO h3 { color: orange;}
-#BIO p { color:white;}
-*/
+._center {
+	text-align: center;
+}
 
-#contents a {align-content: center;}
+#footer {
+    margin-top: 28%;
+}
+
+#social_media {
+	margin-top: 3%;
+	margin-left: 15%;
+}
+
+#social_media a {
+	padding: 0 10px;
+}
+
+#social_media a:hover {
+	opacity:0.7;
+}
 
