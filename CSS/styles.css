@@ -34,7 +34,8 @@ body {
     display: inline;
     padding: 0px 10px;
     text-decoration: none;
-    font-family: 'Roboto Thin', serif;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
 }
 
 #nav a:link { color: white}
@@ -63,7 +64,9 @@ body {
 #intro h2{
     font-size: 40px;
     margin-left: 3%;
-    font-family: "SF UI Display","Roboto Thin", "Helvetica","serif";
+    /*font-family: "SF UI Display","Roboto Thin", "Helvetica Thin","serif";*/
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
     line-height: 70%;
 }
 
