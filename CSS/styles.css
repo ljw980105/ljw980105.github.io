@@ -1,17 +1,17 @@
 #nav ul {
     display:inline;
-    
+
 }
 
-/*body {*/
-    /*width: 900px;*/
-    /*margin: auto;*/
-/*}*/
+body {
+    width: 1516px;
+    margin: auto;
+}
 
 #bg {
     max-width: 50%;
-	width: 50%;
-	float: right;
+    width: 50%;
+    float: right;
     /*height: 70rem;*/
     /*background-image: url("cover3.jpg");*/
     /*background-position: center;*/
@@ -24,18 +24,18 @@
 }
 
 #nav {
-	text-align: center;
-	background-color: black;
-	padding: 15px 0 15px 0;
+    text-align: center;
+    background-color: black;
+    padding: 15px 0 15px 0;
 }
 
-#nav a {		
-	    background-color: black;
-		display: inline;
-		padding: 0px 10px;
-		text-decoration: none;
-		font-family: 'Roboto Thin', serif;
-       }
+#nav a {
+    background-color: black;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: 'Roboto Thin', serif;
+}
 
 #nav a:link { color: white}
 #nav a:visited {color: white}
@@ -44,35 +44,35 @@
 #nav a:focus { color: orange;}
 
 #main{
-	width: 50%;
-	max-width: 50%;
-	margin-right: 60%;
-	margin-top: 14%;
-	margin-left: 18%;
+    width: 50%;
+    max-width: 50%;
+    margin-right: 60%;
+    margin-top: 14%;
+    margin-left: 18%;
 }
 
 #intro {
-	/*width: 50%;*/
-	/*margin-right: 60%;*/
+    /*width: 50%;*/
+    /*margin-right: 60%;*/
     /*margin-top: 14%;*/
-	/*margin-left: 18%;*/
+    /*margin-left: 18%;*/
 }
 
 #intro h1 {
-	font-family: "Roboto", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	font-size: 70px;
-	line-height: 70%;
+    font-family: "Roboto", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 70px;
+    line-height: 70%;
 }
 
 #intro h2{
-	font-size: 35px;
-	margin-left: 3%;
-	font-family: "Roboto Thin", "serif";
-	line-height: 70%;
+    font-size: 35px;
+    margin-left: 3%;
+    font-family: "Roboto Thin", "serif";
+    line-height: 70%;
 }
 
 ._center {
-	text-align: center;
+    text-align: center;
 }
 
 #footer {
@@ -80,16 +80,15 @@
 }
 
 #social_media {
-	margin-top: 6%;
-	margin-left: -7%;
+    margin-top: 6%;
+    margin-left: -7%;
 
 }
 
 #social_media a {
-	padding: 0 1.68%;
+    padding: 0 1.68%;
 }
 
 #social_media a:hover {
-	opacity:0.7;
+    opacity:0.7;
 }
-
