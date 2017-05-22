@@ -51,23 +51,19 @@ body {
     margin-left: 18%;
 }
 
-#intro {
-    /*width: 50%;*/
-    /*margin-right: 60%;*/
-    /*margin-top: 14%;*/
-    /*margin-left: 18%;*/
-}
+#intro {  }
 
 #intro h1 {
-    font-family: "Roboto", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-    font-size: 70px;
+    font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 65px;
     line-height: 70%;
 }
 
 #intro h2{
     font-size: 35px;
     margin-left: 3%;
-    font-family: "Roboto Thin", "serif";
+    font-family: "Roboto Thin", "Helvetica","serif";
     line-height: 70%;
 }
 
