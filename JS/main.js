@@ -20,20 +20,46 @@ function erroneousZoom() {
 }
 
 /*
-Attempt to zoom while hovering
+ when mouse enters #sm, reduce everything else's opacity; when leaving,
+ increase everything else's opacity
  */
-function revealSM() {
-     var $sm = $('#social_media a');
+function opacityFx(num){
+    var $sm = $("#sm" + num.toString());
+    $sm.mouseenter(function() {
+        //$sm.fadeTo("fast",0.7)
+        for (var i = 1; i < 6; i ++){
+            if (i !== num){
+                $media = $("#sm" + i.toString());
+                $media.fadeTo("fast",0.4)
+            }
+        }
+    });
+    $sm.mouseleave(function() {
+        //$sm.fadeTo("fast",1)
+        for (var i = 1; i < 6; i ++){
+            if (i !== num){
+                $media = $("#sm" + i.toString());
+                $media.fadeTo("fast",1)
+            }
+        }
+    });
 }
 
 // primary syntax of jQuery
 $(document).ready(function () { // wait until webpage is ready
-    revealSM();
     var $contents = $('#nav');
     $contents.hide();
     //$contents.fadeIn(1000);
     $contents.slideToggle(500);
-    
+
+    // var $sm = $('#sm1');
+
+    opacityFx(1);
+    opacityFx(2);
+    opacityFx(3);
+    opacityFx(4);
+    opacityFx(5);
+
 
 });
-//main();
+

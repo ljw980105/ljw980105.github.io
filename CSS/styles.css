@@ -41,7 +41,7 @@ body {
 #nav a:link { color: white}
 #nav a:visited {color: white}
 #nav a:active {color: white}
-#nav a:hover { color: orange; opacity: 0.7; }
+#nav a:hover { color: orange;}
 #nav a:focus { color: orange;}
 
 #main{
@@ -89,5 +89,5 @@ body {
 }
 
 #social_media a:hover {
-    opacity:0.7;
+    /*opacity:0.7;*/
 }
