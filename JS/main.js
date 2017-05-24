@@ -6,6 +6,8 @@
 
 //toggles a class on and off. Notice the class selector is typed without the period
 //$('.projects-button').toggleClass('active');
+//target a generic html element like p and li: $("div")
+//compound selector : $('p, li').fadeTo('slow', 0);
 
 function erroneousZoom() {
     var $sm = $('#social_media a');
@@ -26,7 +28,7 @@ function erroneousZoom() {
 function opacityFx(num){
     var $sm = $("#sm" + num.toString());
     $sm.mouseenter(function() {
-        //$sm.fadeTo("fast",0.7)
+        //$(this).fadeTo("fast",0.7);
         for (var i = 1; i < 6; i ++){
             if (i !== num){
                 $media = $("#sm" + i.toString());
@@ -35,7 +37,7 @@ function opacityFx(num){
         }
     });
     $sm.mouseleave(function() {
-        //$sm.fadeTo("fast",1)
+        //$(this).fadeTo("fast",1);
         for (var i = 1; i < 6; i ++){
             if (i !== num){
                 $media = $("#sm" + i.toString());
@@ -47,10 +49,14 @@ function opacityFx(num){
 
 // primary syntax of jQuery
 $(document).ready(function () { // wait until webpage is ready
-    var $contents = $('#nav');
-    $contents.hide();
+    var $nav = $('#nav');
+    $nav.hide();
+    $nav.slideToggle(500);
+
+    // $intro = $("#intro");
+    // $intro.hide();
+    // $intro.slideToggle("slow");
     //$contents.fadeIn(1000);
-    $contents.slideToggle(500);
 
     // var $sm = $('#sm1');
 
@@ -59,7 +65,5 @@ $(document).ready(function () { // wait until webpage is ready
     opacityFx(3);
     opacityFx(4);
     opacityFx(5);
-
-
 });
 

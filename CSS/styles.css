@@ -1,26 +1,22 @@
-#nav ul {
-    display:inline;
+/*
+Create circles or rounded rectangles
+border-radius: 100%;
 
-}
+button
+<br/><button> Button </button>
+*/
 
 body {
-    width: 1516px;
+    width: 1519px;
     margin: auto;
 }
 
 #bg {
-    max-width: 50%;
-    width: 50%;
     float: right;
-    /*height: 70rem;*/
-    /*background-image: url("cover3.jpg");*/
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*text-align: center;*/
+}
+
+#nav ul {
+    display:inline;
 }
 
 #nav {
