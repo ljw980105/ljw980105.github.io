@@ -59,6 +59,13 @@ $(document).ready(function () { // wait until webpage is ready
     //$contents.fadeIn(1000);
 
     // var $sm = $('#sm1');
+    var $proj = $("#contents a");
+    $proj.mouseenter(function () {
+        $(this).fadeTo("fast",0.8)
+    });
+    $proj.mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
 
     opacityFx(1);
     opacityFx(2);
