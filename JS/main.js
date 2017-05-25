@@ -47,6 +47,16 @@ function opacityFx(num){
     });
 }
 
+function lowerOpacity(string){
+    var $proj = $(string);
+    $proj.mouseenter(function () {
+        $(this).fadeTo("fast",0.8)
+    });
+    $proj.mouseleave(function () {
+        $(this).fadeTo("fast",1)
+    });
+}
+
 // primary syntax of jQuery
 $(document).ready(function () { // wait until webpage is ready
     var $nav = $('#nav');
@@ -59,14 +69,7 @@ $(document).ready(function () { // wait until webpage is ready
     //$contents.fadeIn(1000);
 
     // var $sm = $('#sm1');
-    var $proj = $("#contents a");
-    $proj.mouseenter(function () {
-        $(this).fadeTo("fast",0.8)
-    });
-    $proj.mouseleave(function () {
-        $(this).fadeTo("fast",1)
-    });
-
+    lowerOpacity("#contents a");
     opacityFx(1);
     opacityFx(2);
     opacityFx(3);
