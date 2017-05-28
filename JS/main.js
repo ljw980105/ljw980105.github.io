@@ -62,11 +62,18 @@ $(document).ready(function () { // wait until webpage is ready
     var $nav = $('#nav');
     $nav.hide();
     $nav.slideToggle(500);
-
-    // $intro = $("#intro");
-    // $intro.hide();
-    // $intro.slideToggle("slow");
     //$contents.fadeIn(1000);
+
+    // var stickyHeaderTop = $nav.offset().top;
+    // $(window).scroll(function(){
+    //     if( $(window).scrollTop() > stickyHeaderTop ) {
+    //         $nav.css({position: 'fixed', top: '0px'});
+    //         //$nav.css('display', 'block');
+    //     } else {
+    //         $nav.css({position: 'static', top: '0px'});
+    //         //$nav.css('display', 'none');
+    //     }
+    // });
 
     // var $sm = $('#sm1');
     lowerOpacity("#contents a");

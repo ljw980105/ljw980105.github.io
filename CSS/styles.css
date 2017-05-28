@@ -119,6 +119,7 @@ body {
 #contents #images{
     padding-top: 2.3%;
     padding-bottom: 2%;
+    /*could be 7% or 2%*/
 }
 
 /*#contents a:hover {opacity: 0.7;}*/
