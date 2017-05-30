@@ -90,8 +90,8 @@ body {
 }
 
 #contents {
-    /*background-color: rgba(0,0,0,0.06);*/
-    background-color: black;
+    background-color: rgba(0,0,0,0.06);
+    /*background-color: black;*/
     margin-top: 31%;
     text-align: center;
     padding: 3% 0;
@@ -100,20 +100,22 @@ body {
 #contents h1 {
     /*font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";*/
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    color:white;
+    color:black;
     font-weight: 300;
     font-size: 45px;
     line-height: 70%;
 }
 
 #first{
-    padding-left: 3%;
+    /*padding-left: 3%;*/
+    padding-top: 0%;
 }
 
 #contents a {
     padding-top: 2%;
-    padding-right: 3%;
-    display: inline;
+    /*padding-right: 3%;*/
+    display: block;
+    /*display used to be inline*/
 }
 
 #contents #images{
