@@ -33,3 +33,45 @@ body {
 ._center {
     text-align: center;
 }
+
+#title_ h1 {
+    padding: 10% 0;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 70px;
+}
+
+#phone {
+    /*padding: 3% 0;*/
+    background-color: rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+#phone #p_icon{
+    -ms-transform: scale(0.8, 0.8); /* IE 9 */
+    -webkit-transform: scale(0.8, 0.8); /* Safari */
+    transform: scale(0.8, 0.8);
+}
+
+#email{
+    text-align: center;
+    padding: 1% 0;
+}
+
+#email #e_icon{
+    -ms-transform: scale(0.9, 0.9); /* IE 9 */
+    -webkit-transform: scale(0.9, 0.9); /* Safari */
+    transform: scale(0.9, 0.9);
+}
+
+#social_media{
+    background-color: rgba(0,0,0,0.04);
+    text-align: center;
+    padding: 13% 0;
+}
+
+#social_media a{
+    padding-right: 4%;
+}
