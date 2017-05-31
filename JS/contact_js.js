@@ -21,7 +21,7 @@ function opacityFx(num){
 }
 
 $(document).ready(function () {
-    
+
     var num1 = $('#p_icon').offset().top;
     var num2 = $('#e_icon').offset().top;
     var num3 = $('#sub_sm').offset().top;

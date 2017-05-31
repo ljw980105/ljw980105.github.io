@@ -3,6 +3,9 @@
 body {
     width: 1519px;
     margin: auto;
+    background-image: url("Bio_bg3.jpg");
+    background-repeat: repeat;
+
 }
 
 #nav ul {
@@ -39,7 +42,7 @@ body {
     font-family: "Helvetica","Adobe Caslon Pro Bold",serif;
     font-weight: bold;
     font-size: 40px;
-
+    color: white;
     margin-top: 10%;
 }
 
@@ -48,5 +51,15 @@ body {
     font-family: "Bell MT","Helvetica","Adobe Caslon Pro Bold",serif;
     font-size: 20px;
     padding-bottom: 10%;
+
+}
+
+.color_white{
+    color:white;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#footer{
+    color: white;
 }
 
