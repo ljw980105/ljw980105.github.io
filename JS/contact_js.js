@@ -21,29 +21,34 @@ function opacityFx(num){
 }
 
 $(document).ready(function () {
-    var num2 = $('#email').offset().top;
-    var num3 = $('#social_media').offset().top;
-    var num4 = $('#footer').offset().top;
+    
+    var num1 = $('#p_icon').offset().top;
+    var num2 = $('#e_icon').offset().top;
+    var num3 = $('#sub_sm').offset().top;
+    var num4 = $('#f00ter').offset().top;
     // alert(num2);
-    $('#phone').hide();
-    $('#email').hide();
-    $('#social_media').hide();
-    $("#footer").hide();
+    //$('#phone').hide();
+    $('#p_icon').hide();
+    $('#e_icon').hide();
+    $('#sub_sm').hide();
+    $("#f00ter").hide();
 
-    $('#phone').fadeIn(1500);
+    //$('#phone').fadeIn(1500);
     $(document).scroll(function () {
         var curr = $(this).scrollTop();
-        if (curr > num2-700) {
-            $('#email').fadeIn(2000);
+        if (curr > num1-700){
+            $('#p_icon').fadeIn(2000);
+        }
+        if (curr > num2-600) {
+            $('#e_icon').fadeIn(2000);
         }
         if (curr > num3-700) {
-            $('#social_media').fadeIn(2000);
+            $('#sub_sm').fadeIn(2000);
         }
         if (curr > num4-900) {
-            $('#footer').fadeIn(2000);
+            $('#f00ter').fadeIn(2000);
         }
     });
-
 
     opacityFx(1);
     opacityFx(2);
