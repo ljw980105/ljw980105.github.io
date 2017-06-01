@@ -64,16 +64,42 @@ $(document).ready(function () { // wait until webpage is ready
     $nav.slideToggle(500);
     //$contents.fadeIn(1000);
 
-    // var stickyHeaderTop = $nav.offset().top;
-    // $(window).scroll(function(){
-    //     if( $(window).scrollTop() > stickyHeaderTop ) {
-    //         $nav.css({position: 'fixed', top: '0px'});
-    //         //$nav.css('display', 'block');
-    //     } else {
-    //         $nav.css({position: 'static', top: '0px'});
-    //         //$nav.css('display', 'none');
+    // var num1 = $('#gfx a').offset().top;
+    // var num2 = $('#proj a').offset().top;
+    // var num3 = $('#footer h4').offset().top;
+    //
+    // $('#gfx a').hide();
+    // $('#proj a').hide();
+    // $('#footer h4').hide();
+    //
+    // alert(num1);
+    // $(document).scroll(function () {
+    //     var curr = $(this).scrollTop();
+    //     if (curr > num1 - 600){
+    //         $('gfx a').fadeIn(2000);
     //     }
-    // });
+    //     if (curr > num2-600) {
+    //         $('#proj a').fadeIn(2000);
+    //     }
+    //     if (curr > num4-900) {
+    //         $('#footer h4').fadeIn(2000);
+    //     }
+    // })
+    var menu_change = $('#gfx').offset().top;
+    $(document).scroll(function () {
+        var curr = $(this).scrollTop();
+        if (curr > menu_change - 50){
+            $('#nav').css("background-color","white");
+            $('#nav a').css("background-color","white");
+            $('#nav a:link').css("color","black");
+            $('#nav a:visited').css("color","black");
+        } else {
+            $('#nav').css("background-color","black");
+            $('#nav a').css("background-color","black");
+            $('#nav a:link').css("color","white");
+            $('#nav a:visited').css("color","white");
+        }
+    });
 
     // var $sm = $('#sm1');
     lowerOpacity("#contents a");

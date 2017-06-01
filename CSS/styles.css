@@ -13,6 +13,7 @@ body {
 
 #bg {
     float: right;
+    margin-top: -14%;
 }
 
 #nav ul {
@@ -23,6 +24,10 @@ body {
     text-align: center;
     background-color: black;
     padding: 15px 0 15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 #nav a {
@@ -44,7 +49,7 @@ body {
     width: 50%;
     max-width: 50%;
     margin-right: 60%;
-    margin-top: 14%;
+    margin-top: 18%;
     margin-left: 18%;
 }
 
@@ -71,7 +76,7 @@ body {
 }
 
 #footer {
-    margin-top: 2%;
+    margin: 2% 0;
     /*use to be 32%*/
 }
 
@@ -106,9 +111,9 @@ body {
     line-height: 70%;
 }
 
-#first{
+#contents #images #first{
     /*padding-left: 3%;*/
-    padding-top: 0%;
+    padding-top: -2%;
 }
 
 #contents a {
@@ -119,9 +124,57 @@ body {
 }
 
 #contents #images{
-    padding-top: 2.3%;
+    padding-top: .7%;
     padding-bottom: 2%;
     /*could be 7% or 2%*/
+}
+
+#gfx{
+    margin-top: 31%;
+    padding: 20% 0;
+    background-image: url("indexbg1x.jpg");
+    text-align: center;
+    background-position: 50% 18%;
+
+}
+
+#gfx a {
+    color: white;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+}
+
+#gfx:link { color: white}
+#gfx a:visited {color: white}
+#gfx a:hover {
+    color: orangered;
+}
+
+#proj{
+    margin-top: .5%;
+    padding: 20% 0;
+    background-image: url("indexbg2.jpg");
+    text-align: center;
+    background-position: 50% 18%;
+
+}
+
+#proj a {
+    color: white;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+}
+
+#proj a:link { color: white}
+#proj a:visited {color: white}
+#proj a:hover {
+    color: orangered;
 }
 
 /*#contents a:hover {opacity: 0.7;}*/
