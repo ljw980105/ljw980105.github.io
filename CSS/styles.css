@@ -133,6 +133,7 @@ body {
     margin-top: 31%;
     padding: 20% 0;
     background-image: url("indexbg1x.jpg");
+    background-size: 100% auto;
     text-align: center;
     background-position: 50% 18%;
 
