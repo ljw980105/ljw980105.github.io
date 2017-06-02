@@ -16,6 +16,10 @@ body {
     left: 0;
     top: 0;
     width: 100%;
+    /*z index is the order of the stack of elements
+     here 10 can lead to it being above everything*/
+    z-index: 10;
+
 }
 
 #nav a {
@@ -38,7 +42,7 @@ body {
 }
 
 #showcase{
-    margin: 3.38% 0% 0 0%;
+    margin-top: 3.38%;
     padding: 22.5% 0;
     background-image: url("../images/gfxbg2.png");
     background-size: 100% auto;
@@ -92,7 +96,6 @@ body {
 /*}*/
 
 #design #img2{
-    background-color: rgba(0,0,0,0.02);
     float: left;
     /*background-size: 40% auto;*/
     /*padding: 18.7% 40%;*/
@@ -150,6 +153,34 @@ body {
     position: absolute;
     left: 40%;
     top: 40%;
+    padding: 10px;
+    color: #FFF;
+    margin: 5px;
+}
+
+#img2{
+    position: relative;
+}
+
+#img2 a {
+    font-size: 40px;
+    position: absolute;
+    left: 23%;
+    top: 35%;
+    padding: 10px;
+    color: #FFF;
+    margin: 5px;
+}
+
+#img3{
+    position: relative;
+}
+
+#img3 a {
+    font-size: 40px;
+    position: absolute;
+    left: 43%;
+    top: 189%;
     padding: 10px;
     color: #FFF;
     margin: 5px;

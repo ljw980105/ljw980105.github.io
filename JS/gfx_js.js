@@ -22,5 +22,9 @@ function blurFx(to_change, text, whole_div) {
 
 $(document).ready(function () {
     $("#img1x a").hide();
+    $("#img2 a").hide();
+    $("#img3 a").hide();
     blurFx("#img1x img", "#img1x a", "#img1x");
+    blurFx("#img2 img", "#img2 a", "#img2");
+    blurFx("#img3 img", "#img3 a", "#img3");
 });
