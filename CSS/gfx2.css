@@ -168,8 +168,8 @@ body {
 #img2 a {
     font-size: 40px;
     position: absolute;
-    left: 42%;
-    top: 137%;
+    left: 640px;
+    top: 1010px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -178,8 +178,8 @@ body {
 #img4 a {
     font-size: 40px;
     position: absolute;
-    left: 9%;
-    top: 195%;
+    left: 145px;
+    top: 1430px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -188,8 +188,8 @@ body {
 #img3 a {
     font-size: 40px;
     position: absolute;
-    left: 72.5%;
-    top: 133%;
+    left: 1100px;
+    top: 980px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
