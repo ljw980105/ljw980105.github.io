@@ -138,8 +138,8 @@ body {
 #behance a {
     font-size: 35px;
     position: absolute;
-    left: 39.5%;
-    top: 200%;
+    left: 600px;
+    top: 1470px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -148,8 +148,8 @@ body {
 #flickr a {
     font-size: 35px;
     position: absolute;
-    left: 73%;
-    top: 195%;
+    left: 1105px;
+    top: 1435px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
