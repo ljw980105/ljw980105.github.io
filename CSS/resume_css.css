@@ -10,13 +10,15 @@ body {
 }
 
 #nav {
+    opacity: 0.9;
     text-align: center;
     background-color: black;
     padding: 15px 0 15px 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: 10;*/
 }
 
 #nav a {
@@ -37,3 +39,119 @@ body {
 ._center {
     text-align: center;
 }
+
+#footer{
+    margin-top: 50%;
+}
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#experience h1 {
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+}
+
+/*@media (min-aspect-ratio: 16/9) {*/
+    /*.fullscreen-bg__video {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
+/*}*/
+
+/*@media (max-aspect-ratio: 16/9) {*/
+    /*.fullscreen-bg__video {*/
+        /*width: auto;*/
+        /*height: 100%;*/
+    /*}*/
+/*}*/
+
+#intro{
+    text-align: center;
+    color: white;
+    /*margin-top: 3%;*/
+    padding: 18% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#intro h1 {
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#intro a:link {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#intro a:visited {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#intro a:hover {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: underline;
+    color: white;
+    font-weight: 300;
+}
+
+.thin_title{
+    text-align: center;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#progress ul {
+    display:inline;
+    padding-left: 55%;
+}
+
+#progress  {
+    /*text-align: center;*/
+    background-color: white;
+    padding: 15px 0 15px 0;
+}
+
+#progress  a {
+    background-color: white;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#progress  a:link { color: black}
+#progress  a:visited {color: black}
+#progress  a:active {color: white}
+#progress  a:hover {color: red}
+#progress  a:focus { color: orange;}
