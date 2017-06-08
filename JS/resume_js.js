@@ -10,6 +10,7 @@ function progressFx(limit1, limit2, curr, target){
 }
 
 
+
 $(document).ready(function () {
 
     var nav_top = $("#nav").offset().top;
