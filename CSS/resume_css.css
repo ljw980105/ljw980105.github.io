@@ -141,12 +141,12 @@ body {
     padding: 15px 0 15px 0;
 }
 
-#progress  a {
+#progress a {
     background-color: white;
     display: inline;
     padding: 0px 10px;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto","Helvetica", sans-serif;
     font-weight: 300;
 }
 
@@ -155,3 +155,130 @@ body {
 #progress  a:active {color: white}
 #progress  a:hover {color: red}
 #progress  a:focus { color: orange;}
+
+#quick_guide {
+    background-size: 100%;
+    width: auto;
+    padding: 8% 0;
+    background-image: url("../images/nyc.jpg");
+    background-attachment: fixed;
+}
+
+#wrapper {
+    display: inline-flex;
+    opacity: 0.95;
+    margin: 5% 5%;
+}
+
+#wrapper a:hover{  text-decoration: underline;  }
+
+#col1 {
+    width: 450px;
+    margin-right: 4%;
+}
+
+#col2 {
+    width: 450px;
+    margin-right: 4%;
+}
+
+#col3 {
+    width: 450px;
+}
+
+#col1_item1 {
+     padding: 25% 0;
+     background-color: rgba(221,51,34,1);
+ }
+
+#col1_item2 {
+    margin-top: 14%;
+    padding: 25% 0;
+    background-color: white;
+}
+
+#col2_item1 {
+    padding: 25% 0;
+    background-color: white;
+}
+
+#col2_item2 {
+    margin-top: 14%;
+    padding: 25% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#col3_item1 {
+    padding: 25% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#col3_item2 {
+    margin-top: 14%;
+    padding: 25% 0;
+    background-color: white;
+}
+
+#col1_item1 a{
+    margin-left: 32%;
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col1_item2 a{
+    padding: 23%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#col2_item1 a{
+    padding: 22%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#col2_item2 a{
+    padding: 34%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col3_item1 a{
+    padding: 25.5%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col3_item2 a{
+    padding: 28%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+
+
