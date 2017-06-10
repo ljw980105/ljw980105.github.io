@@ -136,7 +136,7 @@ body {
 }
 
 #progress  {
-    /*text-align: center;*/
+    opacity: 0.95;
     background-color: white;
     padding: 15px 0 15px 0;
 }
@@ -347,6 +347,7 @@ body {
 }
 
 #experience{
+    /*filter: contrast(110%);*/
     padding: 14% 0;
     background-image: url("../images/EXP_BG2.jpg");
     background-size: 100%;
@@ -361,16 +362,16 @@ body {
 
 #exp_left{
     float: left;
-    margin-top: -30.7%;
-    margin-right: 28%;
+    margin-top: -370px;
+    margin-right: 341px;
 }
 
 #exp_right{
     text-align: right;
     white-space: nowrap;
     z-index: 10;
-    margin-top: -1%;
-    margin-right: 2%;
+    margin-top: -12px;
+    margin-right: 25px;
 }
 
 #exp1{
