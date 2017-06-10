@@ -41,7 +41,7 @@ body {
 }
 
 #footer{
-    margin-top: 50%;
+    margin-top: 5%;
 }
 
 
@@ -132,7 +132,7 @@ body {
 
 #progress ul {
     display:inline;
-    padding-left: 55%;
+    padding-left: 50%;
 }
 
 #progress  {
@@ -280,5 +280,129 @@ body {
     font-weight: 300;
 }
 
+#edu{
+    padding-top:  8%;
+    padding-bottom:  2%;
+    background-color: rgba(0,0,0,0.06);
+}
+
+#edu h1 {
+    margin-top: -3%;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(221,51,34,1);
+
+}
+
+#wrap {
+    display: flex;
+    margin: 5% 10%;
+}
+
+#left_col{
+    margin-left: 9%;
+    margin-right: 10%;
+}
 
 
+#edu h2{
+    margin-top: -3%;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+}
+
+#edu h3{
+    font-size: 25px;
+    font-family: "Myriad Pro","Roboto", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(221,51,34,1);
+}
+
+#edu h4 {
+    margin-top: -3%;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+#edu h5 {
+    margin-top: -2%;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+#progress a {
+    cursor: pointer;
+}
+
+#experience{
+    padding: 14% 0;
+    background-image: url("../images/EXP_BG2.jpg");
+    background-size: 100%;
+    width: auto;
+    /*background-color: rgba(0,0,0,0.8);*/
+}
+
+#exp_wrapper{
+    display: flex;
+    margin: 0 10%;
+}
+
+#exp_left{
+    float: left;
+    margin-top: -30.7%;
+    margin-right: 28%;
+}
+
+#exp_right{
+    text-align: right;
+    white-space: nowrap;
+    z-index: 10;
+    margin-top: -1%;
+    margin-right: 2%;
+}
+
+#exp1{
+    margin-top: 122%;
+}
+
+#exp2{
+    margin-top: 170%;
+}
+
+#experience h2 {
+    color: rgba(253,196,18,1);
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+}
+
+#experience h3 {
+    color: rgba(221,51,34,1);
+    font-size: 22px;
+    font-family:"Myriad Pro","Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+#experience h4 {
+    line-height: 150%;
+    color: white;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#exp3{
+    margin-top: 34%;
+}

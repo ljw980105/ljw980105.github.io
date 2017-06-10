@@ -9,6 +9,17 @@ function progressFx(limit1, limit2, curr, target){
     }
 }
 
+/*
+Animated scroll to certain divs triggered by a button click
+ */
+function animatedScroll(button,target){
+    $(button).click(function() {
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 300);
+    });
+}
+
 
 
 $(document).ready(function () {
@@ -16,6 +27,8 @@ $(document).ready(function () {
     var nav_top = $("#nav").offset().top;
     var guide_top = $("#quick_guide").offset().top;
     var edu_top = $("#edu").offset().top;
+    var exp_top = $("#experience").offset().top;
+    var skl_top = $("#skills").offset().top;
     var section_top = $("#progress").offset().top;
     $("#progress").hide();
 
@@ -34,6 +47,15 @@ $(document).ready(function () {
 
         progressFx(0,guide_top,curr,"#progress #p1");
         progressFx(guide_top,edu_top,curr,"#progress #p2");
+        progressFx(edu_top,exp_top,curr,"#progress #p3");
+        progressFx(exp_top,skl_top,curr,"#progress #p4");
     });
+    animatedScroll("#p1","#intro");
+    animatedScroll("#p2","#quick_guide");
+    animatedScroll("#p3","#edu");
+    animatedScroll("#p4","#experience");
+    animatedScroll("#p5","#skills");
+    animatedScroll("#p6","#awards");
+    animatedScroll("#p7","#nav");
 
 });
