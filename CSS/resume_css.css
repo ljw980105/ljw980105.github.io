@@ -41,7 +41,7 @@ body {
 }
 
 #footer{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 
@@ -293,7 +293,6 @@ body {
     font-weight: 500;
     text-align: center;
     color: rgba(221,51,34,1);
-
 }
 
 #wrap {
@@ -406,4 +405,58 @@ body {
 
 #exp3{
     margin-top: 34%;
+}
+
+#skills {
+    background-color: rgba(253,196,18,.05);
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#skills h1 {
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(221,51,34,1);
+}
+
+#skills h2 {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+#skills #left_arrow, #right_arrow{
+    -ms-transform: scale(.2,.2); /* IE 9 */
+    -webkit-transform: scale(.2,.2); /* Safari */
+    transform: scale(.2,.2);
+}
+
+#left_arrow{
+    margin-left: -3%;
+    cursor: pointer;
+}
+
+#right_arrow{
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+#skill_content{
+    -ms-transform: scale(.8,.8); /* IE 9 */
+    -webkit-transform: scale(.8,.8); /* Safari */
+    transform: scale(.8,.8);
+}
+
+#skills h2 {
+    z-index: 4;
+    text-align: center;
+}
+
+#skills_wrapper{
+    margin-top: -6%;
+    display: flex;
 }
