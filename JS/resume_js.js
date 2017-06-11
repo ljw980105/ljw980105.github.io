@@ -34,10 +34,6 @@ var createImage = function (src) {
     return '<img src="' + src + '" />';
 };
 
-function dummy() {
-
-}
-
 $(document).ready(function () {
 
     var nav_top = $("#nav").offset().top;
@@ -45,6 +41,7 @@ $(document).ready(function () {
     var edu_top = $("#edu").offset().top;
     var exp_top = $("#experience").offset().top;
     var skl_top = $("#skills").offset().top;
+    var foot_top = $("#footer").offset().top;
     var section_top = $("#progress").offset().top;
     $("#progress").hide();
 
@@ -65,6 +62,7 @@ $(document).ready(function () {
         progressFx(guide_top, edu_top, curr, "#progress #p2");
         progressFx(edu_top, exp_top, curr, "#progress #p3");
         progressFx(exp_top, skl_top, curr, "#progress #p4");
+        progressFx(skl_top, foot_top, curr, "#progress #p5");
 
     });
     animatedScroll("#p1", "#intro");
@@ -80,47 +78,51 @@ $(document).ready(function () {
 
     var imgArray = [];
     imgArray.push(createImage("images/skl1.png"));
+    imgArray.push(createImage("images/skl2.png"));
+    imgArray.push(createImage("images/skl3x.png"));
     imgArray.push(createImage("images/skl4.png"));
-    imgArray.push(createImage("images/skl1.png"));
-    imgArray.push(createImage("images/skl4.png"));
-    imgArray.push(createImage("images/skl1.png"));
+    imgArray.push(createImage("images/skl5.png"));
+    imgArray.push(createImage("images/skl6.png"));
+    imgArray.push(createImage("images/skl7.png"));
 
     var i = 0;
     var $skl = $('#skill_content');
-    var $button_left = $ ("#left_arrow");
-    var $button_right = $ ("#right_arrow");
+    var $button_left = $("#left_arrow");
+    var $button_right = $("#right_arrow");
 
     $button_left.click(function () {
-        $skl.fadeTo(300,0.001);
+        $skl.fadeTo(300, 0.001);
         i--;
-        if (i < 0){i= imgArray.length-1;}
-        $skl.html(imgArray[i]);
-        // setTimeout(function () {
-            $skl.fadeTo(300,1);
-        // }, 300);
+        if (i < 0) {
+            i = imgArray.length - 1;
+        }
+        setTimeout(function () {
+            $skl.html(imgArray[i]);
+        }, 300);
+        $skl.fadeTo(300, 1);
     });
 
     $button_right.click(function () {
-        $skl.fadeTo(300,0.001);
+        $skl.fadeTo(300, 0.001);
         i++;
-        if (imgArray.length == i - 1){i= 0;}
-        $skl.html(imgArray[i]);
-        // setTimeout(function () {
-            $skl.fadeTo(300,1);
-        // }, 300);
-    });
-
-    setInterval(function () {
-        setTimeout(function () {// fade out, change image, fade in, delay
-            $skl.fadeTo(1100,0.001);
-        }, 4000);
-        i++;
-        if (imgArray.length == i - 1) {
+        if (imgArray.length === i) {
             i = 0;
         }
-        $skl.html(imgArray[i]);
-        $skl.fadeTo(1000,1);
-    },6000);
+        setTimeout(function () {
+            $skl.html(imgArray[i]);
+        }, 300);
+        $skl.fadeTo(300, 1);
+    });
 
-
+    // setInterval(function () {
+    //     setTimeout(function () {// fade out, change image, fade in, delay
+    //         $skl.fadeTo(1000,0.001);
+    //     }, 4000);
+    //     i++;
+    //     if (imgArray.length == i - 1) {
+    //         i = 0;
+    //     }
+    //     $skl.html(imgArray[i]);
+    //     $skl.fadeTo(1000,1);
+    // },6000);
 });
