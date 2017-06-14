@@ -83,6 +83,10 @@ body {
     /*}*/
 /*}*/
 
+#quick_guide h3 {
+    cursor: pointer;
+}
+
 #intro{
     text-align: center;
     color: white;
@@ -193,18 +197,18 @@ body {
 
 #col1_item2 {
     margin-top: 14%;
-    padding: 25% 0;
+    padding: 3% 0;
     background-color: white;
 }
 
 #col2_item1 {
-    padding: 25% 0;
+    padding: 2.5% 0;
     background-color: white;
 }
 
 #col2_item2 {
     margin-top: 14%;
-    padding: 25% 0;
+    padding: 2.5% 0;
     background-color: rgba(221,51,34,1);
 }
 
@@ -220,7 +224,7 @@ body {
 }
 
 #col1_item1 a{
-    margin-left: 32%;
+    margin-left: 34%;
     text-align: center;
     opacity: 1;
     font-size: 40px;
@@ -230,13 +234,41 @@ body {
     font-weight: 300;
 }
 
-#col1_item2 a{
+#col1_item2 a {
     padding: 23%;
     opacity: 1;
     font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     text-decoration: none;
     color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#wrapper h6{
+    cursor: pointer;
+}
+
+#wrapper h6:hover{
+    text-decoration: underline;
+}
+
+#q1, #q2{
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#q3{
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
     font-weight: 300;
 }
 
@@ -460,3 +492,4 @@ body {
     margin-top: -6%;
     display: flex;
 }
+

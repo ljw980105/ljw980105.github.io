@@ -34,6 +34,10 @@ var createImage = function (src) {
     return '<img src="' + src + '" />';
 };
 
+function animateOne(){
+    animatedScroll("#col1_item2 a","#skills");
+}
+
 $(document).ready(function () {
 
     var nav_top = $("#nav").offset().top;
@@ -72,6 +76,10 @@ $(document).ready(function () {
     animatedScroll("#p5", "#skills");
     animatedScroll("#p6", "#awards");
     animatedScroll("#p7", "#nav");
+
+    animatedScroll("#q1","#edu");
+    animatedScroll("#q2","#experience");
+    animatedScroll("#q3","#skills");
 
     fadeFx("#left_arrow");
     fadeFx("#right_arrow");
