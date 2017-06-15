@@ -1,0 +1,189 @@
+/*
+Create circles or rounded rectangles
+border-radius: 100%;
+
+button
+<br/><button> Button </button>
+*/
+
+body {
+    width: 1519px;
+    margin: auto;
+}
+
+#bg {
+    float: right;
+    margin-top: -14%;
+}
+
+#nav ul {
+    display:inline;
+}
+
+#nav {
+    text-align: center;
+    background-color: black;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#nav a {
+    background-color: black;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#nav a:link { color: white}
+#nav a:visited {color: white}
+#nav a:active {color: white}
+#nav a:hover { color: orange;}
+#nav a:focus { color: orange;}
+
+#main{
+    width: 50%;
+    max-width: 50%;
+    margin-right: 60%;
+    margin-top: 18%;
+    margin-left: 18%;
+}
+
+#intro {  }
+
+#intro h1 {
+    font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 70%;
+}
+
+#intro h2{
+    font-size: 40px;
+    margin-left: 3%;
+    /*font-family: "SF UI Display","Roboto Thin", "Helvetica Thin","serif";*/
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 70%;
+}
+
+._center {
+    text-align: center;
+}
+
+#footer {
+    margin: 2% 0;
+    /*use to be 32%*/
+}
+
+#social_media {
+    margin-top: 6%;
+    margin-left: -7%;
+
+}
+
+#social_media a {
+    padding: 0 1.68%;
+}
+
+#social_media a:hover {
+    /*opacity:0.7;*/
+}
+
+#contents {
+    background-color: rgba(0,0,0,0.04);
+    /*background-color: black;*/
+    margin-top: 31%;
+    text-align: center;
+    padding: 3% 0;
+}
+
+#contents h1 {
+    /*font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";*/
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    color:black;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 70%;
+}
+
+#contents #images #first{
+    /*padding-left: 3%;*/
+    padding-top: -2%;
+}
+
+#contents a {
+    padding-top: 2%;
+    /*padding-right: 3%;*/
+    display: block;
+    /*display used to be inline*/
+}
+
+#contents #images{
+    padding-top: .7%;
+    padding-bottom: 2%;
+    /*could be 7% or 2%*/
+}
+
+#gfx{
+    padding: 20% 0;
+    background-image: url("indexbg1x.jpg");
+    background-size: 150% auto;
+    text-align: center;
+    background-position: 50% 18%;
+    margin-right: 5px;
+
+}
+
+#proj{
+    padding: 20% 0;
+    background-image: url("../images/FRC.jpg");
+    background-size: 120%;
+    text-align: center;
+    background-position: 50% 18%;
+    margin-right: 5px;
+}
+
+#resume{
+    padding: 20% 0;
+    background-image: url("../images/indexbg3.jpg");
+    /*background-size: 120%;*/
+    text-align: center;
+    background-position: 50% 18%;
+}
+
+#wrapper a {
+    color: white;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+}
+
+#wrapper a:link { color: white}
+#wrapper a:visited {color: white}
+#wrapper a:hover {  color: orangered;  }
+
+#wrapper {
+    margin-top: 17.12%;
+    display: flex;
+}
+
+#col1 {
+    width: 503px;
+}
+
+#col2 {
+    width: 503px;
+}
+
+#col3{
+    width: 503px;
+}
+
+/*#contents a:hover {opacity: 0.7;}*/
