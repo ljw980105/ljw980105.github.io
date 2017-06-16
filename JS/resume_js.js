@@ -85,13 +85,13 @@ $(document).ready(function () {
     fadeFx("#right_arrow");
 
     var imgArray = [];
-    imgArray.push(createImage("images/skl1.png"));
-    imgArray.push(createImage("images/skl2.png"));
-    imgArray.push(createImage("images/skl3x.png"));
-    imgArray.push(createImage("images/skl4.png"));
-    imgArray.push(createImage("images/skl5.png"));
-    imgArray.push(createImage("images/skl6.png"));
-    imgArray.push(createImage("images/skl7.png"));
+    imgArray.push(createImage("Images/skl1.png"));
+    imgArray.push(createImage("Images/skl2.png"));
+    imgArray.push(createImage("Images/skl3x.png"));
+    imgArray.push(createImage("Images/skl4.png"));
+    imgArray.push(createImage("Images/skl5.png"));
+    imgArray.push(createImage("Images/skl6.png"));
+    imgArray.push(createImage("Images/skl7.png"));
 
     var i = 0;
     var $skl = $('#skill_content');

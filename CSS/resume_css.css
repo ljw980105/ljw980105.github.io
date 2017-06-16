@@ -164,7 +164,7 @@ body {
     background-size: 100%;
     width: auto;
     padding: 8% 0;
-    background-image: url("../images/nyc.jpg");
+    background-image: url("../Images/nyc.jpg");
     background-attachment: fixed;
 }
 
@@ -380,7 +380,7 @@ body {
 #experience{
     /*filter: contrast(110%);*/
     padding: 14% 0;
-    background-image: url("../images/EXP_BG2.jpg");
+    background-image: url("../Images/EXP_BG2.jpg");
     background-size: 100%;
     width: auto;
     /*background-color: rgba(0,0,0,0.8);*/
