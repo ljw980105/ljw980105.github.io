@@ -17,6 +17,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Jetbrains Webstorm Temp Files
+*.iml
+*.xml
+
 # =========================
 # Operating System Files
 # =========================
