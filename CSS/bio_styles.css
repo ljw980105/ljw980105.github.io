@@ -1,0 +1,68 @@
+/* CSS DOCUMENT */
+
+body {
+    width: 1519px;
+    margin: auto;
+    background-image: url("Bio_bg3.jpg");
+    background-repeat: repeat;
+
+}
+
+#nav ul {
+    display:inline;
+}
+
+#nav {
+    text-align: center;
+    background-color: black;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#nav a {
+    background-color: black;
+    display: inline;
+    padding: 0 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#nav a:link { color: white}
+#nav a:visited {color: white}
+#nav a:active {color: white}
+#nav a:hover { color: orange;}
+#nav a:focus { color: orange;}
+
+._center {
+    text-align: center;
+}
+
+#name{
+    text-align: center;
+    font-family: "Helvetica","Adobe Caslon Pro Bold",serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-top: 10%;
+}
+
+#intro{
+    padding: 1% 18%;
+    font-family: "Bell MT","Helvetica","Adobe Caslon Pro Bold",serif;
+    font-size: 20px;
+    padding-bottom: 10%;
+
+}
+
+.color_white{
+    color:white;
+}
+
+#footer{
+    color: white;
+}
+

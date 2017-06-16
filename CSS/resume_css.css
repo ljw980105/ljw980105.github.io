@@ -1,0 +1,496 @@
+/* CSS DOCUMENT */
+
+body {
+    width: 1519px;
+    margin: auto;
+}
+
+#nav ul {
+    display:inline;
+}
+
+#nav {
+    opacity: 0.9;
+    text-align: center;
+    background-color: black;
+    padding: 15px 0 15px 0;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*z-index: 10;*/
+}
+
+#nav a {
+    background-color: black;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#nav a:link { color: white}
+#nav a:visited {color: white}
+#nav a:active {color: white}
+#nav a:hover { color: orange;}
+#nav a:focus { color: orange;}
+
+._center {
+    text-align: center;
+}
+
+#footer{
+    margin-top: 1%;
+}
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#experience h1 {
+    text-align: center;
+    margin-top: 20%;
+    color: white;
+}
+
+/*@media (min-aspect-ratio: 16/9) {*/
+    /*.fullscreen-bg__video {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
+/*}*/
+
+/*@media (max-aspect-ratio: 16/9) {*/
+    /*.fullscreen-bg__video {*/
+        /*width: auto;*/
+        /*height: 100%;*/
+    /*}*/
+/*}*/
+
+#quick_guide h3 {
+    cursor: pointer;
+}
+
+#intro{
+    text-align: center;
+    color: white;
+    /*margin-top: 3%;*/
+    padding: 18% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#intro h1 {
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#intro a:link {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#intro a:visited {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#intro a:hover {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: underline;
+    color: white;
+    font-weight: 300;
+}
+
+.thin_title{
+    text-align: center;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#progress ul {
+    display:inline;
+    padding-left: 55%;
+}
+
+#progress  {
+    opacity: 0.95;
+    background-color: white;
+    padding: 15px 0 15px 0;
+}
+
+#progress a {
+    background-color: white;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto","Helvetica", sans-serif;
+    font-weight: 300;
+}
+
+#progress  a:link { color: black}
+#progress  a:visited {color: black}
+#progress  a:active {color: white}
+#progress  a:hover {color: red}
+#progress  a:focus { color: orange;}
+
+#quick_guide {
+    background-size: 100%;
+    width: auto;
+    padding: 8% 0;
+    background-image: url("../images/nyc.jpg");
+    background-attachment: fixed;
+}
+
+#wrapper {
+    display: inline-flex;
+    opacity: 0.95;
+    margin: 5% 5%;
+}
+
+#wrapper a:hover{  text-decoration: underline;  }
+
+#col1 {
+    width: 450px;
+    margin-right: 4%;
+}
+
+#col2 {
+    width: 450px;
+    margin-right: 4%;
+}
+
+#col3 {
+    width: 450px;
+}
+
+#col1_item1 {
+     padding: 25% 0;
+     background-color: rgba(221,51,34,1);
+ }
+
+#col1_item2 {
+    margin-top: 14%;
+    padding: 2.5% 0;
+    background-color: white;
+}
+
+#col2_item1 {
+    padding: 2.5% 0;
+    background-color: white;
+}
+
+#col2_item2 {
+    margin-top: 14%;
+    padding: 2.5% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#col3_item1 {
+    padding: 25% 0;
+    background-color: rgba(221,51,34,1);
+}
+
+#col3_item2 {
+    margin-top: 14%;
+    padding: 25% 0;
+    background-color: white;
+}
+
+#col1_item1 a{
+    margin-left: 34%;
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col1_item2 a {
+    padding: 23%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#wrapper h6{
+    cursor: pointer;
+}
+
+#wrapper h6:hover{
+    text-decoration: underline;
+}
+
+#q1, #q2{
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#q3{
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col2_item1 a{
+    padding: 22%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#col2_item2 a{
+    padding: 34%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col3_item1 a{
+    padding: 25.5%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+#col3_item2 a{
+    padding: 28%;
+    opacity: 1;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    text-decoration: none;
+    color: rgba(221,51,34,1);
+    font-weight: 300;
+}
+
+#edu{
+    padding-top:  8%;
+    padding-bottom:  2%;
+    background-color: rgba(0,0,0,0.06);
+}
+
+#edu h1 {
+    margin-top: -3%;
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(221,51,34,1);
+}
+
+#wrap {
+    display: flex;
+    margin: 5% 10%;
+}
+
+#left_col{
+    margin-left: 9%;
+    margin-right: 10%;
+}
+
+
+#edu h2{
+    margin-top: -3%;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: black;
+}
+
+#edu h3{
+    font-size: 25px;
+    font-family: "Myriad Pro","Roboto", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(221,51,34,1);
+}
+
+#edu h4 {
+    margin-top: -3%;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+#edu h5 {
+    margin-top: -2%;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: black;
+}
+
+#progress a {
+    cursor: pointer;
+}
+
+#experience{
+    /*filter: contrast(110%);*/
+    padding: 14% 0;
+    background-image: url("../images/EXP_BG2.jpg");
+    background-size: 100%;
+    width: auto;
+    /*background-color: rgba(0,0,0,0.8);*/
+}
+
+#exp_wrapper{
+    display: flex;
+    margin: 0 10%;
+}
+
+#exp_left{
+    /*margin-top: -370px;*/
+    margin-top: -23em;
+    margin-right: 341px;
+}
+
+#exp_right{
+    text-align: right;
+    white-space: nowrap;
+    z-index: 10;
+    /*margin-top: -12px;*/
+    margin-top: -0.8em;
+    margin-right: 25px;
+}
+
+#exp1{
+    margin-top: 122%;
+}
+
+#exp2{
+    margin-top: 170%;
+}
+
+#experience h2 {
+    color: rgba(253,196,18,1);
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+}
+
+#experience h3 {
+    color: rgba(221,51,34,1);
+    font-size: 22px;
+    font-family:"Myriad Pro","Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+#experience h4 {
+    line-height: 150%;
+    color: white;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
+#exp3{
+    margin-top: 34%;
+}
+
+#skills {
+    background-color: rgba(253,196,18,.05);
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+
+#skills h1 {
+    font-size: 55px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(221,51,34,1);
+}
+
+#skills h2 {
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+#skills #left_arrow, #right_arrow{
+    -ms-transform: scale(.2,.2); /* IE 9 */
+    -webkit-transform: scale(.2,.2); /* Safari */
+    transform: scale(.2,.2);
+}
+
+#left_arrow{
+    margin-left: -3%;
+    cursor: pointer;
+}
+
+#right_arrow{
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+#skill_content{
+    -ms-transform: scale(.8,.8); /* IE 9 */
+    -webkit-transform: scale(.8,.8); /* Safari */
+    transform: scale(.8,.8);
+}
+
+#skills h2 {
+    z-index: 4;
+    text-align: center;
+}
+
+#skills_wrapper{
+    margin-top: -6%;
+    display: flex;
+}
+

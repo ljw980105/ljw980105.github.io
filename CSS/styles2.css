@@ -65,7 +65,6 @@ body {
 #intro h2{
     font-size: 40px;
     margin-left: 3%;
-    /*font-family: "SF UI Display","Roboto Thin", "Helvetica Thin","serif";*/
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
     line-height: 70%;
@@ -96,14 +95,12 @@ body {
 
 #contents {
     background-color: rgba(0,0,0,0.04);
-    /*background-color: black;*/
     margin-top: 31%;
     text-align: center;
     padding: 3% 0;
 }
 
 #contents h1 {
-    /*font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";*/
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     color:black;
     font-weight: 300;
@@ -130,52 +127,61 @@ body {
 }
 
 #gfx{
-    margin-top: 31%;
     padding: 20% 0;
     background-image: url("indexbg1x.jpg");
-    background-size: 100% auto;
+    background-size: 150% auto;
     text-align: center;
     background-position: 50% 18%;
+    margin-right: 5px;
 
-}
-
-#gfx a {
-    color: white;
-    font-size: 55px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    text-shadow: 3px 3px 2px black;
-}
-
-#gfx:link { color: white}
-#gfx a:visited {color: white}
-#gfx a:hover {
-    color: orangered;
 }
 
 #proj{
-    margin-top: .5%;
     padding: 20% 0;
+    /*background-image: url("../images/FRC.jpg");*/
     background-image: url("indexbg2.jpg");
+    background-size: 120%;
     text-align: center;
     background-position: 50% 18%;
-
+    margin-right: 5px;
 }
 
-#proj a {
+#resume{
+    padding: 20% 0;
+    background-image: url("../images/indexbg3.jpg");
+    /*background-size: 120%;*/
+    text-align: center;
+    background-position: 50% 18%;
+}
+
+#wrapper a {
     color: white;
-    font-size: 55px;
+    font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
     text-decoration: none;
     text-shadow: 3px 3px 2px black;
 }
 
-#proj a:link { color: white}
-#proj a:visited {color: white}
-#proj a:hover {
-    color: orangered;
+#wrapper a:link { color: white}
+#wrapper a:visited {color: white}
+#wrapper a:hover {  color: orangered;  }
+
+#wrapper {
+    margin-top: 17.14%;
+    display: flex;
+}
+
+#col1 {
+    width: 507px;
+}
+
+#col2 {
+    width: 507px;
+}
+
+#col3{
+    width: 507px;
 }
 
 /*#contents a:hover {opacity: 0.7;}*/
