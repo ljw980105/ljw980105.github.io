@@ -25,6 +25,11 @@ $(document).ready(function () {
     $("#img2 a").hide();
     $("#img3 a").hide();
     $("#img4 a").hide();
+    $("#showcase").fadeTo(1,0.001);
+
+    setTimeout(function () {
+        $("#showcase").fadeTo(1000,1);
+    },500);
     blurFx("#img1 img", "#img1 a", "#img1");
     blurFx("#img2 img", "#img2 a", "#img2");
     blurFx("#img3 img", "#img3 a", "#img3");

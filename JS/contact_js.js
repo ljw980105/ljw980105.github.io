@@ -28,25 +28,25 @@ $(document).ready(function () {
     var num4 = $('#f00ter').offset().top;
     // alert(num2);
     //$('#phone').hide();
-    $('#p_icon').hide();
-    $('#e_icon').hide();
-    $('#sub_sm').hide();
-    $("#f00ter").hide();
+    $('#p_icon').fadeTo(1,0.001);
+    $('#e_icon').fadeTo(1,0.001);
+    $('#sub_sm').fadeTo(1,0.001);
+    $("#f00ter").fadeTo(1,0.001);
 
     //$('#phone').fadeIn(1500);
     $(document).scroll(function () {
         var curr = $(this).scrollTop();
         if (curr > num1-700){
-            $('#p_icon').fadeIn(2000);
+            $('#p_icon').fadeTo(2000,1);
         }
         if (curr > num2-600) {
-            $('#e_icon').fadeIn(2000);
+            $('#e_icon').fadeTo(2000,1);
         }
         if (curr > num3-700) {
-            $('#sub_sm').fadeIn(2000);
+            $('#sub_sm').fadeTo(2000,1);
         }
         if (curr > num4-900) {
-            $('#f00ter').fadeIn(2000);
+            $('#f00ter').fadeTo(2000,1);
         }
     });
 
