@@ -1,4 +1,6 @@
+/*For original menu*/
 /* CSS DOCUMENT */
+
 body {
     width: 1519px;
     margin: auto;
@@ -16,16 +18,14 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    /*z index is the order of the stack of elements
-     here 10 can lead to it being above everything*/
     z-index: 10;
-
 }
 
-#nav a {
+#nav > nav > ul > li > a{
+    transition:all linear 0.15s;
     background-color: white;
     display: inline;
-    padding: 0px 10px;
+    padding: 15px 10px;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
@@ -40,6 +40,95 @@ body {
 ._center {
     text-align: center;
 }
+
+
+/*For drop-down menu*/
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+
+.menu {
+    text-align: center;
+    width:100%;
+    margin:0px auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'serif';
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    /*color:#919191;*/
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+}
+
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    display:inline-block;
+    position:relative;
+}
+
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+}
+
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:rgba(0,0,0,0.05);
+}
+
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    margin-top: 10%;
+    text-align: left;
+    width:150%;
+    padding:5px 30px;
+    position:absolute;
+    top:120%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:rgb(240,240,240);
+
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    margin-left: -25%;
+    padding:10px 30px;
+    display:block;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+}
+
 
 #showcase{
     margin-top: 3.38%;

@@ -1,43 +1,4 @@
 /* CSS DOCUMENT */
-/*Project images follow the dimension of 900 x 600. Use format png*/
-
-body {
-    width: 1519px;
-    margin: auto;
-}
-
-#nav ul {
-    display:inline;
-}
-
-#nav {
-    text-align: center;
-    background-color: black;
-    padding: 15px 0 15px 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-#nav a {
-    background-color: black;
-    display: inline;
-    padding: 0px 10px;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-}
-
-#nav a:link { color: white}
-#nav a:visited {color: white}
-#nav a:active {color: white}
-#nav a:hover { color: orange;}
-#nav a:focus { color: orange;}
-
-._center {
-    text-align: center;
-}
 
 #typography{
     margin-top:3%;
@@ -93,7 +54,7 @@ body {
 #proj_contents p {
     font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     font-weight: 200;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 #proj_contents a:link, #proj_contents a:visited{
@@ -117,3 +78,5 @@ body {
 #footer{
     margin-top: 3%;
 }
+
+/*dropdown starts here*/
