@@ -11,6 +11,7 @@ body {
 }
 
 #nav {
+    z-index: 10;
     text-align: center;
     background-color: black;
     padding: 15px 0 15px 0;

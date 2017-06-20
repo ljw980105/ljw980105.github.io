@@ -1,10 +1,181 @@
 #footer{
-    margin-top: 20%;
+    padding: 10% 0 2% 0;
+    background-color: black;
+    /*margin-bottom: -20%;*/
 }
 
-#testing{
-    background-size: 100%;
-    background-image: url("../Images/indexbg3.jpg");
-    padding: 50% 0;
+#footer h2 {
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 70%;
+    color: white;
 }
+
+#footer a {
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 70%;
+    color: orange;
+}
+
+#footer a:link, #footer a:visited {
+    text-decoration: none;
+}
+
+#footer a:hover {
+    transition: opacity 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+#footer h4 {
+    margin-top: 11%;
+    color: white;
+    margin-bottom: -1%;
+}
+
+#text_wrap{
+    margin-left: 25%;
+    margin-top: -12.5%;
+}
+
+#intro{
+    background-size: 100%;
+    background-image: url("../Images/FRC_bg1y.jpg");
+    padding: 27% 0;
+    text-shadow: 2px 2px rgba(0,0,0,0.5)
+}
+
+#intro h1 {
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70%;
+    color: white;
+}
+
+#intro h2 {
+    line-height: 100%;
+    /*margin-left: 15px;*/
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 29px;;
+    color: white;
+}
+
+#algo{
+    height: 50%;
+}
+
+.fullscreen-bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.fullscreen-bg__video {
+    filter: brightness(80%);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+#text_sec{
+    z-index: 2;
+    margin-top: -50%;
+    margin-bottom: 90%;
+    margin-left: 10%;
+}
+
+#algo #text_sec h1 {
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: white;
+}
+
+#algo #text_sec h2 {
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 130%;
+    color: white;
+}
+
+#descrip {
+    margin-top: -72%;
+    padding: 11% 0;
+    background-size: 100%;
+    width: 100%;
+    background-image: url("../Images/FRC_bg2.jpg");
+}
+
+#descrip h1 {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    margin-left: 10%;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: white;
+}
+
+#descrip p {
+    text-shadow: 2px 2px rgba(0,0,0,0.5);
+    width: 30%;
+    margin-left: 10%;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 130%;
+    color: white;
+}
+
+#vids{
+    background-color: rgba(0,0,0,0.05);
+    padding: 12% 0 6% 0;
+    text-align: center;
+}
+
+#vids h1 {
+    margin-top: -7%;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 120%;
+    color: black;
+}
+
+#vids p {
+    margin-left: 15%;
+    width:70%;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 120%;
+    color: black;
+}
+
 
