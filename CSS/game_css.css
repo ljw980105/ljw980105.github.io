@@ -1,0 +1,48 @@
+body {
+    background-color: ivory;
+}
+
+#instr{
+    margin: 8% 10% 10% 10%;
+    padding: 2% 0 2% 0;
+    background-color: azure;
+    box-shadow: 5px 5px 2px #888888;;
+}
+
+#instr h2{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    color:black;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 100%;
+}
+
+#instr .ins{
+    color: dodgerblue;
+}
+
+#instr #igotit{
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    margin: 0 40%;
+    padding: 1% 0 1.4% 0;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+#instr #igotit:hover{
+    background-color: dodgerblue;
+    padding: 1% 0 1.4% 0;
+    border: 2px solid dodgerblue;
+    color: white;
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+#footer{
+    margin-top: 10%;
+}
+

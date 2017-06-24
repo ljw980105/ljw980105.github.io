@@ -1,17 +1,54 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Let's Play A Game</title>
-<link rel="icon" href="Images/icon png.png">
+	<script src="JS/jquery.js"></script>
+	<script src="JS/common_jquery.js"></script>
+    <script src="JS/game_js.js"></script>
+	<meta charset="utf-8">
+	<title>Featured Game - 2048 </title>
+	<link rel="icon" href="Images/icon png.png">
+	<link href="CSS/game_css.css" rel="stylesheet" type="text/css" media="screen">
+	<link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
-  <div id= "wrapper">
 
-	<div id="footer">
-		<h4> &copy; JING WEI LI 2017</h4>
-		</div>
-  </div>
+<div id="nav" class="menu-wrap">
+	<nav class="menu">
+		<ul class="clearfix">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="Bio.html">ABOUT</a></li>
+			<li><a href="Resume.html">RESUME</a></li>
+			<li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
+			<li>
+				<a id="nav_proj" href="Projects.html">PROJECTS</a>
+				<ul class="sub-menu">
+					<li><a href="Projects.html">All</a></li>
+					<li><a href="proj_frc.html">FIRST Robotics</a></li>
+					<li><a href="index.html">Personal Website</a></li>
+				</ul>
+			</li>
+			<li><a href="Games.html">GAMES</a></li>
+			<li><a href="Contacts.html">CONTACT</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div id="instr">
+	<h2>This is a web-based implementation of 2048, created entirely from scratch by me.</h2>
+    <h2 class="ins">Instructions:</h2>
+    <h2>If you are on a touchscreen device, <strong> swipe </strong> to move tiles.</h2>
+    <h2>If you are on a regular computer, <strong> use the arrow keys </strong>  to move tiles.</h2>
+    <h2>Your goal is to get as much points as possible, and to not run out of spaces!</h2>
+    <h2 class="ins">Innovations:</h2>
+    <h2>You can now reverse to an earlier grid! ( You can reverse 10 grids at most. )</h2>
+    <h2>You can now randomly generate a 2 or 4 tile with a button so you can always keep large # in corners.</h2>
+    <h2 id="igotit"> Start the Game </h2>
+</div>
+
+<div id="footer" class="_center">
+	<h4> &copy; JING WEI LI 2017</h4>
+</div>
+
 </body>
 </html>
