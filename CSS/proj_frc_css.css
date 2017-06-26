@@ -4,6 +4,16 @@
     /*margin-bottom: -20%;*/
 }
 
+#vids p a:link, #vids p a:visited {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+#vids p a:hover {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
 #footer h2 {
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 400;

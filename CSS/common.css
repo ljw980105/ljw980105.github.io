@@ -11,6 +11,7 @@ body {
 }
 
 #nav {
+
     z-index: 10;
     text-align: center;
     background-color: black;
@@ -96,7 +97,7 @@ body {
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
     z-index:1;
-    opacity:1;
+    opacity:0.95;
 }
 
 .sub-menu {
