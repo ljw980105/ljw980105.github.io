@@ -120,6 +120,7 @@ button
 }
 
 #wrapper a {
+    transition: all .1s ease-in;
     color: white;
     font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
