@@ -8,6 +8,7 @@ button
 #bg {
     float: right;
     margin-top: -14%;
+    height: auto;
 }
 
 #main{
@@ -134,18 +135,23 @@ button
 #wrapper a:hover {  color: orangered;  }
 
 #wrapper {
-    margin-top: 17.14%;
+    /*use to be margin top 17.14*/
+    margin-top: 17.48%;
     display: flex;
 }
 
 #col1 {
-    width: 507px;
+    /*use to be 507 px*/
+    width: 33.4%;
+    /*width: 507px;*/
 }
 
 #col2 {
-    width: 507px;
+    /*width: 507px;*/
+    width: 33.4%;
 }
 
 #col3{
-    width: 507px;
+    /*width: 507px;*/
+    width: 33.4%;
 }
