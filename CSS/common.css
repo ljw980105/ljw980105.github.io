@@ -2,7 +2,7 @@
 /* CSS DOCUMENT */
 
 body {
-    width: 1519px;
+    min-width: 1519px;
     margin: auto;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 #nav {
-
+    min-width: 800px;
     z-index: 10;
     text-align: center;
     background-color: black;
