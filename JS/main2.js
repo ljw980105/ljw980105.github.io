@@ -57,6 +57,18 @@ function lowerOpacity(string){
     });
 }
 
+function delayedFadeIn(name,time){
+    setTimeout(function () {
+        $(name).fadeTo(300,1);
+    }, time);
+}
+
+function delayedFadeIn2(name,time){
+    setTimeout(function () {
+        $(name).fadeTo(220,1);
+    }, time);
+}
+
 // primary syntax of jQuery
 $(document).ready(function () { // wait until webpage is ready
     var $nav = $('#nav');
@@ -64,21 +76,19 @@ $(document).ready(function () { // wait until webpage is ready
     $nav.slideToggle(500);
     //$contents.fadeIn(1000);
 
-    // var menu_change = $('#gfx').offset().top;
-    // $(document).scroll(function () {
-    //     var curr = $(this).scrollTop();
-    //     if (curr > menu_change - 50){
-    //         $('#nav').css("background-color","white");
-    //         $('#nav a').css("background-color","white");
-    //         $('#nav a:link').css("color","black");
-    //         $('#nav a:visited').css("color","black");
-    //     } else {
-    //         $('#nav').css("background-color","black");
-    //         $('#nav a').css("background-color","black");
-    //         $('#nav a:link').css("color","white");
-    //         $('#nav a:visited').css("color","white");
-    //     }
-    // });
+    $("#bg").fadeTo(1,0.001);
+    $("#intro h1").fadeTo(1,0.001);
+    $("#intro h2").fadeTo(1,0.001);
+    for(var i = 1; i <= 5; i++){
+        $("#sm"+i.toString()).fadeTo(1,0.001);
+    }
+
+    delayedFadeIn("#bg",500);
+    delayedFadeIn("#intro h1",800);
+    delayedFadeIn("#intro h2",1100);
+    for(var j = 1; j <= 5; j++){
+        delayedFadeIn2("#sm"+j.toString(),1200+220*j);
+    }
 
     // var $sm = $('#sm1');
     lowerOpacity("#contents a");
