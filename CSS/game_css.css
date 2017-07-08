@@ -46,3 +46,12 @@ body {
     margin-top: 10%;
 }
 
+#game{
+    display: block;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    margin-top: 4%;
+    margin-left: 25%;
+}
+

@@ -1,45 +1,227 @@
 <!doctype html>
 <html>
 <head>
-	<script src="JS/jquery.js"></script>
-	<script src="JS/common_jquery.js"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/common_jquery.js"></script>
     <script src="JS/game_js.js"></script>
-	<meta charset="utf-8">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-	<title>Featured Game - 2048 </title>
-	<link rel="icon" href="Images/icon png.png">
-	<link href="CSS/game_css.css" rel="stylesheet" type="text/css" media="screen">
-	<link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Featured Game - 2048 </title>
+    <link rel="icon" href="Images/icon png.png">
+    <link href="CSS/game_css.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!--REACT JS LIBRARIES-->
+    <script src="JS/react.js"></script>
+    <script src="JS/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="JS/2048.js"></script>
+    <!--REACT JS INCOMING-->
+    <script type="text/babel">
+        /*
+         determine what color should the tile be based on the value of the tile itself
+         */
+        function determine_color(num) {
+            if (num === 0) {
+                return "beige";
+            } else if (num == 2) {
+                return "red";
+            }
+        }
+
+        function font_color(num){
+            if (num === 0){
+                return "beige";
+            } else {
+                return "black";
+            }
+        }
+
+        class Game extends React.Component {
+            constructor(props) {
+                super(props);
+                this.update_pseudo = this.update_pseudo.bind(this);
+                // have 16 different states, each representing a tile in the 2048 game
+                this.state = {
+                    tile1: 0, tile2: 0, tile3: 0, tile4: 0,
+                    tile5: 0, tile6: 0, tile7: 0, tile8: 0,
+                    tile9: 0, tile10: 0, tile11: 0, tile12: 0,
+                    tile13: 0, tile14: 0, tile15: 0, tile16: 0
+                };
+            }
+
+            update_pseudo() {
+                this.setState({tile1: 2});
+            }
+
+            render() {
+                //returns a 4 by 4 grid containing the 2048 grid
+                return (
+                        <div>
+                            <button onClick={this.update_pseudo}>Change Color</button>
+                            <div style={{display: "flex", fontSize: "30px", margin: "0 0 0 14%"}}>
+
+                                <div style={{width: "20%", margin: "1%"}}>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile1),
+                                        color: font_color(this.state.tile1),
+                                        padding: "23% 0"
+                                    }}>{this.state.tile1}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile2),
+                                        padding: "23% 0",
+                                        color: font_color(this.state.tile2),
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile2}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile3),
+                                        padding: "23% 0",
+                                        color: font_color(this.state.tile3),
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile3}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile4),
+                                        padding: "23% 0",
+                                        color: font_color(this.state.tile4),
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile4}</h1>
+                                </div>
+
+                                <div style={{width: "20%", margin: "1%"}}>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile5),
+                                        color: font_color(this.state.tile5),
+                                        padding: "23% 0"
+                                    }}>{this.state.tile5}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile6),
+                                        color: font_color(this.state.tile6),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile6}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile7),
+                                        color: font_color(this.state.tile7),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile7}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile8),
+                                        color: font_color(this.state.tile8),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile8}</h1>
+                                </div>
+
+                                <div style={{width: "20%", margin: "1%"}}>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile9),
+                                        color: font_color(this.state.tile9),
+                                        padding: "23% 0"
+                                    }}>{this.state.tile9}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile10),
+                                        color: font_color(this.state.tile10),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile10}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile11),
+                                        padding: "23% 0",
+                                        color: font_color(this.state.tile11),
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile11}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile12),
+                                        color: font_color(this.state.tile12),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile12}</h1>
+                                </div>
+
+                                <div style={{width: "20%", margin: "1%"}}>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile13),
+                                        color: font_color(this.state.tile13),
+                                        padding: "23% 0"
+                                    }}>{this.state.tile13}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile14),
+                                        color: font_color(this.state.tile14),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile14}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile15),
+                                        color: font_color(this.state.tile15),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile15}</h1>
+                                    <h1 style={{
+                                        align: "center",
+                                        background: determine_color(this.state.tile16),
+                                        color: font_color(this.state.tile16),
+                                        padding: "23% 0",
+                                        marginTop: "-20%"
+                                    }}>{this.state.tile16}</h1>
+                                </div>
+                            </div>
+                        </div>
+//                        <SingleTile/>
+                );
+            }
+        }
+
+        ReactDOM.render(
+                <Game/>,
+            document.getElementById('game')
+        );
+    </script>
 </head>
 
 <body>
 
 <div id="nav" class="menu-wrap">
-	<nav class="menu">
-		<ul class="clearfix">
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="Bio.html">ABOUT</a></li>
-			<li><a href="Resume.html">RESUME</a></li>
-			<li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
-			<li>
-				<a id="nav_proj" href="Projects.html">PROJECTS</a>
-				<ul class="sub-menu">
-					<li><a href="Projects.html">All</a></li>
-					<li><a href="proj_frc.html">FIRST Robotics</a></li>
-					<li><a href="index.html">Personal Website</a></li>
-				</ul>
-			</li>
-			<li><a href="Games.html">GAMES</a></li>
-			<li><a href="Contacts.html">CONTACT</a></li>
-		</ul>
-	</nav>
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Bio.html">ABOUT</a></li>
+            <li><a href="Resume.html">RESUME</a></li>
+            <li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
+            <li>
+                <a id="nav_proj" href="Projects.html">PROJECTS</a>
+                <ul class="sub-menu">
+                    <li><a href="Projects.html">All</a></li>
+                    <li><a href="proj_frc.html">FIRST Robotics</a></li>
+                    <li><a href="index.html">Personal Website</a></li>
+                </ul>
+            </li>
+            <li><a href="Games.html">GAMES</a></li>
+            <li><a href="Contacts.html">CONTACT</a></li>
+        </ul>
+    </nav>
 </div>
 
 <div id="instr">
-	<h2>This is a web-based implementation of 2048, created entirely from scratch by me.</h2>
+    <h2>This is a web-based implementation of 2048, created entirely from scratch by me.</h2>
     <h2 class="ins">Instructions:</h2>
     <h2>If you are on a touchscreen device, <strong> swipe </strong> to move tiles.</h2>
-    <h2>If you are on a regular computer, <strong> use the arrow keys </strong>  to move tiles.</h2>
+    <h2>If you are on a regular computer, <strong> use the arrow keys </strong> to move tiles.</h2>
     <h2>Your goal is to get as much points as possible, and to not run out of spaces!</h2>
     <h2 class="ins">Innovations:</h2>
     <h2>You can now reverse to an earlier grid! ( You can reverse 10 grids at most. )</h2>
@@ -48,11 +230,11 @@
 </div>
 
 <div id="game">
-
+    <!--Here exists a 2048 game re-imagined with ReactJS-->
 </div>
 
 <div id="footer" class="_center">
-	<h4> &copy; JING WEI LI 2017</h4>
+    <h4> &copy; JING WEI LI 2017</h4>
 </div>
 
 </body>
