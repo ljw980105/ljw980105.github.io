@@ -29,6 +29,13 @@
     padding: 14% 10% 5% 10%;
 }
 
+#col1_item2{
+    margin-top: 14%;
+    background-color: rgba(0,0,0,0.05);
+    padding: 14% 10% 5% 10%;
+}
+
+
 #col2_item1{
     background-color: rgba(0,0,0,0.05);
     padding: 14% 10% 5% 10%;
@@ -39,6 +46,10 @@
 }
 
 #col2_item1 h2 {
+    margin-top: -5%;
+}
+
+#col1_item2 h2 {
     margin-top: -5%;
 }
 
