@@ -87,6 +87,10 @@ class Board {
         }
     }
 
+    get_score(){
+        return this.score;
+    }
+
     empty_size() {
         alert(this.empty_spots.length);
     }
@@ -109,6 +113,7 @@ class Board {
             for (var l = 0; l < temp2.length - 1; ++l) {
                 if (temp2[l] === temp2[l + 1]) {
                     temp3.push(temp2[l] + temp2[l + 1]);
+                    this.score += temp2[l] * 2;
                     l++;
                 } else {
                     temp3.push(temp2[l]);
@@ -144,6 +149,7 @@ class Board {
             for (var l = 0; l < temp.length - 1; ++l) {
                 if (temp[l] === temp[l + 1]) {
                     temp2.push(temp[l] + temp[l + 1]);
+                    this.score += temp[l] * 2;
                     l++;
                 } else {
                     temp2.push(temp[l]);
@@ -180,6 +186,7 @@ class Board {
             for (var l = 0; l < temp.length - 1; ++l) {
                 if (temp[l] === temp[l + 1]) {
                     temp2.push(temp[l] + temp[l + 1]);
+                    this.score += temp[l] * 2;
                     l++;
                 } else {
                     temp2.push(temp[l]);
@@ -216,6 +223,7 @@ class Board {
             for (var l = 0; l < temp.length - 1; ++l) {
                 if (temp[l] === temp[l + 1]) {
                     temp2.push(temp[l] + temp[l + 1]);
+                    this.score += temp[l] * 2;
                     l++;
                 } else {
                     temp2.push(temp[l]);

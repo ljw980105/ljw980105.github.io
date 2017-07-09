@@ -107,6 +107,10 @@
                 }
             }
 
+            get_score(){
+                return this.score;
+            }
+
             empty_size() {
                 alert(this.empty_spots.length);
             }
@@ -129,6 +133,7 @@
                     for (var l = 0; l < temp2.length - 1; ++l) {
                         if (temp2[l] === temp2[l + 1]) {
                             temp3.push(temp2[l] + temp2[l + 1]);
+                            this.score += temp2[l] * 2;
                             l++;
                         } else {
                             temp3.push(temp2[l]);
@@ -164,6 +169,7 @@
                     for (var l = 0; l < temp.length - 1; ++l) {
                         if (temp[l] === temp[l + 1]) {
                             temp2.push(temp[l] + temp[l + 1]);
+                            this.score += temp[l] * 2;
                             l++;
                         } else {
                             temp2.push(temp[l]);
@@ -200,6 +206,7 @@
                     for (var l = 0; l < temp.length - 1; ++l) {
                         if (temp[l] === temp[l + 1]) {
                             temp2.push(temp[l] + temp[l + 1]);
+                            this.score += temp[l] * 2;
                             l++;
                         } else {
                             temp2.push(temp[l]);
@@ -236,6 +243,7 @@
                     for (var l = 0; l < temp.length - 1; ++l) {
                         if (temp[l] === temp[l + 1]) {
                             temp2.push(temp[l] + temp[l + 1]);
+                            this.score += temp[l] * 2;
                             l++;
                         } else {
                             temp2.push(temp[l]);
@@ -337,7 +345,8 @@
                     tile1: 0, tile2: 0, tile3: 0, tile4: 0,
                     tile5: 0, tile6: 0, tile7: 0, tile8: 0,
                     tile9: 0, tile10: 0, tile11: 0, tile12: 0,
-                    tile13: 0, tile14: 0, tile15: 0, tile16: 0
+                    tile13: 0, tile14: 0, tile15: 0, tile16: 0,
+                    scores: 0
                 };
             }
 
@@ -361,6 +370,7 @@
                 this.setState({tile14: board[3][1]});
                 this.setState({tile15: board[3][2]});
                 this.setState({tile16: board[3][3]});
+                this.setState({scores: grid.get_score()});
             }
 
             rand_gen() {
@@ -545,6 +555,10 @@
                                 <button onClick={this.left}>Move left</button>
                                 <button onClick={this.right}>Move Right</button>
                                 <button onClick={this.down}>Move Down</button>
+                            </div>
+                            <div style={{height:"20%", width:"30%",background:"beige", marginLeft:"-30%",marginTop:"-55%", zIndex:"3"}}>
+                                <h1 style={{paddingTop:"5%"}}>Score</h1>
+                                <h1>{this.state.scores}</h1>
                             </div>
                         </div>
                 );
