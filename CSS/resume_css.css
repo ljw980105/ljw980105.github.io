@@ -436,7 +436,7 @@ body {
 
 #edu h3{
     font-size: 25px;
-    font-family: "Myriad Pro","RobotoReg", sans-serif;
+    font-family: "Myriad Pro Bold","RobotoReg", sans-serif;
     font-weight: bold;
     text-align: left;
     color: rgba(221,51,34,1);
@@ -511,7 +511,7 @@ body {
 #experience h3 {
     color: rgba(221,51,34,1);
     font-size: 22px;
-    font-family:"Myriad Pro","Roboto", sans-serif;
+    font-family:"Myriad Pro Bold","Roboto", sans-serif;
     font-weight: bolder;
 }
 

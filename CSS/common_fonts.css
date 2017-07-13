@@ -1,3 +1,5 @@
+/*Regular Roboto now refers to Roboto Light. To use actually regular roboto please use RobotoReg*/
+
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Light.ttf");
@@ -12,6 +14,17 @@
     font-family: "Bell MT";
     src: url("../fonts/BELL.ttf");
 }
+
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("../fonts/MyriadPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/MyriadPro-Regular.otf");
+}
+
 
 @font-face {
     font-family: "Helvetica";
