@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "RobotoReg";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Bell MT";
+    src: url("../fonts/BELL.ttf");
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("../fonts/Helvetica-Normal.ttf");
+}

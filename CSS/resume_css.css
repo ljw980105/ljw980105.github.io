@@ -428,7 +428,7 @@ body {
 #edu h2{
     margin-top: -3%;
     font-size: 25px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,"RobotoReg", sans-serif;
     font-weight: 500;
     text-align: left;
     color: black;
@@ -436,7 +436,7 @@ body {
 
 #edu h3{
     font-size: 25px;
-    font-family: "Myriad Pro","Roboto", sans-serif;
+    font-family: "Myriad Pro","RobotoReg", sans-serif;
     font-weight: bold;
     text-align: left;
     color: rgba(221,51,34,1);
@@ -445,7 +445,7 @@ body {
 #edu h4 {
     margin-top: -3%;
     font-size: 17px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,"RobotoReg", sans-serif;
     font-weight: 400;
     text-align: left;
     color: black;
@@ -454,7 +454,7 @@ body {
 #edu h5 {
     margin-top: -2%;
     font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,"RobotoReg", sans-serif;
     font-weight: 400;
     text-align: left;
     color: black;
