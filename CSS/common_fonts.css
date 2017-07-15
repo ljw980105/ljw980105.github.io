@@ -30,3 +30,14 @@
     font-family: "Helvetica";
     src: url("../fonts/Helvetica-Normal.ttf");
 }
+
+/*For selection color*/
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: orange;
+}
+
+::selection {
+    color: white;
+    background: orange;
+}
