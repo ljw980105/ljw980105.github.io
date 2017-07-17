@@ -21,9 +21,11 @@
     <script type="text/babel">
         class Board {
             constructor() {
+                this.score_increment = [];
                 this.score = 0;
                 this.empty_spots = [];
                 this.history = [];
+                this.prev = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
                 this.grid = []; // main data structure representation
                 for (let i = 0; i < 4; ++i) {
                     let row = [];
@@ -43,6 +45,15 @@
                 this.grid[i][j] = val;
             }
 
+            push_to_scores (sc){
+                if (this.score_increment.length < 10){
+                    this.score_increment.push(sc);
+                } else {
+                    this.score_increment.shift();
+                    this.score_increment.push(sc);
+                }
+            }
+
             print_board() {
                 var result = "";
                 for (var i = 0; i < this.grid.length; i++) {
@@ -52,33 +63,43 @@
                     }
                     result += "\n";
                 }
-                alert(result);
+//                alert(result);
+                return result;
+            }
+
+            print_prev() {
+                var result = "";
+                for (var i = 0; i < this.prev.length; i++) {
+                    for (var j = 0; j < this.prev[i].length; j++) {
+                        result += this.prev[i][j].toString();
+                        result += " ";
+                    }
+                    result += "\n";
+                }
+                return result;
             }
 
             /*
-             Both functions below are not functional. Contents seem to be linked to each other, causing all
-             values in history to be the same
+             TODO: move_left() and move_right() are not reversing, but the other 2 are functional
+             TODO: the history is set to curr for left() and right()
              */
-            set_reverse(input) {
+            set_reverse() {
+//                this.prev = this.grid.slice(0);
                 if (this.history.length < 10) { // only add to database
-                    this.history.push(input);
+                    this.history.push(this.grid.slice(0));
                 } else {
                     this.history.shift(); // remove the first element
-                    this.history.push(input);
+                    this.history.push(this.grid.slice(0));
                 }
             }
 
             reverse() {
-                this.grid = this.history[this.history.length - 1];
-//                this.grid = [];
-//                for (var i = 0; i < rev.length; i ++){
-//                    var temp = [];
-//                    for (var j = 0; j < rev[i].length; j ++){
-//                        temp.push(rev[i][j]);
-//                    }
-//                    this.grid.push(temp);
-//                }
-                this.history.pop();
+//                this.grid = this.prev.slice(0);
+                this.grid = this.history[this.history.length - 1].slice(0);
+                if (this.history.length > 0) this.history.pop();
+
+                this.score -= this.score_increment[this.score_increment.length - 1];
+                if (this.score_increment.length > 0) this.score_increment.pop();
             }
 
             random_generate() {
@@ -135,6 +156,7 @@
                         if (temp2[l] === temp2[l + 1]) {
                             temp3.push(temp2[l] + temp2[l + 1]);
                             this.score += temp2[l] * 2;
+                            this.push_to_scores(temp2[l] * 2);
                             l++;
                         } else {
                             temp3.push(temp2[l]);
@@ -149,43 +171,6 @@
                     }
                     temp3.reverse();
                     this.grid[i] = temp3;
-                }
-                this.update_empty_spots();
-                this.random_generate();
-            }
-
-            move_left() {
-                for (var i = 0; i < this.grid.length; ++i) {
-                    var vertical = [];
-                    for (var j = 0; j < this.grid.length; ++j) {  // 0 4 16 32
-                        vertical.push(this.grid[j][i]);
-                    }
-                    var temp = [];
-                    for (var k = 0; k < vertical.length; ++k) {
-                        if (vertical[k] !== 0) temp.push(vertical[k]); // 4 16 32
-                    }
-                    while (temp.length < this.grid.length) temp.push(0); //4 16 32 0
-
-                    var temp2 = [];
-                    for (var l = 0; l < temp.length - 1; ++l) {
-                        if (temp[l] === temp[l + 1]) {
-                            temp2.push(temp[l] + temp[l + 1]);
-                            this.score += temp[l] * 2;
-                            l++;
-                        } else {
-                            temp2.push(temp[l]);
-                        }
-                    }
-                    //////////////
-                    var last = temp[temp.length - 1];
-                    if (temp.length === this.grid.length) temp2.push(last);
-                    //////////////
-                    while (temp2.length < this.grid.length) {
-                        temp2.push(0);
-                    }
-                    for (var x = 0; x < temp2.length; ++x) {
-                        this.grid[x][i] = temp2[x];
-                    }
                 }
                 this.update_empty_spots();
                 this.random_generate();
@@ -208,6 +193,7 @@
                         if (temp[l] === temp[l + 1]) {
                             temp2.push(temp[l] + temp[l + 1]);
                             this.score += temp[l] * 2;
+                            this.push_to_scores(temp[l] * 2);
                             l++;
                         } else {
                             temp2.push(temp[l]);
@@ -221,6 +207,44 @@
                     this.grid[i] = temp2;
                 }
                 //update empty spots
+                this.update_empty_spots();
+                this.random_generate();
+            }
+
+            move_left() {
+                for (var i = 0; i < this.grid.length; ++i) {
+                    var vertical = [];
+                    for (var j = 0; j < this.grid.length; ++j) {  // 0 4 16 32
+                        vertical.push(this.grid[j][i]);
+                    }
+                    var temp = [];
+                    for (var k = 0; k < vertical.length; ++k) {
+                        if (vertical[k] !== 0) temp.push(vertical[k]); // 4 16 32
+                    }
+                    while (temp.length < this.grid.length) temp.push(0); //4 16 32 0
+
+                    var temp2 = [];
+                    for (var l = 0; l < temp.length - 1; ++l) {
+                        if (temp[l] === temp[l + 1]) {
+                            temp2.push(temp[l] + temp[l + 1]);
+                            this.score += temp[l] * 2;
+                            this.push_to_scores(temp[l] * 2);
+                            l++;
+                        } else {
+                            temp2.push(temp[l]);
+                        }
+                    }
+                    //////////////
+                    var last = temp[temp.length - 1];
+                    if (temp.length === this.grid.length) temp2.push(last);
+                    //////////////
+                    while (temp2.length < this.grid.length) {
+                        temp2.push(0);
+                    }
+                    for (var x = 0; x < temp2.length; ++x) {
+                        this.grid[x][i] = temp2[x];
+                    }
+                }
                 this.update_empty_spots();
                 this.random_generate();
             }
@@ -245,6 +269,7 @@
                         if (temp[l] === temp[l + 1]) {
                             temp2.push(temp[l] + temp[l + 1]);
                             this.score += temp[l] * 2;
+                            this.push_to_scores(temp[l] * 2);
                             l++;
                         } else {
                             temp2.push(temp[l]);
@@ -256,8 +281,8 @@
                     //////////////
                     while (temp2.length < this.grid.length) temp2.push(0);
                     temp2.reverse();
-                    for (var j = 0; j < temp2.length; ++j) {
-                        this.grid[j][i] = temp2[j];
+                    for (var z = 0; z < temp2.length; ++z) {
+                        this.grid[z][i] = temp2[z];
                     }
                 }
                 this.update_empty_spots();
@@ -268,7 +293,6 @@
                 if(this.empty_spots.length !== 0){
                     return false;
                 }
-//                alert("no empty spots");
                 //vertical check
                 for (var k = 0; k < this.grid.length; ++k) {
                     for (var i = 1; i < this.grid.length; ++i) {
@@ -340,14 +364,14 @@
                 this.up = this.up.bind(this);
                 this.right = this.right.bind(this);
                 this.down = this.down.bind(this);
-                //this.reverse_game = this.reverse_game.bind(this);
+                this.reverse_game = this.reverse_game.bind(this);
                 // have 16 different states, each representing a tile in the 2048 game
                 this.state = {
                     tile1: 0, tile2: 0, tile3: 0, tile4: 0,
                     tile5: 0, tile6: 0, tile7: 0, tile8: 0,
                     tile9: 0, tile10: 0, tile11: 0, tile12: 0,
                     tile13: 0, tile14: 0, tile15: 0, tile16: 0,
-                    scores: 0
+                    scores: 0, hist_num: 0
                 };
             }
 
@@ -372,50 +396,51 @@
                 this.setState({tile15: board[3][2]});
                 this.setState({tile16: board[3][3]});
                 this.setState({scores: grid.get_score()});
+                this.setState({hist_num : grid.history.length});
             }
 
             rand_gen() {
-                grid.set_reverse(grid.get_board());
+                grid.set_reverse();
                 grid.random_generate();
                 this.update(grid.get_board());
                 if (grid.game_over()){
-                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART")
+                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART");
                 }
             }
 
             up() {
-                grid.set_reverse(grid.get_board());
+                grid.set_reverse();
                 grid.move_up();
                 this.update(grid.get_board());
                 if (grid.game_over()){
-                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART")
-                }
-            }
-
-            left() {
-                grid.set_reverse(grid.get_board());
-                grid.move_left();
-                this.update(grid.get_board());
-                if (grid.game_over()){
-                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART")
-                }
-            }
-
-            right() {
-                grid.set_reverse(grid.get_board());
-                grid.move_right();
-                this.update(grid.get_board());
-                if (grid.game_over()){
-                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART")
+                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART");
                 }
             }
 
             down() {
-                grid.set_reverse(grid.get_board());
+                grid.set_reverse();
                 grid.move_down();
                 this.update(grid.get_board());
                 if (grid.game_over()){
-                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART")
+                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART");
+                }
+            }
+
+            left() {
+                grid.set_reverse();
+                grid.move_left();
+                this.update(grid.get_board());
+                if (grid.game_over()){
+                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART");
+                }
+            }
+
+            right() {
+                grid.set_reverse();
+                grid.move_right();
+                this.update(grid.get_board());
+                if (grid.game_over()){
+                    alert("GAME OVER. PLEASE RELOAD THIS PAGE TO RESTART");
                 }
             }
 
@@ -550,7 +575,9 @@
                                     }}>{this.state.tile16}</h1>
                                 </div>
                             </div>
+                            {/*<h1 style={{textAlign: "center", marginTop: "-5%"}}> {grid.print_prev()}</h1>*/}
                             <div style={{marginTop: "-2%"}}>
+                                {/*<button onClick={this.reverse_game}>Reverse</button>*/}
                                 <button onClick={this.rand_gen}>Random Generate</button>
                                 <button onClick={this.up}>Move up</button>
                                 <button onClick={this.left}>Move left</button>

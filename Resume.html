@@ -9,6 +9,10 @@
     <title>Digital Resume</title>
     <link rel="icon" href="Images/icon png.png">
     <link href="CSS/resume_css.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!-- bxSlider Javascript & css file  -->
+    <script src="JS/jquery.bxslider.min.js"></script>
+    <link href="CSS/jquery.bxslider.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
 
 <body>
@@ -46,7 +50,7 @@
 
 <div id ="intro">
     <h1> Welcome to My Digital Resume</h1>
-    <a href="ResumeJune17.pdf">or visit the standard resume</a>
+    <a href="ResumeJuly17.pdf">or visit the standard resume</a>
 </div>
 
 <div id = "quick_guide">
@@ -139,27 +143,43 @@
     <div id="skills_text">
         <h1>SKILLS</h1>
     </div>
-    <div id="skills_wrapper">
-        <!--<div id = "left_arrow" onclick="plusDivs(-1)">-->
+    <!--<div id="skills_wrapper">-->
+        <!--<div id = "left_arrow">-->
+            <!--<img src="Images/arrow_l2.png">-->
+        <!--</div>-->
+        <!--<div id="skill_content">-->
+            <!--<img src="Images/skl1.png">-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl1.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl2.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl3x.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl4.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl5.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl6.png">&ndash;&gt;-->
+            <!--&lt;!&ndash;<img class="mySlides" src="images/skl7.png">&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div id="right_arrow">-->
+            <!--<img src="Images/arrow_r2.png">-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--Slider created with bxSlider. To change the styles, modify source css file of bxSlider-->
+    <div id="skl_wrapper">
         <div id = "left_arrow">
             <img src="Images/arrow_l2.png">
         </div>
-        <div id="skill_content">
-            <img src="Images/skl1.png">
-            <!--<img class="mySlides" src="images/skl1.png">-->
-            <!--<img class="mySlides" src="images/skl2.png">-->
-            <!--<img class="mySlides" src="images/skl3x.png">-->
-            <!--<img class="mySlides" src="images/skl4.png">-->
-            <!--<img class="mySlides" src="images/skl5.png">-->
-            <!--<img class="mySlides" src="images/skl6.png">-->
-            <!--<img class="mySlides" src="images/skl7.png">-->
-        </div>
-        <!--<div id="right_arrow" onclick="plusDivs(+1)">-->
-        <div id="right_arrow">
+        <ul class="bxslider">
+            <li><img src="Images/skl1.png" /></li>
+            <li><img src="Images/skl2.png" /></li>
+            <li><img src="Images/skl3x.png" /></li>
+            <li><img src="Images/skl4.png" /></li>
+            <li><img src="Images/skl5.png" /></li>
+            <li><img src="Images/skl6.png" /></li>
+            <li><img src="Images/skl7.png" /></li>
+        </ul>
+        <div id = "right_arrow">
             <img src="Images/arrow_r2.png">
         </div>
     </div>
-
 
 </div>
 

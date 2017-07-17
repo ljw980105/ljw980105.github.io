@@ -581,3 +581,10 @@ body {
     display: flex;
 }
 
+#skl_wrapper{
+    margin-top: -2%;
+    margin-left: 4%;
+    display: flex;
+
+}
+

@@ -3,9 +3,9 @@
  */
 function progressFx(limit1, limit2, curr, target) {
     if (curr > limit1 && curr < limit2) {
-        $(target).css("font-weight", "500");
+        $(target).css("font-family", "RobotoReg");
     } else {
-        $(target).css("font-weight", "300");
+        $(target).css("font-family", "Roboto");
     }
 }
 
@@ -133,4 +133,21 @@ $(document).ready(function () {
     //     $skl.html(imgArray[i]);
     //     $skl.fadeTo(1000,1);
     // },6000);
+
+    let slider = $('.bxslider').bxSlider({
+        easing: "ease-in-out",
+        auto:true,
+        slideWidth: 2000,
+    });
+
+    $button_right.click(function(){
+        slider.goToNextSlide();
+        return false;
+    });
+
+    $button_left.click(function(){
+        slider.goToPrevSlide();
+        return false;
+    });
 });
+
