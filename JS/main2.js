@@ -76,6 +76,15 @@ $(document).ready(function () { // wait until webpage is ready
     $nav.slideToggle(500);
     //$contents.fadeIn(1000);
 
+    //CODE FOR SLIDING MOBILE NAV BAR
+    var $mobile_nav = $("#mobile_nav");
+    var $navicon = $("#navicon");
+    $mobile_nav.hide();
+    $navicon.click(function () {
+        $mobile_nav.slideToggle();
+    });
+
+
     $("#bg").fadeTo(1,0.001);
     $("#intro h1").fadeTo(1,0.001);
     $("#intro h2").fadeTo(1,0.001);
