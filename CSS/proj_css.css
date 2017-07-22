@@ -90,4 +90,78 @@
     margin-top: 3%;
 }
 
-/*dropdown starts here*/
+@media only screen and (max-width: 1500px) {
+    #proj_contents img{
+        max-width:134%;
+        max-height:134%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #proj_contents h2{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #typography{
+        margin-top: 10%;
+        background-size: 70%;
+    }
+    #proj_contents h2{
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    #proj_contents h2{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #proj_contents h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #typography{
+        margin-top: 4%;
+        padding: 30% 0;
+        background-size: 80%;
+    }
+
+    #proj_contents{
+        display: block;
+    }
+
+    #proj_contents img{
+        max-width:134%;
+        max-height:134%;
+        height: auto;
+    }
+
+    #col1, #col2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #col2_item1{
+        margin-top: 14%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #typography{
+        background-size: 100%;
+        background-image: url("../Images/Projects Typography DesignMobile.jpg");
+        margin-top: 5%;
+        padding: 60% 0;
+    }
+
+    #col1_item1{
+        margin-top: 14%;
+    }
+}

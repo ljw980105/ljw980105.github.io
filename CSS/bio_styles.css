@@ -22,6 +22,16 @@ body {
 
 }
 
+#intro p a:link, #intro p a:visited{
+    text-decoration: underline;
+    color: white;
+}
+
+#intro p a:hover{
+    color: orange;
+}
+
+
 .color_white{
     color:white;
 }
@@ -29,4 +39,22 @@ body {
 #footer{
     color: white;
 }
+
+@media screen and (max-width: 480px){
+    #name{
+        font-size: 30px;
+    }
+
+    #intro{
+        padding: 1% 12%;;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #name{
+        font-size: 30px;
+    }
+}
+
+
 

@@ -4,7 +4,7 @@
 /*INITIATING MEDIA QUERIES*/
 
 body {
-    min-width: 1519px;
+    /*min-width: 1519px;*/
     margin: auto;
 }
 
@@ -131,5 +131,70 @@ body {
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
 }
+
+/*MEDIA QUERIES FOR THE MOBILE NAV BAR*/
+#mobile_nav {
+    position: absolute;
+    visibility: hidden;
+}
+
+#top_mobile_nav {
+    background-color: black;
+    padding: .3% 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#mobile_nav #nav_fist{
+    padding-top: 2%;
+}
+
+#navicon {
+    cursor: pointer;
+    filter: invert();
+}
+
+@media only screen and (max-width: 800px) {
+    /*FOR THE MOBILE NAV BAR*/
+    #nav {
+        visibility: hidden;
+    }
+
+    #mobile_nav {
+        margin-top: -.001%;
+        text-align: center;
+        position: relative;
+        visibility: visible;
+    }
+
+    #mobile_nav a:link, #mobile_nav a:visited {
+        padding: 1% 0;
+        margin-left: -50px;
+        display: block;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
+    }
+
+    #mobile_nav #nav_last {
+        padding-bottom: 2%;
+    }
+
+    #mobile_nav a:hover {
+        transition: all 0.15s ease-in-out;
+        color: orange;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #top_mobile_nav {
+        position: relative;
+        visibility: visible;
+
+    }
+}
+
 
 
