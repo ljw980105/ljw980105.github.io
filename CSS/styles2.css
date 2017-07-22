@@ -16,7 +16,7 @@ body {
 }
 
 #nav ul {
-    display:inline;
+    display: inline;
 }
 
 #nav {
@@ -31,121 +31,125 @@ body {
     width: 100%;
 }
 
-#nav > nav > ul > li > a{
-    transition:all linear 0.15s;
+#nav > nav > ul > li > a {
+    transition: all linear 0.15s;
     background-color: black;
     display: inline;
     padding: 15px 10px;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
 }
 
-#nav a:link { color: white}
-#nav a:visited {color: white}
-#nav a:active {color: white}
-#nav a:hover { color: orange;}
-#nav a:focus { color: orange;}
+#nav a:link {
+    color: white
+}
+
+#nav a:visited {
+    color: white
+}
+
+#nav a:active {
+    color: white
+}
+
+#nav a:hover {
+    color: orange;
+}
+
+#nav a:focus {
+    color: orange;
+}
 
 ._center {
     text-align: center;
 }
 
-
 /*For drop-down menu*/
 
 .clearfix:after {
-    display:block;
-    clear:both;
+    display: block;
+    clear: both;
 }
 
 /*----- Menu Outline -----*/
 .menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background: #3e3436;
 }
 
 .menu {
     text-align: center;
-    width:100%;
-    margin:0px auto;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .menu li {
-    margin:0px;
-    list-style:none;
-    font-family:'serif';
+    margin: 0px;
+    list-style: none;
+    font-family: 'serif';
 }
 
 .menu a {
-    transition:all linear 0.15s;
+    transition: all linear 0.15s;
     /*color:#919191;*/
 }
 
 .menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
+    text-decoration: none;
 }
-
 
 /*----- Top Level -----*/
 .menu > ul > li {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
 }
 
 .menu > ul > li > a {
-    padding:10px 40px;
-    display:inline-block;
+    padding: 10px 40px;
+    display: inline-block;
 }
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
+    background: #2e2728;
 }
 
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
-    z-index:1;
-    opacity:0.95;
+    z-index: 1;
+    opacity: 0.95;
 }
 
 .sub-menu {
     margin-top: 10%;
     text-align: left;
-    width:150%;
-    padding:5px 30px;
-    position:absolute;
-    top:120%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    width: 150%;
+    padding: 5px 30px;
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background: #2e2728;
 
 }
 
 .sub-menu li {
-    display:block;
-    font-size:16px;
+    display: block;
+    font-size: 16px;
 }
 
 .sub-menu li a {
     margin-left: -25%;
-    padding:10px 30px;
-    display:block;
+    padding: 10px 30px;
+    display: block;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
 }
-
-
-
-
-
-
-
-
 
 #bg {
     float: right;
@@ -153,7 +157,7 @@ body {
     height: auto;
 }
 
-#main{
+#main {
     width: 50%;
     /*max-width: 50%;*/
     margin-right: 60%;
@@ -161,7 +165,8 @@ body {
     margin-left: 18%;
 }
 
-#intro {  }
+#intro {
+}
 
 #intro h1 {
     font-family: "Helvetica", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
@@ -170,10 +175,10 @@ body {
     line-height: 70%;
 }
 
-#intro h2{
+#intro h2 {
     font-size: 40px;
     margin-left: 3%;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
     line-height: 70%;
 }
@@ -202,21 +207,21 @@ body {
 }
 
 #contents {
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
     margin-top: 31%;
     text-align: center;
     padding: 3% 0;
 }
 
 #contents h1 {
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    color: black;
     font-weight: 300;
     font-size: 45px;
     line-height: 70%;
 }
 
-#contents #images #first{
+#contents #images #first {
     /*padding-left: 3%;*/
     padding-top: -2%;
 }
@@ -228,13 +233,13 @@ body {
     /*display used to be inline*/
 }
 
-#contents #images{
+#contents #images {
     padding-top: .7%;
     padding-bottom: 2%;
     /*could be 7% or 2%*/
 }
 
-#gfx{
+#gfx {
     padding: 20% 0;
     background-image: url("indexbg1x.jpg");
     background-size: 150% auto;
@@ -244,7 +249,7 @@ body {
 
 }
 
-#proj{
+#proj {
     padding: 20% 0;
     /*background-image: url("../images/FRC.jpg");*/
     background-image: url("indexbg2.jpg");
@@ -254,7 +259,7 @@ body {
     margin-right: 5px;
 }
 
-#resume{
+#resume {
     padding: 20% 0;
     background-image: url("../Images/indexbg3.jpg");
     /*background-size: 120%;*/
@@ -266,15 +271,23 @@ body {
     transition: all .1s ease-in;
     color: white;
     font-size: 40px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
     text-decoration: none;
     text-shadow: 3px 3px 2px black;
 }
 
-#wrapper a:link { color: white}
-#wrapper a:visited {color: white}
-#wrapper a:hover {  color: orangered;  }
+#wrapper a:link {
+    color: white
+}
+
+#wrapper a:visited {
+    color: white
+}
+
+#wrapper a:hover {
+    color: orangered;
+}
 
 #wrapper {
     /*use to be margin top 17.14*/
@@ -292,7 +305,7 @@ body {
     width: 33.4%;
 }
 
-#col3{
+#col3 {
     /*width: 507px;*/
     width: 33.4%;
 }
@@ -300,87 +313,89 @@ body {
 
 
 
-
-
-#mobile_nav{
+#mobile_nav {
     position: absolute;
     visibility: hidden;
 }
 
-#top_mobile_nav{
+#top_mobile_nav {
     background-color: black;
     padding: .3% 0;
     position: absolute;
     visibility: hidden;
 }
 
-#navicon{
+#mobile_nav #nav_fist{
+    padding-top: 2%;
+}
+
+#navicon {
     cursor: pointer;
     filter: invert();
 }
 
 
-@media only screen and (max-width: 480px){
-    #bg{
+@media only screen and (max-width: 480px) {
+    #bg {
         margin-left: -20%;
         float: none;
     }
 }
 
-@media only screen and (max-width: 1517px){
-    #bg img{
+@media only screen and (max-width: 1517px) {
+    #bg img {
         margin-top: 7%;
         width: 570px;
     }
-    #wrapper{
+
+    #wrapper {
         margin-top: 10%;
     }
 }
 
-@media only screen and (max-width: 1350px){
-    #wrapper{
+@media only screen and (max-width: 1350px) {
+    #wrapper {
         margin-top: 13%;
     }
 }
 
-@media only screen and (max-width: 1200px){
-    #main{
+@media only screen and (max-width: 1200px) {
+    #main {
         margin-left: 14%;
     }
-    #bg img{
+
+    #bg img {
         width: 520px;
     }
 }
 
-@media only screen and (max-width: 1100px){
-    #wrapper{
+@media only screen and (max-width: 1100px) {
+    #wrapper {
         margin-top: 8%;
     }
+
     #wrapper a {
         font-size: 30px;
     }
-    #bg img{
+
+    #bg img {
         width: 450px;
     }
 }
 
-@media only screen and (max-width: 1000px){
-    #main{
+@media only screen and (max-width: 1000px) {
+    #main {
         margin-left: 11%;
     }
 }
 
-@media only screen and (max-width: 950px)and (min-width: 240px) {
-    #gfx, #proj, #resume{
-        padding: 15% 0;
-    }
+@media only screen and (max-width: 950px) {
 
-
-    #nav{
+    #nav {
         visibility: hidden;
     }
 
-    #mobile_nav{
+    #mobile_nav {
         margin-top: -.001%;
         text-align: center;
         position: relative;
@@ -389,41 +404,50 @@ body {
 
     #mobile_nav a:link, #mobile_nav a:visited {
         padding: 1% 0;
-        width: 90%;
+        margin-left: -50px;
         display: block;
         text-decoration: none;
         font-family: Roboto;
         font-size: 20px;
-        border-bottom: 6px;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.75);
     }
 
-    #mobile_nav #nav_last{
-        padding-bottom: 3%;
+    #mobile_nav #nav_last {
+        padding-bottom: 2%;
     }
 
     #mobile_nav a:hover {
+        transition: all 0.15s ease-in-out;
         color: orange;
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
-    #top_mobile_nav{
+    #top_mobile_nav {
         position: relative;
         visibility: visible;
 
     }
 
-    #wrapper{
+
+
+    #gfx, #proj, #resume {
+        padding: 15% 0;
+        margin-right: 0;
+    }
+
+    #wrapper {
         display: block;
     }
 
-    #col1, #col2, #col3{
+    #col1, #col2, #col3 {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
     }
 
-    #bg{
+    #bg {
         margin-top: 5%;
         float: none;
         margin-left: 25%;
@@ -441,33 +465,46 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px){
-    #social_media{
+@media only screen and (max-width: 600px) {
+    #social_media {
         margin-top: 15%;
     }
 
-    #bg img{
+    #bg img {
         width: 350px;
         margin-left: -5%;
     }
 
-    #main img{
+    #main img {
         margin-top: -5%;
         margin-bottom: 12%;
     }
 }
 
-@media only screen and (max-width: 500px){
-    #bg img{
+@media only screen and (max-width: 500px) {
+    #bg img {
         width: 300px;
         margin-left: -8%;
     }
+
     #intro h1 {
         font-size: 50px;
     }
+
     #intro h2 {
         font-size: 35px;
     }
 }
 
+/*FOR iPhone 7*/
+@media only screen and (max-width: 414px) {
+    #bg img {
+        width: 280px;
+        margin-left: -12%;
+    }
+
+    #social_media{
+        margin-left: -10%;
+    }
+}
 
