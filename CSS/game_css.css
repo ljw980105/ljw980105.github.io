@@ -2,141 +2,6 @@ body {
      background-color: ivory;
 }
 
-/*For original menu*/
-/* CSS DOCUMENT */
-
-body {
-    /*min-width: 1519px;*/
-    margin: auto;
-}
-
-#nav ul {
-    display:inline;
-}
-
-#nav {
-    min-width: 800px;
-    z-index: 10;
-    text-align: center;
-    background-color: black;
-    padding: 15px 0 15px 0;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-
-#nav > nav > ul > li > a{
-    transition:all linear 0.15s;
-    background-color: black;
-    display: inline;
-    padding: 15px 10px;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-}
-
-#nav a:link { color: white}
-#nav a:visited {color: white}
-#nav a:active {color: white}
-#nav a:hover { color: orange;}
-#nav a:focus { color: orange;}
-
-._center {
-    text-align: center;
-}
-
-
-/*For drop-down menu*/
-
-.clearfix:after {
-    display:block;
-    clear:both;
-}
-
-/*----- Menu Outline -----*/
-.menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
-}
-
-.menu {
-    text-align: center;
-    width:100%;
-    margin:0px auto;
-}
-
-.menu li {
-    margin:0px;
-    list-style:none;
-    font-family:'serif';
-}
-
-.menu a {
-    transition:all linear 0.15s;
-    /*color:#919191;*/
-}
-
-.menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
-}
-
-
-/*----- Top Level -----*/
-.menu > ul > li {
-    display:inline-block;
-    position:relative;
-}
-
-.menu > ul > li > a {
-    padding:10px 40px;
-    display:inline-block;
-}
-
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-}
-
-/*----- Bottom Level -----*/
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:0.95;
-}
-
-.sub-menu {
-    margin-top: 10%;
-    text-align: left;
-    width:150%;
-    padding:5px 30px;
-    position:absolute;
-    top:120%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
-
-}
-
-.sub-menu li {
-    display:block;
-    font-size:16px;
-}
-
-.sub-menu li a {
-    margin-left: -25%;
-    padding:10px 30px;
-    display:block;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-}
-
-
-
-
 #instr{
     margin: 8% 10% 10% 10%;
     padding: 2% 0 2% 0;
@@ -188,5 +53,17 @@ body {
     height: 50%;
     margin-top: 3%;
     margin-left: 25%;
+}
+
+@media only screen and (max-width: 1400px){
+    #instr{
+        padding: 4% 4%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #instr h2{
+        line-height: 130%;
+    }
 }
 
