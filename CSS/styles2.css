@@ -5,12 +5,6 @@ border-radius: 100%;
 button
 <br/><button> Button </button>
 */
-
-/*REMOVE THIS NAV BAR CODE AFTER FINISHING RESPONSIVE DESIGN ON ALL PAGES*/
-/*REMOVE THIS NAV BAR CODE AFTER FINISHING RESPONSIVE DESIGN ON ALL PAGES*/
-/*REMOVE THIS NAV BAR CODE AFTER FINISHING RESPONSIVE DESIGN ON ALL PAGES*/
-/*REMOVE THIS NAV BAR CODE AFTER FINISHING RESPONSIVE DESIGN ON ALL PAGES*/
-
 body {
     /*min-width: 1519px;*/
     margin: auto;
@@ -106,7 +100,7 @@ body {
 
 #gfx {
     padding: 20% 0;
-    background-image: url("indexbg1x.jpg");
+    background-image: url("../Images/indexbg1x.jpg");
     background-size: 150% auto;
     text-align: center;
     background-position: 50% 18%;
@@ -117,7 +111,7 @@ body {
 #proj {
     padding: 20% 0;
     /*background-image: url("../images/FRC.jpg");*/
-    background-image: url("indexbg2.jpg");
+    background-image: url("../Images/indexbg2.jpg");
     background-size: 120%;
     text-align: center;
     background-position: 50% 18%;

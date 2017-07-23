@@ -15,18 +15,20 @@
 }
 
 #footer h2 {
+    padding: 0 10%;
+    line-height: 135%;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 400;
     font-size: 30px;
-    line-height: 70%;
     color: white;
 }
 
 #footer a {
+    padding: 0 10%;
+    line-height: 135%;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
     font-size: 26px;
-    line-height: 70%;
     color: orange;
 }
 
@@ -51,7 +53,8 @@
 }
 
 #intro{
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: 1520px 1000px;
     background-image: url("../Images/FRC_bg1y.jpg");
     padding: 27% 0;
     text-shadow: 2px 2px rgba(0,0,0,0.5)
@@ -67,7 +70,6 @@
 
 #intro h2 {
     line-height: 100%;
-    /*margin-left: 15px;*/
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
     font-size: 29px;;
@@ -137,7 +139,8 @@
 #descrip {
     margin-top: -72%;
     padding: 11% 0;
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: 1515px 1000px;
     width: 100%;
     background-image: url("../Images/FRC_bg2.jpg");
 }
@@ -154,7 +157,7 @@
 
 #descrip p {
     text-shadow: 2px 2px rgba(0,0,0,0.5);
-    width: 30%;
+    width: 33%;
     margin-left: 10%;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     font-weight: 300;
@@ -178,6 +181,12 @@
     color: black;
 }
 
+
+#algo_gif{
+    visibility: hidden;
+    position: absolute;
+}
+
 #vids p {
     margin-left: 15%;
     width:70%;
@@ -187,5 +196,309 @@
     line-height: 120%;
     color: black;
 }
+
+#vids #if_sec{
+    margin-left: 3%;
+}
+
+@media only screen and (max-width: 1400px){
+    #intro{
+        background-position: 25% 0;
+    }
+    #text_wrap{
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .fullscreen-bg__video {
+        display: none;
+        position: absolute;
+    }
+    #text_sec{
+        z-index: 2;
+        margin-top: 0%;
+        margin-bottom: 82%;
+        margin-left: 10%;
+    }
+
+    #algo #text_sec h1 ,#algo #text_sec h2 {
+        color: white;
+    }
+
+    #algo {
+        background-color: black;
+        display: flex;
+        padding: .01% 0;
+    }
+
+    #algo_gif{
+        margin-top: 8%;
+        margin-left: 4%;
+        width: 50%;
+        height: 10%;
+        float: right;
+        visibility: visible;
+        position: relative;
+    }
+
+    #algo #text_sec h1,#algo #text_sec h2{
+        margin-left: -8%;
+    }
+
+    #algo #text_sec h1{
+        margin-top: 150px;
+    }
+    #descrip{
+        padding: 8% 0 17% 0;
+    }
+
+    #descrip h1{
+        font-size: 46px;
+    }
+    #descrip p{
+        font-size: 29px;
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #intro{
+        background-size: 1200px 800px;
+        background-position: 50% 0;
+        padding: 24% 0 20% 0;
+    }
+    #text_wrap{
+        margin-top: -8%;
+        margin-left: 15%;
+    }
+
+    #algo #text_sec h1{
+        margin-top: 100px;
+        font-size: 45px;
+    }
+    #algo #text_sec h2{
+        font-size: 35px;
+    }
+    #descrip{
+        background-position: 30% 0;
+    }
+    #descrip p{
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 1180px){
+    #vids #if_sec{
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    #algo #text_sec h1{
+        margin-top: 100px;
+        font-size: 38px;
+    }
+    #algo #text_sec h2{
+        font-size: 31px;
+    }
+    #descrip p{
+        font-size: 27px;
+        width: 42%;
+    }
+    #descrip h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 940px){
+    #intro{
+        padding: 24% 0;
+        background-size: 1000px 666px;
+        background-position: 60% 15%;
+    }
+    #text_wrap{
+        margin-top: -5%;
+        margin-left: 13%;
+    }
+    #intro h1 {
+        font-size: 48px;
+    }
+    #intro h2 {
+        font-size: 25px;
+    }
+    #algo #text_sec h1{
+        margin-top: 70px;
+        font-size: 35px;
+    }
+    #algo #text_sec h2{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 840px){
+    #algo_gif{
+        width: 45%;
+    }
+    #algo #text_sec h1{
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    #algo #text_sec h2{
+        font-size: 23px;
+    }
+    #descrip p{
+        width: 45%;
+    }
+    #vids h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 730px){
+    #text_wrap{
+        margin-top: -5%;
+        margin-left: 8%;
+    }
+    #algo #text_sec h1{
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    #algo #text_sec h2{
+        font-size: 23px;
+    }
+    #algo_gif{
+        margin-top: 80px;
+    }
+
+    #vids p{
+        margin-left: 10%;
+        width: 80%;
+        font-size: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 650px){
+    #intro {
+        text-shadow: none;
+        background-image: url("../Images/frc_trophy_mobile.jpg");
+        background-size: 100%;
+        padding: 67% 0 143% 0;
+    }
+
+    #text_wrap{
+        margin-top: -60%;
+        text-align: center;
+        margin-left: 0;
+    }
+    #algo{
+        display: block;
+        padding: 0% 0 70% 0%;
+    }
+    #algo #text_sec h1,#algo #text_sec h2{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #algo #text_sec h1{
+        margin-top: 30px;
+    }
+    #algo_gif{
+        margin-top:-77%;
+        margin-left: 0;
+        width: 100%;
+        height: 10%;
+        float: right;
+        visibility: visible;
+        position: relative;
+        padding-bottom: -50px;
+    }
+    #descrip{
+        background-image: url("../Images/frc_display_mobile.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 5% 0 115% 0;
+    }
+    #descrip h1{
+        text-shadow: none;
+    }
+    #descrip p{
+        text-shadow: none;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #descrip{
+        background-size: 110%;
+    }
+    #vids iframe{
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    #intro h1{
+        font-size: 40px;
+    }
+    #intro h2 {
+        font-size: 23px;
+    }
+    #descrip{
+        padding: 5% 0 100% 0;
+    }
+    #descrip h1{
+        font-size: 30px;
+    }
+    #descrip p{
+        font-size: 23px;
+    }
+    #vids h1 {
+        margin-left: 10%;
+        width: 80%;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    #intro{
+        padding: 60% 0 143% 0;
+    }
+    #descrip h1{
+        font-size: 27px;
+    }
+    #descrip p{
+        font-size: 20px;
+    }
+    #vids h1 {
+        font-size: 30px;
+    }
+    #vids p{
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    #intro{
+        padding: 60% 0 130% 0;
+    }
+
+    #intro h1{
+        font-size: 35px;
+    }
+    #intro h2 {
+        font-size: 20px;
+    }
+    #descrip h1{
+        font-size: 24px;
+    }
+    #descrip p{
+        font-size: 17px;
+    }
+}
+
 
 
