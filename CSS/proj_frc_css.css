@@ -181,7 +181,6 @@
     color: black;
 }
 
-
 #algo_gif{
     visibility: hidden;
     position: absolute;
@@ -199,6 +198,15 @@
 
 #vids #if_sec{
     margin-left: 3%;
+}
+
+@media only screen and (min-width: 1520px){
+    #intro{
+        background-size: 100%;
+    }
+    #descrip{
+        background-size: 100%;
+    }
 }
 
 @media only screen and (max-width: 1400px){

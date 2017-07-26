@@ -1,134 +1,11 @@
-/*For original menu*/
 /* CSS DOCUMENT */
-
-body {
-    width: 1519px;
-    margin: auto;
-}
-
-#nav ul {
-    display:inline;
-}
-
-#nav {
-    text-align: center;
-    background-color: black;
-    padding: 15px 0 15px 0;
-}
-
-#nav > nav > ul > li > a{
-    transition:all linear 0.15s;
-    background-color: black;
-    display: inline;
-    padding: 15px 10px;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-}
-
-#nav a:link { color: white}
-#nav a:visited {color: white}
-#nav a:active {color: white}
-#nav a:hover { color: orange;}
-#nav a:focus { color: orange;}
-
-._center {
-    text-align: center;
-}
-
-
-/*For drop-down menu*/
-
-.clearfix:after {
-    display:block;
-    clear:both;
-}
-
-/*----- Menu Outline -----*/
-.menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
-}
-
-.menu {
-    text-align: center;
-    width:100%;
-    margin:0px auto;
-}
-
-.menu li {
-    margin:0px;
-    list-style:none;
-    font-family:'serif';
-}
-
-.menu a {
-    transition:all linear 0.15s;
-    /*color:#919191;*/
-}
-
-.menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
-}
-
-
-/*----- Top Level -----*/
-.menu > ul > li {
-    display:inline-block;
-    position:relative;
-}
-
-.menu > ul > li > a {
-    padding:10px 40px;
-    display:inline-block;
-}
-
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-}
-
-/*----- Bottom Level -----*/
-.menu li:hover .sub-menu {
-    z-index:1;
-    opacity:0.95;
-}
-
-.sub-menu {
-    margin-top: 10%;
-    text-align: left;
-    width:150%;
-    padding:5px 30px;
-    position:absolute;
-    top:120%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
-
-}
-
-.sub-menu li {
-    display:block;
-    font-size:16px;
-}
-
-.sub-menu li a {
-    margin-left: -25%;
-    padding:10px 30px;
-    display:block;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    font-weight: 300;
-}
-
-
-
 
 #footer{
     margin-top: 1%;
+}
+
+#nav {
+    position:fixed;
 }
 
 
@@ -156,20 +33,6 @@ body {
     color: white;
 }
 
-/*@media (min-aspect-ratio: 16/9) {*/
-    /*.fullscreen-bg__video {*/
-        /*width: 100%;*/
-        /*height: auto;*/
-    /*}*/
-/*}*/
-
-/*@media (max-aspect-ratio: 16/9) {*/
-    /*.fullscreen-bg__video {*/
-        /*width: auto;*/
-        /*height: 100%;*/
-    /*}*/
-/*}*/
-
 #quick_guide h3 {
     cursor: pointer;
 }
@@ -188,15 +51,12 @@ body {
     font-weight: 300;
 }
 
-#intro a:link {
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
+#intro a {
+    text-align: center;
+    padding: 0 10%;
 }
 
-#intro a:visited {
+#intro a:link, #intro a:visited {
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     text-decoration: none;
@@ -223,19 +83,21 @@ body {
 
 #progress ul {
     display:inline;
-    padding-left: 55%;
+    /*padding-left: 55%;*/
+    margin-right: 5%;
 }
 
 #progress  {
     opacity: 0.95;
     background-color: white;
     padding: 15px 0 15px 0;
+    text-align: right;
 }
 
 #progress a {
     background-color: white;
     display: inline;
-    padding: 0px 10px;
+    padding: 0 10px;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto","Helvetica", sans-serif;
     font-weight: 300;
@@ -256,7 +118,7 @@ body {
 }
 
 #wrapper {
-    display: inline-flex;
+    display: flex;
     opacity: 0.95;
     margin: 5% 5%;
 }
@@ -264,21 +126,22 @@ body {
 #wrapper a:hover{  text-decoration: underline;  }
 
 #col1 {
-    width: 450px;
-    margin-right: 4%;
+    /*width: 450px;*/
+    width: 30%;
+    margin-right: 5%;
 }
 
 #col2 {
-    width: 450px;
-    margin-right: 4%;
+    width: 30%;
+    margin-right: 5%;
 }
 
 #col3 {
-    width: 450px;
+    width: 30%;
 }
 
 #col1_item1 {
-     padding: 25% 0;
+     padding: 2.5% 0;
      background-color: rgba(221,51,34,1);
  }
 
@@ -300,13 +163,13 @@ body {
 }
 
 #col3_item1 {
-    padding: 25% 0;
+    padding: 2.5% 0;
     background-color: rgba(221,51,34,1);
 }
 
 #col3_item2 {
     margin-top: 14%;
-    padding: 25% 0;
+    padding: 2.5% 0;
     background-color: white;
 }
 
@@ -339,7 +202,7 @@ body {
     text-decoration: underline;
 }
 
-#q1, #q2{
+#q1, #q2, #q6{
     text-align: center;
     opacity: 1;
     font-size: 40px;
@@ -349,7 +212,7 @@ body {
     font-weight: 300;
 }
 
-#q3{
+#q3, #q4, #q5{
     text-align: center;
     opacity: 1;
     font-size: 40px;
@@ -465,12 +328,11 @@ body {
 }
 
 #experience{
-    /*filter: contrast(110%);*/
-    padding: 14% 0;
-    background-image: url("../Images/EXP_BG2.jpg");
+    padding: 55% 0;
+    /*background-image: url("../Images/EXP_BG2.jpg");*/
+    background-image: url("../Images/ExperienceBg_Final2.jpg");
     background-size: 100%;
     width: auto;
-    /*background-color: rgba(0,0,0,0.8);*/
 }
 
 #exp_wrapper{
@@ -479,7 +341,6 @@ body {
 }
 
 #exp_left{
-    /*margin-top: -370px;*/
     margin-top: -23em;
     margin-right: 341px;
 }
@@ -488,7 +349,6 @@ body {
     text-align: right;
     white-space: nowrap;
     z-index: 10;
-    /*margin-top: -12px;*/
     margin-top: -0.8em;
     margin-right: 25px;
 }
@@ -585,6 +445,264 @@ body {
     margin-top: -2%;
     margin-left: 4%;
     display: flex;
+}
 
+#skill_slider{
+    margin-left: 6%;
+    width: 60%;
+    height: auto;
+}
+
+#left_arrow{
+    width: 15%;
+    height: auto;
+}
+
+#right_arrow{
+    margin-left: 3%;
+    width: 15%;
+    height: auto;
+}
+
+#exp_left, #exp_right{
+    visibility: hidden;
+    position: absolute;
+}
+
+#mobile_exp{
+    visibility: hidden;
+    position: fixed;
+}
+
+@media only screen and (max-width: 1400px) {
+    #experience{
+        padding: 60% 0;
+        background-size: 110%;
+        background-position:top;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #experience{
+        padding: 63% 0;
+        background-size: 118%;
+        background-position-x: 44%;
+    }
+    #skill_slider{
+        margin-left: 6%;
+        width: 70%;
+        height: auto;
+    }
+
+    #left_arrow{
+        width: 10%;
+        height: auto;
+    }
+
+    #right_arrow{
+        /*margin-left: 3%;*/
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #quick_guide{
+        padding: 5% 0;
+        background-attachment: scroll;
+        background-size: 130%;
+    }
+    #wrapper h6{
+        font-size: 35px;
+    }
+    #wrap {
+        display: flex;
+        margin: 5% 5%;
+    }
+    #experience{
+        background-image: none;
+    }
+    #mobile_exp{
+        visibility: visible;
+        position: relative;
+    }
+    #logo{
+        margin-top: 3%;
+        margin-left: 20%;
+        margin-bottom: 3%;
+        width: 60%;
+    }
+    #experience{
+        background-color: rgba(40,38,39,1);
+        padding: 0 0;
+    }
+    #mobile_wrap{
+        margin: 0 8%;
+    }
+
+    #ex3{
+        background-color: rgba(40,38,39,1);
+        padding-bottom: 3%;
+    }
+    #right_arrow{
+        margin-left: 1%;
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    #intro h1{
+        padding: 0 10%;
+        width: 80%;
+        font-size: 40px;
+    }
+    #wrapper h6{
+        font-size: 25px;
+    }
+    #wrap {
+        display: flex;
+        margin: 5% 2%;
+    }
+    #left_col{
+        margin-right: 4%;
+    }
+    #skill_slider{
+        margin-left: 6%;
+        width: 75%;
+        height: auto;
+    }
+
+    #left_arrow{
+        width: 8%;
+        height: auto;
+    }
+
+    #right_arrow{
+        margin-left: 0%;
+        width: 8%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #logo{
+        width: 74%;
+        margin-left: 13%;
+    }
+    #wrap{
+        display: block;
+    }
+    #right_col{
+        margin-top: 9%;
+        margin-left: 9%;
+        margin-right: 10%;
+    }
+    #wrap #left_col #h3, #wrap #left_col #h5, #wrap #left_col #h4{
+        margin-top: -5%;
+    }
+    #progress{
+        visibility: hidden;
+        position: absolute;
+    }
+    #skill_slider{
+        margin-left: 0;
+        width: 95%;
+        position: relative;
+    }
+
+    #left_arrow{
+        visibility: hidden;
+        position: fixed;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #right_arrow{
+        visibility: hidden;
+        position: fixed;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #logo{
+        width: 100%;
+        margin-left: 0%;
+    }
+    #quick_guide{
+        background-image: url("../Images/water_pattern.png");
+        background-size: 100%;
+    }
+    #wrapper{
+        margin: 0;
+        display: block;
+    }
+    #col1, #col2, #col3 {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #col1_item1 {
+        padding: 1% 0;
+    }
+
+    #col1_item2 {
+        margin-top: 3%;
+        padding: 1% 0;
+    }
+
+    #col2_item1 {
+        margin-top: 3%;
+        padding: 1% 0;
+    }
+
+    #col2_item2 {
+        margin-top: 3%;
+        padding: 1% 0;
+    }
+
+    #col3_item1 {
+        margin-top: 3%;
+        padding: 1% 0;
+    }
+
+    #col3_item2 {
+        margin-top: 3%;
+        padding: 1% 0;
+    }
+
+    #wrapper h6{
+        font-size: 22px;
+    }
+    #experience h3 {
+        font-size: 20px;
+    }
+    #experience h4 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    #wrapper h6{
+        font-size: 17px;
+    }
+    #edu h1 {
+        font-size: 40px;
+    }
+    #experience h2 {
+        font-size: 18px;
+    }
+    #experience h3 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #edu h1 {
+        font-size: 35px;
+    }
 }
 

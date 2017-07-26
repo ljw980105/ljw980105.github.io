@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/common_fonts.css" rel="stylesheet" type="text/css" media="screen">
     <script src="JS/jquery.js"></script>
     <script src="JS/common_jquery.js"></script>
@@ -8,7 +9,9 @@
     <meta charset="utf-8">
     <title>Digital Resume</title>
     <link rel="icon" href="Images/icon png.png">
+    <link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
     <link href="CSS/resume_css.css" rel="stylesheet" type="text/css" media="screen">
+
 
     <!-- bxSlider Javascript & css file  -->
     <script src="JS/jquery.bxslider.min.js"></script>
@@ -37,6 +40,20 @@
     </nav>
 </div>
 
+<div id="top_mobile_nav">
+    <img id="navicon" src="Images/navicon.png" height="50px" width="50px" >
+</div>
+
+<ul id="mobile_nav">
+    <a id="nav_fist" href="index.html">HOME</a>
+    <a href="Bio.html">ABOUT</a>
+    <a href="Resume.html">RESUME</a>
+    <a href="Graphic Design.html">GRAPHIC DESIGN</a>
+    <a id="nav_projz" href="Projects.html">PROJECTS</a>
+    <a href="Games.html">GAMES</a>
+    <a id="nav_last" href="Contacts.html">CONTACT</a>
+</ul>
+
 <div id="progress">
     <ul>
         <a id = "p1">WELCOME</a>
@@ -58,7 +75,8 @@
     <div id="wrapper">
         <div id="col1">
             <div id = "col1_item1">
-                <a href="Bio.html">ABOUT</a>
+                <!--<h6><a href="Bio.html">ABOUT</a></h6>-->
+                <h6 id="q4">ABOUT</h6>
             </div>
             <div id="col1_item2">
                 <!--<a href="#edu">EDUCATION</a>-->
@@ -77,10 +95,10 @@
         </div>
         <div id="col3">
             <div id = "col3_item1">
-                <a href="Projects.html">PROJECTS</a>
+                <h6 id="q5">PROJECTS</h6>
             </div>
             <div id="col3_item2">
-                <a href="Contacts.html">CONTACT</a>
+                <h6 id="q6">CONTACT</h6>
             </div>
         </div>
     </div>
@@ -107,9 +125,10 @@
 </div>
 
 <div id="experience">
-    <div id = "exp_wrapper">
-        <div id="exp_left">
-            <div id="exp1">
+    <div id="mobile_exp">
+        <img id="logo" src="Images/ExperienceBg_Final.jpg">
+        <div id="mobile_wrap">
+            <div id="ex1">
                 <h2>HEAD PROGRAMMER & VIDEO EDITOR </h2>
                 <h3>2013-2016, FIRST ROBOTICS TEAM 1635</h3>
                 <h4>•	Developed a Java algorithm to ensure the robot will drive straight even if it’s made off-course by external forces. It is achieved using an onboard gyroscope. (See the video below)<br/>
@@ -120,20 +139,18 @@
                     •	Developed strong leadership, communication and time management skills dealing with various challenges in the 6-week designing process.<br/>
                     •	Winner of the MVP Award sponsored by FIRST.<br/></h4>
             </div>
-            <div id="exp3">
+            <div id="ex2">
+                <h2>ELECTRONIC MANUFACTURING & AUTOCAD INTERN </h2>
+                <h3>2016, QUADLOGICS CONTROL CORP</h3>
+                <h4>•	Drafted 10+ AutoCAD schematics of complex electrical products to enable smooth production of electronics.<br/>
+                    •	Verified 200+ service statuses of electrical products using TeraTerm in order to increase the satisfactionrating of the company.<br/>
+                    •	Assisted with electronic manufacturing processes such as soldering.<br/></h4>
+            </div>
+            <div id="ex3">
                 <h2>GRAPHIC DESIGNER & WEB DESIGNER</h2>
                 <H3>2017-PRESENT, RENSSELAER UNION</H3>
                 <h4>•	Apply graphic design skills in creating logos, posters, brochures, and other designs using Adobe Illustrator, Adobe InDesign and Adobe Photoshop.<br/>
                     •	Maintain RPI Union Websites using Drupal.</h4>
-            </div>
-        </div>
-        <div id="exp_right">
-            <div id="exp2">
-                <h2>ELECTRONIC MANUFACTURING & <br/>AUTOCAD INTERN </h2>
-                <h3>2016, QUADLOGICS CONTROL CORP</h3>
-                <h4>•	Drafted 10+ AutoCAD schematics<br/> of complex electrical products to enable<br/> smooth production of electronics.<br/>
-                    •	Verified 200+ service statuses of electrical<br/> products using TeraTerm in order to increase<br/> the satisfactionrating of the company.<br/>
-                    •	Assisted with electronic manufacturing<br/> processes such as soldering.<br/></h4>
             </div>
         </div>
     </div>
@@ -143,39 +160,22 @@
     <div id="skills_text">
         <h1>SKILLS</h1>
     </div>
-    <!--<div id="skills_wrapper">-->
-        <!--<div id = "left_arrow">-->
-            <!--<img src="Images/arrow_l2.png">-->
-        <!--</div>-->
-        <!--<div id="skill_content">-->
-            <!--<img src="Images/skl1.png">-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl1.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl2.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl3x.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl4.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl5.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl6.png">&ndash;&gt;-->
-            <!--&lt;!&ndash;<img class="mySlides" src="images/skl7.png">&ndash;&gt;-->
-        <!--</div>-->
-        <!--<div id="right_arrow">-->
-            <!--<img src="Images/arrow_r2.png">-->
-        <!--</div>-->
-    <!--</div>-->
-
     <!--Slider created with bxSlider. To change the styles, modify source css file of bxSlider-->
     <div id="skl_wrapper">
         <div id = "left_arrow">
             <img src="Images/arrow_l2.png">
         </div>
-        <ul class="bxslider">
-            <li><img src="Images/skl1.png" /></li>
-            <li><img src="Images/skl2.png" /></li>
-            <li><img src="Images/skl3x.png" /></li>
-            <li><img src="Images/skl4.png" /></li>
-            <li><img src="Images/skl5.png" /></li>
-            <li><img src="Images/skl6.png" /></li>
-            <li><img src="Images/skl7.png" /></li>
-        </ul>
+        <div id="skill_slider">
+            <ul class="bxslider">
+                <li><img src="Images/skl1.png" /></li>
+                <li><img src="Images/skl2.png" /></li>
+                <li><img src="Images/skl3x.png" /></li>
+                <li><img src="Images/skl4.png" /></li>
+                <li><img src="Images/skl5.png" /></li>
+                <li><img src="Images/skl6.png" /></li>
+                <li><img src="Images/skl7.png" /></li>
+            </ul>
+        </div>
         <div id = "right_arrow">
             <img src="Images/arrow_r2.png">
         </div>

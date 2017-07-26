@@ -38,6 +38,12 @@ function animateOne(){
     animatedScroll("#col1_item2 a","#skills");
 }
 
+function diffPage(target,dest){
+    $(target).click(function () {
+        window.location.replace(dest);
+    });
+}
+
 $(document).ready(function () {
 
     var nav_top = $("#nav").offset().top;
@@ -80,6 +86,10 @@ $(document).ready(function () {
     animatedScroll("#q1","#edu");
     animatedScroll("#q2","#experience");
     animatedScroll("#q3","#skills");
+
+    diffPage("#q4","./Bio.html");
+    diffPage("#q5","./Projects.html");
+    diffPage("#q6","./Contacts.html");
 
     fadeFx("#left_arrow");
     fadeFx("#right_arrow");
