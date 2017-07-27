@@ -94,6 +94,9 @@ $(document).ready(function () {
     fadeFx("#left_arrow");
     fadeFx("#right_arrow");
 
+    var $button_left = $("#left_arrow");
+    var $button_right = $("#right_arrow");
+
     let slider = $('.bxslider').bxSlider({
         easing: "ease-in-out",
         auto:true,
