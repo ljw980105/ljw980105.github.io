@@ -2,12 +2,12 @@
 /* CSS DOCUMENT */
 
 body {
-    width: 1519px;
+    /*width: 1519px;*/
     margin: auto;
 }
 
 #nav ul {
-    display:inline;
+    display: inline;
 }
 
 #nav {
@@ -21,129 +21,209 @@ body {
     z-index: 10;
 }
 
-#nav > nav > ul > li > a{
-    transition:all linear 0.15s;
+#nav > nav > ul > li > a {
+    transition: all linear 0.15s;
     background-color: white;
     display: inline;
     padding: 15px 10px;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
 }
 
-#nav a:link { color: black}
-#nav a:visited {color: black}
-#nav a:active {color: black}
-#nav a:hover { color: orange;}
-#nav a:focus { color: orange;}
+#nav a:link {
+    color: black
+}
+
+#nav a:visited {
+    color: black
+}
+
+#nav a:active {
+    color: black
+}
+
+#nav a:hover {
+    color: orange;
+}
+
+#nav a:focus {
+    color: orange;
+}
 
 ._center {
     text-align: center;
 }
 
-
 /*For drop-down menu*/
 
 .clearfix:after {
-    display:block;
-    clear:both;
+    display: block;
+    clear: both;
 }
 
 /*----- Menu Outline -----*/
 .menu-wrap {
-    width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background: #3e3436;
 }
 
 .menu {
     text-align: center;
-    width:100%;
-    margin:0px auto;
+    width: 100%;
+    margin: 0px auto;
 }
 
 .menu li {
-    margin:0px;
-    list-style:none;
-    font-family:'serif';
+    margin: 0px;
+    list-style: none;
+    font-family: 'serif';
 }
 
 .menu a {
-    transition:all linear 0.15s;
+    transition: all linear 0.15s;
     /*color:#919191;*/
 }
 
 .menu li:hover > a, .menu .current-item > a {
-    text-decoration:none;
+    text-decoration: none;
 }
-
 
 /*----- Top Level -----*/
 .menu > ul > li {
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
 }
 
 .menu > ul > li > a {
-    padding:10px 40px;
-    display:inline-block;
+    padding: 10px 40px;
+    display: inline-block;
 }
 
 .menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
-    z-index:1;
-    opacity:0.95;
+    z-index: 1;
+    opacity: 0.95;
 }
 
 .sub-menu {
     margin-top: 10%;
     text-align: left;
-    width:150%;
-    padding:5px 30px;
-    position:absolute;
-    top:120%;
-    left:0px;
-    z-index:-1;
-    opacity:0;
-    transition:opacity linear 0.15s;
-    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:rgb(240,240,240);
+    width: 150%;
+    padding: 5px 30px;
+    position: absolute;
+    top: 120%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background: rgb(240, 240, 240);
 
 }
 
 .sub-menu li {
-    display:block;
-    font-size:16px;
+    display: block;
+    font-size: 16px;
 }
 
 .sub-menu li a {
     margin-left: -25%;
-    padding:10px 30px;
-    display:block;
+    padding: 10px 30px;
+    display: block;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
 }
 
-
-#showcase{
+#showcase {
     margin-top: 3.38%;
     padding: 22.5% 0;
     background-image: url("../Images/gfxbg2.png");
-    background-size: 100% auto;
+    /*background-size: 100% auto;*/
+    background-size: 1519px 700px;
+    background-position: center;
 }
 
-#work{
+/*MEDIA QUERIES FOR THE MOBILE NAV BAR*/
+#mobile_nav {
+    position: absolute;
+    visibility: hidden;
+}
+
+#top_mobile_nav {
+    background-color: white;
+    padding: .3% 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+#mobile_nav #nav_fist {
+    padding-top: 2%;
+}
+
+#navicon {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    /*FOR THE MOBILE NAV BAR*/
+    #nav {
+        visibility: hidden;
+    }
+
+    #mobile_nav {
+        margin-top: -.001%;
+        text-align: center;
+        position: relative;
+        visibility: visible;
+    }
+
+    #mobile_nav a:link, #mobile_nav a:visited {
+        padding: 1% 0;
+        margin-left: -50px;
+        display: block;
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        color: black;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    #mobile_nav #nav_last {
+        padding-bottom: 2%;
+    }
+
+    #mobile_nav a:hover {
+        transition: all 0.15s ease-in-out;
+        color: orange;
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    #top_mobile_nav {
+        position: relative;
+        visibility: visible;
+
+    }
+
+    #showcase {
+        margin-top: 0;
+    }
+}
+
+#work {
     text-align: center;
     padding: 1% 0;
 }
 
 #work h1 {
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
     font-size: 30px;
 }
@@ -154,31 +234,29 @@ body {
     background-size: 100% auto;
 }
 
-#img1x{
+#img1x {
     -ms-transform: scale(0.695, 0.695); /* IE 9 */
     -webkit-transform: scale(0.695, 0.695); /* Safari */
     transform: scale(0.695, 0.695);
 }
 
 #col1, #col2 {
-    width: 420px;
+    /*width: 420px;*/
+    width: 33%;
     margin-right: 2.87%;
 }
 
-#col3{
-
+#col3 {
+    width: 33%;
 }
 
-#design img{
-    float: left;
-}
 
-#footer{
+#footer {
     margin-top: 5%;
 }
 
-.imgContainer{
-    float:left;
+.imgContainer {
+    /*float:left;*/
 }
 
 .blur {
@@ -188,37 +266,51 @@ body {
     /*opacity: 0.5;*/
 }
 
-#img1{
+#img1 {
     margin-bottom: 8%;
 }
 
-#img2{
+#img2 {
     margin-bottom: 8%;
     /*margin: 0 2.87% 2.87% 0;*/
 }
 
-#img3{
+#img3 {
     margin-bottom: 8%;
     /*margin: 0 0 2.87% 0;*/
 }
 
-.shadow{
-    text-shadow: 3px 3px 2px rgba(0,0,0,1);
+.shadow {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 1);
 }
 
-#behance{
-
+#behance {
+    padding: 45% 0;
+    text-align: center;
+    background-color: rgba(19,119,255,1);
 }
 
-#design a{
+#flickr{
+    padding: 45% 0;
+    text-align: center;
+    background-color: rgba(255,0,128,1);
+}
+
+#design a {
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 400;
     font-size: 30px;
 }
 
-#design a:link {color: white}
-#design a:visited {color: white}
+#design a:link {
+    color: white
+}
+
+#design a:visited {
+    color: white
+}
+
 #design a:hover {
     color: white;
     text-decoration: underline;
@@ -226,19 +318,12 @@ body {
 
 #behance a {
     font-size: 35px;
-    position: absolute;
-    left: 600px;
-    top: 1470px;
-    padding: 10px;
     color: #FFF;
     margin: 5px;
 }
 
 #flickr a {
     font-size: 35px;
-    position: absolute;
-    left: 1105px;
-    top: 1435px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -246,9 +331,6 @@ body {
 
 #img1 a {
     font-size: 25px;
-    position: absolute;
-    left: 180px;
-    top: 930px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -256,9 +338,6 @@ body {
 
 #img2 a {
     font-size: 40px;
-    position: absolute;
-    left: 640px;
-    top: 1010px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -266,9 +345,6 @@ body {
 
 #img4 a {
     font-size: 40px;
-    position: absolute;
-    left: 145px;
-    top: 1430px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
@@ -276,10 +352,140 @@ body {
 
 #img3 a {
     font-size: 40px;
-    position: absolute;
-    left: 1100px;
-    top: 980px;
     padding: 10px;
     color: #FFF;
     margin: 5px;
+}
+
+#behance_mobile{
+    visibility: hidden;
+    position: absolute;
+    padding: 10% 0;
+    text-align: center;
+    background-color: rgba(19,119,255,1);
+}
+
+#flickr_mobile{
+    visibility: hidden;
+    position: absolute;
+    padding: 10% 0;
+    text-align: center;
+    background-color: rgba(255,0,128,1);
+}
+
+#img1 img, #img4 img, #img2 img, #behance img, #img3 img, #flickr img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1550px), (max-width: 1500px){
+    #img1 a, #img4 a, #img2 a, #img3 a {
+        visibility: hidden;
+        position: absolute;
+    }
+    #img1 img, #img4 img, #img2 img, #img3 img {
+        cursor: pointer;
+    }
+    .blur{
+        -webkit-filter: sepia(40%);
+        filter: sepia(40%);
+    }
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1500px){
+    /*add the img tags back in img# tags to reinstate features*/
+    #img1 a{
+        position: absolute;
+        left: 180px;
+        top: 930px;
+    }
+    #img2 a {
+        position: absolute;
+        left: 640px;
+        top: 1010px;
+    }
+    #img4 a{
+        position: absolute;
+        left: 145px;
+        top: 1430px;
+    }
+    #img3 a {
+        position: absolute;
+        left: 1100px;
+        top: 980px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    #showcase {
+        background-size: 1200px 553px;
+        padding: 25% 0;
+    }
+
+    #design {
+        margin: 0 3% 5% 3%;
+    }
+    #behance a,#flickr a  {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #showcase {
+        background-size: 800px 369px;
+        padding: 22% 0;
+    }
+    #behance a, #flickr a  {
+        font-size: 22px;
+    }
+    #design{
+        display: block;
+    }
+    #col1 , #col2 , #col3{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    #design {
+        margin: 0 6% 5% 6%;
+    }
+    #flickr, #behance{
+        visibility: hidden;
+        position: fixed;
+    }
+    #flickr_mobile, #behance_mobile{
+        width: 70%;
+        margin-left: 15%;
+        visibility: visible;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    #col1 , #col2 , #col3{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #flickr_mobile, #behance_mobile{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #showcase {
+        background-size: 150%;
+        padding: 60% 0;
+    }
+    #design a{
+        font-size: 25px;
+    }
+    #col1 , #col2 , #col3{
+        width: 100%;
+        margin-left: 0;
+    }
+    #flickr_mobile, #behance_mobile{
+        width: 100%;
+        margin-left: 0;
+    }
 }

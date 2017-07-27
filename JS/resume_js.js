@@ -94,56 +94,6 @@ $(document).ready(function () {
     fadeFx("#left_arrow");
     fadeFx("#right_arrow");
 
-    var imgArray = [];
-    imgArray.push(createImage("Images/skl1.png"));
-    imgArray.push(createImage("Images/skl2.png"));
-    imgArray.push(createImage("Images/skl3x.png"));
-    imgArray.push(createImage("Images/skl4.png"));
-    imgArray.push(createImage("Images/skl5.png"));
-    imgArray.push(createImage("Images/skl6.png"));
-    imgArray.push(createImage("Images/skl7.png"));
-
-    var i = 0;
-    var $skl = $('#skill_content');
-    var $button_left = $("#left_arrow");
-    var $button_right = $("#right_arrow");
-
-    $button_left.click(function () {
-        $skl.fadeTo(300, 0.001);
-        i--;
-        if (i < 0) {
-            i = imgArray.length - 1;
-        }
-        setTimeout(function () {
-            $skl.html(imgArray[i]);
-        }, 300);
-        $skl.fadeTo(300, 1);
-    });
-
-    $button_right.click(function () {
-        $skl.fadeTo(300, 0.001);
-        i++;
-        if (imgArray.length === i) {
-            i = 0;
-        }
-        setTimeout(function () {
-            $skl.html(imgArray[i]);
-        }, 300);
-        $skl.fadeTo(300, 1);
-    });
-
-    // setInterval(function () {
-    //     setTimeout(function () {// fade out, change image, fade in, delay
-    //         $skl.fadeTo(1000,0.001);
-    //     }, 4000);
-    //     i++;
-    //     if (imgArray.length == i - 1) {
-    //         i = 0;
-    //     }
-    //     $skl.html(imgArray[i]);
-    //     $skl.fadeTo(1000,1);
-    // },6000);
-
     let slider = $('.bxslider').bxSlider({
         easing: "ease-in-out",
         auto:true,

@@ -20,6 +20,12 @@ function blurFx(to_change, text, whole_div) {
     });
 }
 
+function diffPage(target,dest){
+    $(target).click(function () {
+        window.location.replace(dest);
+    });
+}
+
 $(document).ready(function () {
     $("#img1 a").hide();
     $("#img2 a").hide();
@@ -34,4 +40,13 @@ $(document).ready(function () {
     blurFx("#img2 img", "#img2 a", "#img2");
     blurFx("#img3 img", "#img3 a", "#img3");
     blurFx("#img4 img", "#img4 a", "#img4");
+
+    //only apply the diff page effect with certain width
+    if($(window).width() > 1550 || $(window).width() < 1500){
+        diffPage("#img1 img", "https://www.behance.net/gallery/47281675/2026-Time-Capsule");
+        diffPage("#img4 img","https://www.behance.net/gallery/47687973/Robotics-Recruitment-Poster");
+        diffPage("#img2 img","https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design");
+        diffPage("#img3 img", "https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design");
+    }
 });
+
