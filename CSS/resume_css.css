@@ -330,7 +330,8 @@
 #experience{
     padding: 55% 0;
     /*background-image: url("../Images/EXP_BG2.jpg");*/
-    background-image: url("../Images/ExperienceBg_Final2.jpg");
+    /*background-image: url("../Images/ExperienceBg_Final2.jpg");*/
+    background-image: url("../Images/ExperienceBg_Vector.svg");
     background-size: 100%;
     width: auto;
 }
