@@ -187,13 +187,13 @@ body {
     margin-right: 5px;
 }
 
+.center_img  {
+    /*THE AMAZING CODE THAT CENTERS THE GODDAMN IMAGE*/
+}
 
-
-@media only screen and (max-width: 480px) {
-    #bg {
-        margin-left: -20%;
-        float: none;
-    }
+.center_img img  {
+    display: block;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width: 1517px) {
@@ -256,10 +256,10 @@ body {
 
 @media only screen and (max-width: 950px) {
     #bg {
-        margin-top: 5%;
         float: none;
-        margin-left: 25%;
-        width: 300px;
+        /*!*margin-left: 25%;*!*/
+        /*width: 300px;*/
+        margin-top: 5%;
         margin-bottom: 30%;
     }
 
@@ -285,7 +285,7 @@ body {
 
     #bg img {
         width: 350px;
-        margin-left: -5%;
+        /*margin-left: -5%;*/
     }
 
     #main img {
@@ -313,8 +313,10 @@ body {
 
 @media only screen and (max-width: 500px) {
     #bg img {
+        display: block;
+        margin: 0 auto;
         width: 300px;
-        margin-left: -8%;
+        /*margin-left: 25%;*/
     }
 
     #intro h1 {
@@ -329,12 +331,17 @@ body {
 /*FOR iPhone 7*/
 @media only screen and (max-width: 414px) {
     #bg img {
-        width: 280px;
-        margin-left: -12%;
+        /*margin-left: -12%;*/
     }
 
     #social_media{
         margin-left: -10%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    #bg img {
+        width: 250px;
     }
 }
 
