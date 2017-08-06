@@ -129,7 +129,7 @@ body {
 #wrapper a {
     transition: all .1s ease-in;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
     text-decoration: none;
@@ -154,19 +154,37 @@ body {
     display: flex;
 }
 
+#quad1, #quad2{
+    width:100%;
+    display: flex;
+
+}
+
 #col1 {
-    width: 33.4%;
-    /*width: 507px;*/
+    /*width: 33.4%;*/
+    width: 50%;
 }
 
 #col2 {
-    /*width: 507px;*/
-    width: 33.4%;
+    /*width: 33.4%;*/
+    width: 50%;
 }
 
 #col3 {
-    /*width: 507px;*/
-    width: 33.4%;
+    /*width: 33.4%;*/
+    width: 50%;
+}
+
+#col0{
+    width: 50%;
+}
+
+#yt {
+    padding: 20% 0;
+    background-image: url("../Images/youtube_pattern-690x262.png");
+    background-position: 50% 18%;
+    text-align: center;
+    margin-right: 5px;
 }
 
 
@@ -203,15 +221,26 @@ body {
     #bg img {
         width: 520px;
     }
+    #gfx, #proj, #resume, #yt {
+        padding: 14% 0;
+    }
+
+    #gfx{
+        margin-right: 0;
+    }
+
+    #yt, #gfx{
+        margin-bottom: 5px;
+    }
+
+    #wrapper {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
     #wrapper {
         margin-top: 8%;
-    }
-
-    #wrapper a {
-        font-size: 30px;
     }
 
     #bg img {
@@ -226,21 +255,6 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-    #gfx, #proj, #resume {
-        padding: 15% 0;
-        margin-right: 0;
-    }
-
-    #wrapper {
-        display: block;
-    }
-
-    #col1, #col2, #col3 {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-    }
-
     #bg {
         margin-top: 5%;
         float: none;
@@ -257,6 +271,11 @@ body {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    #wrapper a {
+        font-size: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -272,6 +291,23 @@ body {
     #main img {
         margin-top: -5%;
         margin-bottom: 12%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #quad1, #quad2{
+        width:100%;
+        display: block;
+
+    }
+    #col1, #col2, #col3, #col0 {
+        width: 100%;
+    }
+
+    #yt, #gfx, #proj, #resume{
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
