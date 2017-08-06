@@ -99,7 +99,7 @@ body {
 }
 
 #gfx {
-    padding: 20% 0;
+    padding: 22% 0;
     background-image: url("../Images/indexbg1x.jpg");
     background-size: 150% auto;
     text-align: center;
@@ -109,17 +109,17 @@ body {
 }
 
 #proj {
-    padding: 20% 0;
+    padding: 22% 0;
     /*background-image: url("../images/FRC.jpg");*/
     background-image: url("../Images/indexbg2.jpg");
-    background-size: 120%;
+    background-size: 130%;
     text-align: center;
     background-position: 50% 18%;
     margin-right: 5px;
 }
 
 #resume {
-    padding: 20% 0;
+    padding: 22% 0;
     background-image: url("../Images/indexbg3.jpg");
     /*background-size: 120%;*/
     text-align: center;
@@ -180,7 +180,7 @@ body {
 }
 
 #yt {
-    padding: 20% 0;
+    padding: 22% 0;
     background-image: url("../Images/youtube_pattern-690x262.png");
     background-position: 50% 18%;
     text-align: center;
