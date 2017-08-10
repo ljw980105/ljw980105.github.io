@@ -42,7 +42,9 @@
     color: white;
     /*margin-top: 3%;*/
     padding: 18% 0;
-    background-color: rgba(221,51,34,1);
+    /*background-color: rgba(221,51,34,1);*/
+    background-image: url("../Images/Website Resume Bg Pattern.svg");
+    background-size: 100%;
 }
 
 #intro h1 {
@@ -473,6 +475,87 @@
 #mobile_exp{
     visibility: hidden;
     position: fixed;
+}
+
+.awards_backgrounds{
+    background-color: rgba(14,23,68,1);
+}
+
+#gradient_break{
+    padding: 10% 0;
+    background-image: url("../Images/award-banner1.jpg");
+    background-size: 100%;
+    /*height: 70%;*/
+}
+
+
+/*for the awards section*/
+#awards{
+    display: block;
+    margin: 0 10% 0 10%;
+    width:80%;
+    /*background-color: black;*/
+}
+
+#award_intro {
+    display: flex;
+}
+
+#aw1{
+    margin-top: -8%;
+    padding: 1% 0;
+    text-align: center;
+    background-color: rgba(14,23,68,1);
+    width: 50%;
+    margin-left: 25%;
+    font-family: Roboto, serif;
+    font-size: 25px;
+    color: white;
+    box-shadow: 4px 4px 4px black ;
+}
+
+#multiple_awards_wrap{
+    margin-top: 3%;
+}
+
+.awards_styles{
+    margin: 0 10%;
+    display: flex;
+    background-color: rgba(14,23,68,0.07);
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5)
+}
+
+.awards_styles img {
+    width: 30%;
+    height: 30%
+}
+
+.awards_styles div {
+    padding: 0 5%;
+}
+
+.awards_styles h1 {
+    font-family: RobotoReg, "Helvetica", sans-serif,serif;
+}
+
+.awards_styles h2 {
+    color: rgba(14,23,68,.5);
+    font-family: "Myriad Pro Bold", serif;
+}
+
+.awards_styles p {
+    font-family: Roboto, "serif";
+    font-size: 18px;
+}
+
+.awards_styles a:visited, .awards_styles a:link{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.awards_styles a:hover{
+    transition: all 0.15s ease-in-out;
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 1400px) {
