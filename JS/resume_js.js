@@ -51,6 +51,7 @@ $(document).ready(function () {
     var edu_top = $("#edu").offset().top;
     var exp_top = $("#experience").offset().top;
     var skl_top = $("#skills").offset().top;
+    var awards_top = $("#awards_wrapper").offset().top;
     var foot_top = $("#footer").offset().top;
     var section_top = $("#progress").offset().top;
     $("#progress").hide();
@@ -72,7 +73,8 @@ $(document).ready(function () {
         progressFx(guide_top, edu_top, curr, "#progress #p2");
         progressFx(edu_top, exp_top, curr, "#progress #p3");
         progressFx(exp_top, skl_top, curr, "#progress #p4");
-        progressFx(skl_top, foot_top, curr, "#progress #p5");
+        progressFx(skl_top, awards_top, curr, "#progress #p5");
+        progressFx(awards_top, foot_top, curr, "#progress #p6");
 
     });
     animatedScroll("#p1", "#intro");
