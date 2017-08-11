@@ -267,7 +267,12 @@
 #edu{
     padding-top:  8%;
     padding-bottom:  2%;
+    /*use to be o.o6 for rgba*/
     background-color: rgba(0,0,0,0.06);
+    /*background-image: url("../Images/edu_bg.svg");*/
+    /*background-size: 80%;*/
+    /*background-position-y: 40%;*/
+    /*background-repeat: no-repeat;*/
 }
 
 #edu h1 {
@@ -518,6 +523,15 @@
     margin-top: 3%;
 }
 
+.awards_margintop {
+    /*margin-top: 20%;*/
+}
+
+#awards1, #awards2, #awards3{
+    margin-top: 3%;
+}
+
+
 .awards_styles{
     margin: 0 10%;
     display: flex;
@@ -756,6 +770,9 @@
     .awards_styles h1{
         font-size: 24px;
     }
+    #awards1, #awards2, #awards3{
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 686px){
@@ -793,6 +810,11 @@
     #multiple_awards_wrap{
         margin-top: 6%;
     }
+
+    #awards1, #awards2, #awards3{
+        margin-top: 7%;
+    }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -866,6 +888,9 @@
         padding: .4% 0;
         width: 80%;
         margin-left: 10%;
+    }
+    #awards1, #awards2, #awards3{
+        margin-top: 10%;
     }
 }
 
