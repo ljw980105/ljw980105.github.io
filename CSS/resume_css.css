@@ -574,6 +574,10 @@
     text-decoration: underline;
 }
 
+#footer_container{
+    margin-top: 5%;
+}
+
 @media only screen and (min-width: 1500px){
     .awards_styles p{
         font-size: 22px;

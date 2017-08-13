@@ -90,6 +90,10 @@
     margin-top: 3%;
 }
 
+#footer_container{
+    margin-top: 5%;
+}
+
 @media only screen and (max-width: 1500px) {
     #proj_contents img{
         max-width:134%;

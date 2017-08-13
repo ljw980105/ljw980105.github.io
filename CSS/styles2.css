@@ -24,7 +24,8 @@ body {
     margin-left: 18%;
 }
 
-#intro {
+#footer_container{
+    border-top: none;
 }
 
 #intro h1 {
