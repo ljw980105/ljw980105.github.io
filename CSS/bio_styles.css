@@ -36,9 +36,27 @@ body {
     color:white;
 }
 
-#footer{
+/*#footer{*/
+    /*color: white;*/
+/*}*/
+
+/*TO OVERRIDE THE PRO FOOTER COLOR IN COMMON CSS*/
+#footex ul li h4 {
     color: white;
 }
+
+#navigation ul li h4, #social_media_footer ul li h4, #projects_footer ul li h4 {
+    color: white;
+}
+
+#footer_container #footerx #personal_logo img, #footer_container #mobile_logo img {
+    filter: invert(0);
+}
+
+#standalone_footer{
+    color: white;
+}
+
 
 @media screen and (max-width: 480px){
     #name{
