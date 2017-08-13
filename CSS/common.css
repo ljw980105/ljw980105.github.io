@@ -132,6 +132,137 @@ body {
     font-weight: 300;
 }
 
+/*4 THE FOOTER*/
+#footerx{
+    display: flex;
+    margin-top: 2%;
+    width:70%;
+    margin-left: 15%;
+}
+
+
+#footerx h4 {
+    font-size: 17px;
+    font-family: Helvetica;
+    margin-bottom: 6px;
+}
+
+/*h4 must be a direct descendant of footer */
+#standalone_footer{
+    font-family: Roboto;
+}
+
+#footer_container{
+    background-color: transparent;
+    /*display: flex;*/
+    margin-bottom: 0;
+}
+
+#personal_logo{
+    margin-top: 20px;
+    width: 24%;
+}
+
+#social_media_footer{
+    margin-left: 1.33%;
+    width: 24%;
+}
+
+#projects_footer{
+    margin-left: 1.33%;
+    width: 24%;
+}
+
+#navigation{
+    margin-left: 1.33%;
+    width: 24%;
+    display: inline;
+
+}
+
+#footerx ul {
+    list-style: none;
+}
+
+#personal_logo img{
+    /*margin-top: 2%;*/
+    filter: invert();
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+
+#footerx a:link, #footerx a:visited {
+    color: #888888;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+#footerx a:hover{
+    transition: all 0.1s ease-in-out;
+    color: orange;
+}
+
+#mobile_logo {
+    width: 80px;
+    height: 80px;
+    filter: invert();
+    display: block;
+    margin: 0 auto;
+    position: fixed;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 680px) {
+    #footerx{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    #footerx{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #navigation{
+        margin-left: -5%;
+    }
+
+}
+
+@media only screen and (max-width: 440px){
+    #personal_logo{
+        visibility: hidden;
+        position: fixed;
+    }
+
+    #footerx{
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    #mobile_logo{
+        visibility: visible;
+        position: relative;
+    }
+
+    #mobile_logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #navigation, #projects_footer, #social_media_footer{
+        width: 33%;
+    }
+
+
+}
+
 /*MEDIA QUERIES FOR THE MOBILE NAV BAR*/
 #mobile_nav {
     position: absolute;
@@ -196,6 +327,4 @@ body {
 
     }
 }
-
-
 
