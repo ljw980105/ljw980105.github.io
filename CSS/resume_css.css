@@ -335,10 +335,10 @@
 }
 
 #experience{
-    padding: 55% 0;
-    /*background-image: url("../Images/EXP_BG2.jpg");*/
-    /*background-image: url("../Images/ExperienceBg_Final2.jpg");*/
-    background-image: url("../Images/ExperienceBg_Vector.svg");
+    /*use to be 55%*/
+    padding: 67% 0;
+    /*background-image: url("../Images/ExperienceBg_Vector.svg");*/
+    background-image: url("../Images/exp_w_nmn.svg");
     background-size: 100%;
     width: auto;
 }
@@ -656,7 +656,7 @@
         margin: 0 8%;
     }
 
-    #ex3{
+    #ex4{
         background-color: rgba(40,38,39,1);
         padding-bottom: 3%;
     }
