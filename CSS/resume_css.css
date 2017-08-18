@@ -335,11 +335,13 @@
 }
 
 #experience{
+
     /*use to be 55%*/
     padding: 67% 0;
     /*background-image: url("../Images/ExperienceBg_Vector.svg");*/
     background-image: url("../Images/exp_w_nmn.svg");
     background-size: 100%;
+    background-position-y: -2px;
     width: auto;
 }
 
@@ -586,9 +588,11 @@
 
 @media only screen and (max-width: 1400px) {
     #experience{
-        padding: 60% 0;
+        padding: 73% 0;
         background-size: 110%;
         background-position:top;
+        background-position-y: -4px;
+        background-position-x: 47%;
     }
 }
 
@@ -600,7 +604,7 @@
 
 @media only screen and (max-width: 1200px) {
     #experience{
-        padding: 63% 0;
+        padding: 78% 0;
         background-size: 118%;
         background-position-x: 44%;
     }
