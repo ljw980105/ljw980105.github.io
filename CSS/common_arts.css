@@ -49,6 +49,15 @@ h2{
 }
 
 @media only screen and (max-width: 500px){
+    #reg_showcase{
+        background-size: 180%;
+        padding: 60% 0;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
     #contents{
         margin-left: 5%;
         width: 90%;
