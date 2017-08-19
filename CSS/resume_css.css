@@ -576,6 +576,12 @@
     text-decoration: underline;
 }
 
+
+#awards2 div p span a a:visited, #awards2 div p span a a:link{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
 #footer_container{
     margin-top: 5%;
 }
@@ -674,13 +680,10 @@
     }
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 948px){
     .awards_styles h1{
         font-size: 27px;
     }
-}
-
-@media only screen and (max-width: 900px){
 
     #intro h1{
         padding: 0 10%;
@@ -713,13 +716,14 @@
         width: 8%;
         height: auto;
     }
-}
-
-@media only screen and (max-width: 846px) {
     #awards{
         width: 90%;
         margin: 0 5% 0 5%;
     }
+}
+
+@media only screen and (max-width: 846px) {
+
 }
 
 @media only screen and (max-width: 800px){
