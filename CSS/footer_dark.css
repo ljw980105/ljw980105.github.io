@@ -20,30 +20,35 @@
 
 #footer_container{
     background-color: transparent;
-    /*display: flex;*/
+    display: flex;
     margin-bottom: 0;
+}
+
+#section1, #section2 {
+    width: 40%;
+    display: flex;
 }
 
 #personal_logo{
     margin-top: 20px;
-    width: 24%;
+    width: 20%;
 }
 
 #social_media_footer{
-    margin-left: 1.33%;
-    width: 24%;
+    width: 50%;
 }
 
 #projects_footer{
-    margin-left: 1.33%;
-    width: 24%;
+    width: 50%;
 }
 
 #navigation{
-    margin-left: 1.33%;
-    width: 24%;
+    width: 50%;
     display: inline;
+}
 
+#graphics_footer{
+    width: 50%;
 }
 
 #footerx ul {
@@ -77,7 +82,7 @@
     height: 80px;
     filter: invert();
     display: block;
-    margin: 0 auto;
+    margin: 2% auto 0 auto;
     position: fixed;
     visibility: hidden;
 }
@@ -86,36 +91,31 @@
     border-top: 2px solid black;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 1150px) {
     #footerx{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
-@media only screen and (max-width: 574px) {
-    #footerx{
-        width: 100%;
+@media only screen and (max-width: 750px) {
+    #footer_container{
+        display: block;
+    }
+    #navigation, #projects_footer, #social_media_footer, #graphics_footer{
         margin-left: 0;
     }
 
-    #navigation{
-        margin-left: -5%;
+    #section2, #section1{
+        width: 50%;
     }
 
-}
-
-@media only screen and (max-width: 440px){
     #personal_logo{
+        width: 0;
         visibility: hidden;
         position: fixed;
     }
-
-    #footerx{
-        margin-left: 5%;
-        width: 90%;
-    }
-
     #mobile_logo{
         visibility: visible;
         position: relative;
@@ -125,8 +125,72 @@
         width: 80px;
         height: 80px;
     }
+}
 
-    #navigation, #projects_footer, #social_media_footer{
-        width: 33%;
+@media only screen and (max-width: 600px) {
+    #footerx{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /*#navigation{*/
+        /*margin-left: -10%;*/
+    /*}*/
+
+}
+
+@media only screen and (max-width: 500px){
+    #footerx{
+        display: block;
+        margin-left:10%;
+        width: 80%;
+        margin-right: 10%;
+    }
+
+    #section2{
+        margin-top: -5%;
+    }
+
+    #section1, #section2{
+        margin-left: -2%;
+    }
+
+    #section1, #section2{
+        /*display: block;*/
+        text-align: left;
+        width: 100%;
+    }
+
+    #navigation, #projects_footer, #social_media_footer, #graphics_footer{
+        margin-left: 0;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    #footerx {
+        display: block;
+        margin-left: 5%;
+        width: 90%;
+        margin-right: 5%;
+    }
+    #section1, #section2{
+        margin-left: 0;
+    }
+
+    #projects_footer, #social_media_footer{
+        margin-left: -3%;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    #footerx{
+        display: block;
+        margin-left:0;
+        width: 100%;
+        margin-right:0;
+    }
+    #projects_footer, #social_media_footer{
+        margin-left: -5%;
     }
 }
