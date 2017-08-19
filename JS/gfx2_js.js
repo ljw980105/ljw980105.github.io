@@ -45,7 +45,7 @@ $(document).ready(function () {
     if($(window).width() > 1550 || $(window).width() < 1500){
         diffPage("#img1 img", "https://www.behance.net/gallery/47281675/2026-Time-Capsule");
         diffPage("#img4 img","https://www.behance.net/gallery/47687973/Robotics-Recruitment-Poster");
-        diffPage("#img2 img","https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design");
+        diffPage("#img2 img","./Regular_Art.html");
         diffPage("#img3 img", "https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design");
     }
 });
