@@ -904,6 +904,10 @@
     #awards1, #awards2, #awards3{
         margin-top: 10%;
     }
+
+    #intro{
+        padding: 38% 0;
+    }
 }
 
 @media only screen and (max-width: 414px){
