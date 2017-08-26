@@ -49,10 +49,7 @@ body {
 #game{
     display: block;
     text-align: center;
-    /*width: 50%;*/
-    /*height: 50%;*/
     margin-top: 3%;
-    /*margin-left: 25%;*/
 }
 
 @media only screen and (max-width: 1400px){
