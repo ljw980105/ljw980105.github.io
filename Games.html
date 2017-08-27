@@ -20,6 +20,24 @@
     <!--<script src="JS/2048.js" type="text/javascript"></script>-->
     <!--REACT JS INCOMING-->
     <script type="text/babel">
+        class PropObserver{
+            //mimicking a property observer: only update the game ui when width is changed
+            constructor(width){
+                this.width = width;
+                this.history = width;
+            }
+
+            updateHistory(new_width){
+                this.history = this.width;
+                this.width = new_width;
+            }
+
+            shouldWidthUpdate(){
+                return this.width !== this.history;
+            }
+        }
+
+
         class GameEnum {
             // a class that dictates the styling of Game
             constructor() {
@@ -454,6 +472,8 @@
         var grid = new Board();
         var gameStyles = new GameEnum();
         gameStyles.adjustStyles();
+        let globalWidth = $(window).width();
+        var observer = new PropObserver(globalWidth);
 
         class Game extends React.Component {
             constructor(props) {
@@ -479,7 +499,11 @@
              Function that takes in a board and updates the values of each tile
              */
             update(board) {
-                gameStyles.adjustStyles();
+                globalWidth = $(window).width();
+                observer.updateHistory(globalWidth);
+                if (observer.shouldWidthUpdate()){
+                    gameStyles.adjustStyles();
+                }
                 this.setState({tile1: board[0][0]});
                 this.setState({tile2: board[0][1]});
                 this.setState({tile3: board[0][2]});
