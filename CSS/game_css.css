@@ -35,7 +35,7 @@ body {
 
 #instr #igotit:hover{
     background-color: dodgerblue;
-    padding: 1% 0 1.4% 0;
+    /*padding: 1% 0 1.4% 0;*/
     border: 2px solid dodgerblue;
     color: white;
     margin-top: 4%;
@@ -58,9 +58,39 @@ body {
     }
 }
 
+@media only screen and (max-width: 1350px){
+    #instr #igotit{
+        margin: 0 35%;
+    }
+}
+
+
 @media only screen and (max-width: 1200px){
     #instr h2{
         line-height: 130%;
     }
 }
+
+@media only screen and (max-width: 900px){
+    #instr #igotit {
+        margin: 0 30%;
+    }
+}
+
+@media only screen and (max-width: 666px){
+    #instr #igotit{
+        margin: 0 20%;
+    }
+    #instr h2{
+        font-size: 20px;
+        line-height: 120%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #instr #igotit{
+        margin: 0 12%;
+    }
+}
+
 
