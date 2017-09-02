@@ -74,7 +74,7 @@ $(document).ready(function () {
             if (curr > num6 - 300) {
                 $("#email_mobile").fadeTo(1500, 1);
             }
-            if (curr > num3 - 300) {
+            if (curr > num3 - 500) {
                 $('#sub_sm').fadeTo(1500, 1);
             }
         }

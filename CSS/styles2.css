@@ -329,14 +329,33 @@ body {
     }
 }
 
-/*FOR iPhone 7*/
+/*FOR iPhone 7 Plus*/
 @media only screen and (max-width: 414px) {
-    #bg img {
-        /*margin-left: -12%;*/
-    }
-
     #social_media{
         margin-left: -10%;
+    }
+}
+
+/*iphone 7 regular*/
+@media only screen and (max-width:  375px){
+    #social_media{
+        margin-left: -15%;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    /*for the iphone se and other 4 inch phones*/
+    #social_media img {
+        width: 42px;
+        height: 42px;
+    }
+
+    #intro h1 {
+        font-size: 45px;
+    }
+
+    #intro h2 {
+        font-size: 30px;
     }
 }
 
@@ -345,4 +364,5 @@ body {
         width: 250px;
     }
 }
+
 
