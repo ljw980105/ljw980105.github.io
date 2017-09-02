@@ -94,7 +94,7 @@
 }
 
 #footer_container{
-    border-top: 2px solid gainsboro;
+    border-top: 1px solid gainsboro;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -143,56 +143,34 @@
 @media only screen and (max-width: 500px){
     #footerx{
         display: block;
-        margin-left:10%;
-        width: 80%;
-        margin-right: 10%;
     }
 
-    #section2{
-        margin-top: -5%;
-    }
-
-    #section1, #section2{
-        margin-left: -2%;
-    }
-
-    #section1, #section2{
-        /*display: block;*/
-        text-align: left;
+    #section2, #section1 {
+        display: block;
         width: 100%;
     }
 
     #navigation, #projects_footer, #social_media_footer, #graphics_footer{
-        margin-left: 0;
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    #footerx {
-        display: block;
-        margin-left: 5%;
-        width: 90%;
-        margin-right: 5%;
-    }
-    #section1, #section2{
-        margin-left: 0;
-    }
-
-    #projects_footer, #social_media_footer{
-        margin-left: -3%;
-    }
-}
-
-@media only screen and (max-width: 360px){
-    #footerx{
-        display: block;
-        margin-left:0;
+        border-bottom:  1px solid gainsboro;
         width: 100%;
-        margin-right:0;
     }
-    #projects_footer, #social_media_footer{
-        margin-left: -5%;
+
+    #projects_footer{
+        border-top: 1px solid gainsboro;
+    }
+
+    #social_media_footer{
+        margin-bottom: 10%;
+    }
+
+    #navigation ul li h4, #projects_footer ul li h4, #social_media_footer ul li h4, #graphics_footer ul li h4{
+        cursor: pointer;
+        font-weight: normal;
+        line-height: 60%;
+    }
+
+    #navigation ul li h4:before, #projects_footer ul li h4:before, #social_media_footer ul li h4:before,
+    #graphics_footer ul li h4:before{
+        content: "+  ";
     }
 }
-

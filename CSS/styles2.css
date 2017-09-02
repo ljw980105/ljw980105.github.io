@@ -343,7 +343,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 380px) {
     /*for the iphone se and other 4 inch phones*/
     #social_media img {
         width: 42px;
