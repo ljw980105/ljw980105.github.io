@@ -121,3 +121,13 @@
     }
 }
 
+
+@media only screen and (max-width: 349px){
+    #social_media img {
+        height: 42px;
+        width: 42px;
+    }
+    #social_media{
+        margin-left: -10%;
+    }
+}
