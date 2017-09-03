@@ -43,13 +43,17 @@ $(document).ready(function () { // wait until webpage is ready
     var screenwidth = $(window).width();
     var observer = new PropObserver(screenwidth);
 
-    if ($(window).width() < 500){
-        toggleFooter("#navigation ul li h4","#navigation .slideContents");
-        toggleFooter("#projects_footer ul li h4","#projects_footer .slideContents");
-        toggleFooter("#social_media_footer ul li h4","#social_media_footer .slideContents");
-        toggleFooter("#graphics_footer ul li h4","#graphics_footer .slideContents");
+    var isDropdownEnabled = false;
+    if (!isDropdownEnabled && $(window).width() < 500) {
+        toggleFooter("#navigation ul li h4", "#navigation .slideContents");
+        toggleFooter("#projects_footer ul li h4", "#projects_footer .slideContents");
+        toggleFooter("#social_media_footer ul li h4", "#social_media_footer .slideContents");
+        toggleFooter("#graphics_footer ul li h4", "#graphics_footer .slideContents");
+        isDropdownEnabled = true;
     }
-    setInterval(function(){
+
+    //the resize function is called every time the width of the screen is changed
+    $(window).resize(function () {
         screenwidth = $(window).width();
         observer.updateHistory(screenwidth);
         if (observer.shouldUpdate()){
@@ -59,11 +63,19 @@ $(document).ready(function () { // wait until webpage is ready
                 $("#social_media_footer .slideContents").show();
                 $("#graphics_footer .slideContents").show();
             } else {
+                if (!isDropdownEnabled && $(window).width() < 500) {
+                    toggleFooter("#navigation ul li h4", "#navigation .slideContents");
+                    toggleFooter("#projects_footer ul li h4", "#projects_footer .slideContents");
+                    toggleFooter("#social_media_footer ul li h4", "#social_media_footer .slideContents");
+                    toggleFooter("#graphics_footer ul li h4", "#graphics_footer .slideContents");
+                    isDropdownEnabled = true;
+                }
+
                 $("#navigation .slideContents").hide();
                 $("#projects_footer .slideContents").hide();
                 $("#social_media_footer .slideContents").hide();
                 $("#graphics_footer .slideContents").hide();
             }
         }
-    }, 2000);
+    });
 });
