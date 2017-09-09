@@ -15,7 +15,7 @@ function blurFx(to_change, text, whole_div) {
     });
     // only reverse the effect when leaving entire thing
     $whole.mouseleave(function () {
-        $text.fadeOut(500);;
+        $text.fadeOut(500);
         $proj.removeClass("blur");
     });
 }

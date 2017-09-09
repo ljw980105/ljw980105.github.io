@@ -106,6 +106,7 @@ body {
     text-align: center;
     background-position: 50% 18%;
     margin-right: 5px;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -117,6 +118,7 @@ body {
     text-align: center;
     background-position: 50% 18%;
     margin-right: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 #resume {
@@ -125,6 +127,7 @@ body {
     /*background-size: 120%;*/
     text-align: center;
     background-position: 50% 18%;
+    transition: all 0.3s ease-in-out;
 }
 
 #wrapper a {
@@ -186,6 +189,35 @@ body {
     background-position: 50% 18%;
     text-align: center;
     margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 551px){
+    /*not available for mobile*/
+    #proj:hover {
+        transition: all 0.3s ease-in-out;
+        /*background-size: 140%;*/
+        /*above method is one approach that doesn't always work*/
+        transform:scale(1.1,1.1);
+    }
+
+    #yt:hover{
+        transition: all .3s ease-in-out;
+        /*background-size: 220%;*/
+        transform:scale(1.1,1.1);
+    }
+
+    #resume:hover{
+        transition: all 0.3s ease-in-out;
+        /*background-size: 110%;*/
+        transform:scale(1.1,1.1);
+    }
+
+    #gfx:hover{
+        transition: all .3s ease-in-out;
+        /*background-size: 160%;*/
+        transform:scale(1.1,1.1);
+    }
 }
 
 .center_img  {
