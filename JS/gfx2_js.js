@@ -31,8 +31,13 @@ function zoomFx(to_change) {
     });
 }
 
+/*
+  by default window.location.replace does not update history.
+  using history.pushState() adds history manually. This is a html5 feature
+ */
 function diffPage(target,dest){
     $(target).click(function () {
+        history.pushState({obj: "testing"},"adding_history",window.location);
         window.location.replace(dest);
     });
 }
