@@ -5,6 +5,13 @@ function toggleFooter(title, contents){
     });
 }
 
+function diffPage(target,dest){
+    $(target).click(function () {
+        history.pushState({obj: "testing"},"adding_history",window.location);
+        window.location.replace(dest);
+    });
+}
+
 class PropObserver{
     //mimicking a property observer: only update the dropdown list when width is changed
     constructor(width){
@@ -51,6 +58,10 @@ $(document).ready(function () { // wait until webpage is ready
         toggleFooter("#graphics_footer ul li h4", "#graphics_footer .slideContents");
         isDropdownEnabled = true;
     }
+
+    //make the logo clickable - return to home page
+    diffPage("#mobile_logo img","./index.html");
+    diffPage("#personal_logo img","./index.html");
 
     //the resize function is called every time the width of the screen is changed
     $(window).resize(function () {

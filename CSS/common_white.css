@@ -161,6 +161,10 @@ body {
     cursor: pointer;
 }
 
+#mobile_logo img, #personal_logo img{
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 800px) {
     /*FOR THE MOBILE NAV BAR*/
     #nav {
