@@ -229,6 +229,11 @@ body {
     margin: 0 auto;
 }
 
+/*for larger monitors*/
+@media only screen and (min-width: 1800px){
+    /*to be continued*/
+}
+
 @media only screen and (max-width: 1517px) {
     #bg img {
         margin-top: 7%;

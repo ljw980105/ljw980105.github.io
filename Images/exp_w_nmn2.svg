@@ -4,11 +4,11 @@
         <!--get the texts to use the included fonts-->
         <style type="text/css">
             @font-face{
-                font-family: "Roboto";
+                font-family: Roboto;
                 src: url("../fonts/Roboto-Light.ttf");
             }
             @font-face{
-                font-family: "Myriad Pro";
+                font-family: Myriad Pro;
                 src: url("../fonts/MyriadPro-Bold.otf");
             }
         </style>
