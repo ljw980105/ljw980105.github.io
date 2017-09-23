@@ -48,6 +48,8 @@ function ajdustWindow(){
         blurFx("#img2 img", "#img2 a", "#img2");
         blurFx("#img3 img", "#img3 a", "#img3");
         blurFx("#img4 img", "#img4 a", "#img4");
+        blurFx("#tapeFace img","#tapeFaceAnchor","#tapeFace");
+        blurFx("#gotg img","#gotgAnchor","#gotg")
     }
 
     //only apply the diff page effect with certain width
@@ -56,11 +58,15 @@ function ajdustWindow(){
         diffPage("#img4 img","https://www.behance.net/gallery/47687973/Robotics-Recruitment-Poster");
         diffPage("#img2 img","./Regular_Art.html");
         diffPage("#img3 img", "https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design");
+        diffPage("#tapeFace img", "https://www.behance.net/gallery/57032339/Tape-Face-Live");
+        diffPage("#gotg img", "https://www.behance.net/gallery/57032327/Guardian-of-the-Galaxy-Poster-Design");
 
         zoomFx("#img1 img");
         zoomFx("#img2 img");
         zoomFx("#img3 img");
         zoomFx("#img4 img");
+        zoomFx("#gotg img");
+        zoomFx("#tapeImg");
     }
 
     if($(window).width() <= 500){
@@ -68,6 +74,8 @@ function ajdustWindow(){
         zoomFx("#img2 img");
         zoomFx("#img3 img");
         zoomFx("#img4 img");
+        zoomFx("#gotg img");
+        zoomFx("#tapeImg");
     }
 }
 
@@ -76,6 +84,8 @@ $(document).ready(function () {
     $("#img2 a").hide();
     $("#img3 a").hide();
     $("#img4 a").hide();
+    $("#gotgAnchor").hide();
+    $("#tapeFaceAnchor").hide();
     $("#showcase").fadeTo(1,0.001);
 
     setTimeout(function () {
