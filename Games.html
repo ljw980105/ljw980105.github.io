@@ -474,6 +474,7 @@
         gameStyles.adjustStyles();
         let globalWidth = $(window).width();
         var observer = new PropObserver(globalWidth);
+        var parent; // defined the scope of Game inside constructor of Game
 
         class Game extends React.Component {
             constructor(props) {
@@ -485,6 +486,7 @@
                 this.right = this.right.bind(this);
                 this.down = this.down.bind(this);
                 this.reverse_game = this.reverse_game.bind(this);
+                parent = this; // correct scope issues
                 // have 16 different states, each representing a tile in the 2048 game
                 this.state = {
                     tile1: 0, tile2: 0, tile3: 0, tile4: 0,
@@ -574,6 +576,34 @@
                 this.update(grid.get_board());
             }
 
+            /*
+             * React JS LifeCycle Methods: Called After Render
+             * This function enables keyboard input to interact w/ the game
+            */
+            componentDidMount(){
+                //disable scrolling with arrow keys
+                window.addEventListener("keydown", function(e) {
+                    // space and arrow keys
+                    if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                        e.preventDefault();
+                    }
+                }, false);
+
+                document.addEventListener('keydown', function(event) {
+                    if (event.keyCode === 37) { // left arrow
+                        parent.left();
+                    } else if (event.keyCode === 39) { // right arrow
+                        parent.right();
+                    } else if (event.keyCode === 38){ // up arrow
+                        parent.up();
+                    } else if (event.keyCode === 40){ // down arrow
+                        parent.down();
+                    } else if (event.keyCode === 82){ // R key
+                        parent.rand_gen();
+                    }
+                }, true);
+            }
+
             render() {
                 //returns a 4 by 4 grid containing the 2048 grid
                 return (
@@ -584,7 +614,6 @@
                             marginBottom: gameStyles.sectionMarginBot
                         }}>
                             <div style={{display: "flex", fontSize: gameStyles.gameFontSize, margin: "0 0 0 14%"}}>
-
                                 <div style={{width: gameStyles.colWidth, margin: gameStyles.colSpacing}}>
                                     <h1 style={{
                                         align: "center",
@@ -777,6 +806,8 @@
     <!--<h2>If you are on a touchscreen device, <strong> swipe </strong> to move tiles.</h2>-->
     <!--<h2>If you are on a regular computer, <strong> use the arrow keys </strong> to move tiles.</h2>-->
     <h2>Use the buttons below the grid to move tiles and to randomly generate 2 and 4.</h2>
+    <h2>Arrow keys can also be used to move the tiles.</h2>
+    <h2>Pressing the R key can also randomly generate tiles of 2 and 4.</h2>
     <h2>Your goal is to get as much points as possible, and to not run out of spaces!</h2>
     <h2>Click on one of the buttons below the grid to start the game.</h2>
     <h2 class="ins">Innovations:</h2>
