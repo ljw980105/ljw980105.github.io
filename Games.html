@@ -577,6 +577,14 @@
             }
 
             /*
+             * React JS LifeCycle Methods: Called before Render
+             * Only called before the component is rendered for the 1st time
+             */
+            componentWillMount(){
+                this.rand_gen(); // start the game with one tile
+            }
+
+            /*
              * React JS LifeCycle Methods: Called After Render
              * This function enables keyboard input to interact w/ the game
             */
