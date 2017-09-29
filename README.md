@@ -16,4 +16,5 @@ This website contains:
 &nbsp;&nbsp;&nbsp;&nbsp;•  My graphic design portfolio. [link](https://ljw980105.github.io/Graphic%20Design.html)   
 &nbsp;&nbsp;&nbsp;&nbsp;•  A showcase of all my projects. [link](https://ljw980105.github.io/Projects.html)  
 
+
 ### Thanks for stopping by! :)
