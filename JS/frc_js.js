@@ -44,11 +44,21 @@ $(document).ready(function () {
         if (curr > num3 - 600){
             orderedFade($vid,1);
         }
-        if (curr > num4 - 600){
-            orderedFade($footer,1);
+        if ($(window).width() > 550){
+            if (curr > num4 - 600){
+                orderedFade($footer,1);
+            }
+            if (curr > num5 - 400){
+                orderedFade($tribute,1);
+            }
         }
-        if (curr > num5 - 400){
-            orderedFade($tribute,1);
+        if ($(window).width() <= 550){
+            if (curr > num4 - 900){
+                orderedFade($footer,1);
+            }
+            if (curr > num5 - 700){
+                orderedFade($tribute,1);
+            }
         }
     });
 });

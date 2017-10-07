@@ -29,6 +29,7 @@ $(document).ready(function () {
     // var num4 = $('#f00ter').offset().top;
     var num5 = $('#phone_mobile').offset().top;
     var num6 = $('#email_mobile').offset().top;
+    var num7 = $("#social_media2").offset().top;
 
     // alert(num2);
     //$('#phone').hide();
@@ -36,6 +37,7 @@ $(document).ready(function () {
     $('#p_icon').fadeTo(1, 0.001);
     $('#e_icon').fadeTo(1, 0.001);
     $('#sub_sm').fadeTo(1, 0.001);
+    $("#social_media2").fadeTo(1,0.001);
     // $("#f00ter").fadeTo(1,0.001);
 
     //$('#phone').fadeIn(1500);
@@ -61,11 +63,11 @@ $(document).ready(function () {
             if (curr > num3 - 700) {
                 $('#sub_sm').fadeTo(2000, 1);
             }
+            if (curr > num7 - 700) {
+                $('#social_media2').fadeTo(2000, 1);
+            }
         }
 
-        // if (curr > num4 - 900) {
-        //     // $('#f00ter').fadeTo(2000,1);
-        // }
         if ($(window).width() <= 550){
             //for mobile
             if (curr > num5 - 300) {
@@ -76,6 +78,9 @@ $(document).ready(function () {
             }
             if (curr > num3 - 500) {
                 $('#sub_sm').fadeTo(1500, 1);
+            }
+            if (curr > num7 - 400) {
+                $('#social_media2').fadeTo(2000, 1);
             }
         }
 
