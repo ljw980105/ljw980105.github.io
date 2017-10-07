@@ -80,7 +80,7 @@ $(document).ready(function () {
                 $('#sub_sm').fadeTo(1500, 1);
             }
             if (curr > num7 - 400) {
-                $('#social_media2').fadeTo(2000, 1);
+                $('#social_media2').fadeTo(1500, 1);
             }
         }
 
