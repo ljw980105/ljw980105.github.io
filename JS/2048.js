@@ -245,6 +245,10 @@ class Board {
             //merging the same # s
             var temp2 = temp; // reverse temp
             temp2.reverse();
+
+            let isDuplicating = false;
+            if(temp2[2] === temp2[3]) isDuplicating = true;
+
             var temp3 = [];
             for (var l = 0; l < temp2.length - 1; ++l) {
                 if (temp2[l] === temp2[l + 1]) {
@@ -264,6 +268,10 @@ class Board {
                 temp3.push(0);
             }
             temp3.reverse();
+            if(isDuplicating){
+                temp3.shift();
+                temp3.unshift(0);
+            }
             this.grid[i] = temp3;
         }
         this.update_empty_spots();
@@ -281,6 +289,10 @@ class Board {
             for (var k = 0; k < this.grid.length - temp.length; ++k) {
                 temp.push(0); //add 0s to temp until size is matched {2, 4, 0, 0}
             }
+
+            let isDuplicating = false;
+            if(temp[2] === temp[3]) isDuplicating = true;
+
             //merging the same # s
             var temp2 = [];
             for (var l = 0; l < temp.length - 1; ++l) {
@@ -296,6 +308,10 @@ class Board {
             var last = temp[temp.length - 1];
             if (temp.length === this.grid.length) temp2.push(last);
             while (temp2.length < this.grid.length) {
+                temp2.push(0);
+            }
+            if(isDuplicating){
+                temp2.pop();
                 temp2.push(0);
             }
             this.grid[i] = temp2;
@@ -317,6 +333,9 @@ class Board {
             }
             while (temp.length < this.grid.length) temp.push(0); //4 16 32 0
 
+            let isDuplicating = false;
+            if(temp[2] === temp[3]) isDuplicating = true;
+
             var temp2 = [];
             for (var l = 0; l < temp.length - 1; ++l) {
                 if (temp[l] === temp[l + 1]) {
@@ -333,6 +352,11 @@ class Board {
             if (temp.length === this.grid.length) temp2.push(last);
             //////////////
             while (temp2.length < this.grid.length) {
+                temp2.push(0);
+            }
+
+            if(isDuplicating){
+                temp2.pop();
                 temp2.push(0);
             }
             for (var x = 0; x < temp2.length; ++x) {
@@ -358,6 +382,9 @@ class Board {
             var temp = vertical2;//reverse of vertical 2
             temp.reverse();
 
+            let isDuplicating = false;
+            if(temp[2] === temp[3]) isDuplicating = true;
+
             var temp2 = [];
             for (var l = 0; l < temp.length - 1; ++l) {
                 if (temp[l] === temp[l + 1]) {
@@ -375,6 +402,10 @@ class Board {
             //////////////
             while (temp2.length < this.grid.length) temp2.push(0);
             temp2.reverse();
+            if(isDuplicating){
+                temp2.shift();
+                temp2.unshift(0);
+            }
             for (var z = 0; z < temp2.length; ++z) {
                 this.grid[z][i] = temp2[z];
             }
