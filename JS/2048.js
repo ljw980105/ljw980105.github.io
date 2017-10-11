@@ -44,6 +44,13 @@ class GameEnum {
 
         //for the buttons
         this.buttonLeft = "0";
+
+        //for the high score scoreboard
+        this.highScoreFontSize = "30px";
+        this.highHeight = "20%";
+        this.highWidth = "30%";
+        this.highMarginLeft = "104%";
+        this.highMarginTop = "-19%";
     }
 
     //simulating media queries
@@ -55,62 +62,127 @@ class GameEnum {
             this.colSpacing = "1.4%";
             this.scoreMarginTop = "-70%";
             this.sectionMarginBot = "25%";
+            this.highMarginTop = "-25%";
         } else if (screenWidth < 1105 && screenWidth >= 1000){
             this.sectionWidth = "60%";
-            this.sectionMarginLeft = "20%";
+            this.sectionMarginLeft = "18.5%";
             this.sectionMarginBot = "25%";
             this.scoreMarginTop = "-60%";
             this.scoreMarginLeft = "-25%";
+            this.highMarginTop = "-22%";
+            this.highMarginLeft = "97%";
         } else if (screenWidth < 1000 && screenWidth >= 800){
-            this.sectionMarginLeft = "15%";
+            this.sectionMarginLeft = "14%";
             this.sectionWidth = "70%";
             this.tilePadding = "18% 0";
             this.sectionMarginBot = "27%";
             this.scoreMarginTop = "-60%";
-            this.scoreMarginLeft = "-18%";
+            this.scoreMarginLeft = "-15%";
+            this.scoreWidth = "25%";
+            this.highWidth = "25%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-21.8%";
+            this.highMarginLeft = "94%";
         } else if (screenWidth < 800 && screenWidth >= 700) {
-            this.sectionMarginLeft = "15%";
+            this.sectionMarginLeft = "13%";
             this.sectionWidth = "70%";
             this.tilePadding = "18% 0";
             this.sectionMarginBot = "29%";
-            this.scoreMarginLeft = "-18%";
+            this.scoreMarginLeft = "-14%";
             this.scoreMarginTop = "-64%";
             this.scoreWidth = "25%";
+            this.highWidth = "25%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-27%";
+            this.highMarginLeft = "93%";
         } else if (screenWidth < 700 && screenWidth > 600){
             this.tilePadding = "18% 0";
             this.sectionMarginBot = "37%";
-            this.scoreMarginLeft = "-10%";
+            this.scoreMarginLeft = "-9%";
             this.scoreMarginTop = "-68%";
             this.scoreWidth = "22%";
             this.gameFontSize = "25px";
             this.sectionWidth = "80%";
-            this.sectionMarginLeft = "10%";
+            this.sectionMarginLeft = "8.5%";
+            this.highWidth = "22%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-27%";
+            this.highMarginLeft = "91%";
         } else if (screenWidth < 600 && screenWidth >= 430) {
             this.tilePadding = "18% 0";
             this.sectionMarginBot = "-10%";
-            this.scoreMarginLeft = "34%";
+            this.scoreMarginLeft = "20%";
             this.scoreMarginTop = "0";
-            this.scoreWidth = "40%";
+            this.scoreWidth = "30%";
             this.gameFontSize = "25px";
             this.sectionWidth = "95%";
             this.sectionMarginLeft = "-3%";
             this.colWidth = "22%";
             this.buttonLeft = "10%";
-        } else if (screenWidth < 430) {
+            this.highWidth = "30%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-27%";
+            this.highMarginLeft = "62%";
+        } else if (screenWidth >= 371 && screenWidth < 430) {
             this.tilePadding = "15% 0";
             this.sectionMarginBot = "-10%";
-            this.scoreMarginLeft = "35%";
+            this.scoreMarginLeft = "20%";
             this.scoreMarginTop = "0";
-            this.scoreWidth = "40%";
+            this.scoreWidth = "30%";
             this.gameFontSize = "20px";
             this.sectionWidth = "95%";
             this.sectionMarginLeft = "-3%";
             this.colWidth = "22%";
             this.buttonLeft = "10%";
+            this.highWidth = "30%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-37%";
+            this.highMarginLeft = "62%";
+        } else if (screenWidth < 371){
+            this.tilePadding = "15% 0";
+            this.sectionMarginBot = "-10%";
+            this.scoreMarginLeft = "20%";
+            this.scoreMarginTop = "0";
+            this.scoreWidth = "30%";
+            this.gameFontSize = "20px";
+            this.sectionWidth = "95%";
+            this.sectionMarginLeft = "-3%";
+            this.colWidth = "22%";
+            this.buttonLeft = "10%";
+            this.highWidth = "30%";
+            this.highHeight = "25%";
+            this.highMarginTop = "-43%";
+            this.highMarginLeft = "62%";
         } else {
             this.restoreDefaults();
         }
     }
+}
+
+/*
+ Functions for setting and getting a cookie
+ */
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
 class Board {
@@ -121,6 +193,7 @@ class Board {
         this.history = [];
         this.prev = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
         this.grid = []; // main data structure representation
+        this.high_score = 0;
         for (let i = 0; i < 4; ++i) {
             let row = [];
             for (let j = 0; j < 4; ++j) {
@@ -128,6 +201,12 @@ class Board {
                 this.empty_spots.push([i, j]);
             }
             this.grid.push(row);
+        }
+        //create the high-score cookie or obtain the existing cookie
+        if (getCookie("high_score") === ""){ // if there's no instance of high score, set it to 0
+            setCookie("high_score",this.high_score.toString(),"365");//keep the cookie for a year bro
+        } else {
+            this.high_score = parseInt( getCookie("high_score"));
         }
     }
 
@@ -276,6 +355,10 @@ class Board {
         }
         this.update_empty_spots();
         this.random_generate();
+        if(this.score > this.high_score){
+            this.high_score = this.score;
+            setCookie("high_score",this.high_score.toString(),"365");
+        }
     }
 
     move_up() {
@@ -319,6 +402,10 @@ class Board {
         //update empty spots
         this.update_empty_spots();
         this.random_generate();
+        if(this.score > this.high_score){
+            this.high_score = this.score;
+            setCookie("high_score",this.high_score.toString(),"365");
+        }
     }
 
     move_left() {
@@ -365,6 +452,10 @@ class Board {
         }
         this.update_empty_spots();
         this.random_generate();
+        if(this.score > this.high_score){
+            this.high_score = this.score;
+            setCookie("high_score",this.high_score.toString(),"365");
+        }
     }
 
     move_right() {
@@ -412,6 +503,10 @@ class Board {
         }
         this.update_empty_spots();
         this.random_generate();
+        if(this.score > this.high_score){
+            this.high_score = this.score;
+            setCookie("high_score",this.high_score.toString(),"365");
+        }
     }
 
     game_over() { //algorithm's correct
@@ -767,6 +862,14 @@ class Game extends React.Component {
                 }}>
                     <h1 style={{paddingTop: "5%"}}>Score</h1>
                     <h1>{this.state.scores}</h1>
+                </div>
+                <div style={{
+                    height:gameStyles.highHeight, width:gameStyles.highWidth,
+                    background:"beige", marginLeft:gameStyles.highMarginLeft,
+                    marginTop: gameStyles.highMarginTop, zIndex:"3"
+                }}>
+                    <h1 style={{paddingTop: "5%"}}>Best</h1>
+                    <h1>{grid.high_score}</h1>
                 </div>
             </div>
         );
