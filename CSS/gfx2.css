@@ -184,11 +184,11 @@
 
 
 @media only screen and (min-width: 1550px), (max-width: 1500px){
-    #img1 a, #img4 a, #img2 a, #img3 a {
+    #img1 a, #img4 a, #img2 a, #img3 a, #img5 a {
         visibility: hidden;
         position: absolute;
     }
-    #img1 img, #img4 img, #img2 img, #img3 img {
+    #img1 img, #img4 img, #img2 img, #img3 img, #img5 img {
         cursor: pointer;
     }
 
@@ -241,6 +241,12 @@
         position: absolute;
         left: 650px;
         top: 1506px;
+    }
+
+    #img5 a{
+        position: absolute;
+        left: 190px;
+        top: 2020px;
     }
 
     .blur {
