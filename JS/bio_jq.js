@@ -1,8 +1,12 @@
 $(document).ready(function () { // wait until webpage is ready
-    var $nav = $('#intro');
-    var $name = $("#name")
-    $nav.hide();
-    //$name.hide();
-    $nav.slideToggle(800);
-    //$name.slideToggle(800);
+    let $contents = $('#intro');
+    let $name = $("#name");
+
+    $name.fadeTo(1,0.001);
+    $contents.fadeTo(1,0.001);
+
+    setTimeout(function () {
+        $name.fadeTo(1000,1);
+        $contents.fadeTo(1000,1);
+    },500);
 });
