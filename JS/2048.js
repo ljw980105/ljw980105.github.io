@@ -123,7 +123,7 @@ class GameEnum {
             this.highHeight = "25%";
             this.highMarginTop = "-27%";
             this.highMarginLeft = "62%";
-        } else if (screenWidth >= 371 && screenWidth < 430) {
+        } else if (screenWidth >= 376 && screenWidth < 430) {
             this.tilePadding = "15% 0";
             this.sectionMarginBot = "-10%";
             this.scoreMarginLeft = "20%";
@@ -138,7 +138,7 @@ class GameEnum {
             this.highHeight = "25%";
             this.highMarginTop = "-37%";
             this.highMarginLeft = "62%";
-        } else if (screenWidth < 371){
+        } else if (screenWidth < 376){
             this.tilePadding = "15% 0";
             this.sectionMarginBot = "-10%";
             this.scoreMarginLeft = "20%";
@@ -151,7 +151,7 @@ class GameEnum {
             this.buttonLeft = "10%";
             this.highWidth = "30%";
             this.highHeight = "25%";
-            this.highMarginTop = "-43%";
+            this.highMarginTop = "-40.3%";
             this.highMarginLeft = "62%";
         } else {
             this.restoreDefaults();
