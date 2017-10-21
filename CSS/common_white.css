@@ -165,45 +165,59 @@ body {
     cursor: pointer;
 }
 
+.horizScrollDiv{
+    display: block;
+    text-align: center;
+    margin-right: 33px;
+}
+
+.horizScrollDiv img{
+    transform: scale(0.8);
+}
+
 @media only screen and (max-width: 800px) {
     /*FOR THE MOBILE NAV BAR*/
     #nav {
         visibility: hidden;
     }
 
-    #mobile_nav {
-        margin-top: -.001%;
-        text-align: center;
-        position: relative;
-        visibility: visible;
-        margin-bottom: -.001%;
-    }
-
-    #mobile_nav a:link, #mobile_nav a:visited {
-        padding: 1% 0;
-        margin-left: -50px;
-        display: block;
-        text-decoration: none;
-        font-family: Roboto;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.1);
-        color: black;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    }
-
-    #mobile_nav #nav_last {
-        padding-bottom: 2%;
-    }
-
-    #mobile_nav a:hover {
-        transition: all 0.15s ease-in-out;
-        color: orange;
-        background-color: rgba(0, 0, 0, 0.15);
-    }
-
     #top_mobile_nav {
         position: relative;
         visibility: visible;
 
+    }
+
+    #mobile_nav {
+        position: relative;
+        visibility: visible;
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        padding: 15px 0 15px 0;
+        background-color :rgba(0,0,0,0.1);
+        display: flex;
+        list-style: none;
+    }
+
+    #mobile_nav ul:after { /* 5 */
+        content: '    ';
+        display: inline-block;
+        width: 100%;
+    }
+
+    #mobile_nav div li a:link, #mobile_nav div li a:visited{
+        font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        transition: all linear 0.15s;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .horizScrollDiv{
+        margin-right: 16px;
     }
 }
