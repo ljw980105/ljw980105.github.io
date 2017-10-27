@@ -20,6 +20,38 @@ function blurFx(to_change, text, whole_div) {
     });
 }
 
+function orderedFade(obj,order){
+    var delay = order * 300;
+
+    setTimeout(function () {
+        $(obj).fadeTo(300,1);
+    },delay);
+}
+
+function orderedSlideUp(obj,order){
+    var delay = order * 300;
+
+    setTimeout(function () {
+        $(obj).animate({marginTop:"0px"},300);
+    },delay);
+}
+
+function orderedSlideUp2(obj,order){
+    var delay = order * 300;
+
+    setTimeout(function () {
+        $(obj).animate({marginTop:"0px"},300);
+    },delay);
+}
+
+function orderedSlideUp3(obj,order){
+    var delay = order * 300;
+
+    setTimeout(function () {
+        $(obj).animate({marginTop:"0px"},300);
+    },delay);
+}
+
 function zoomFx(to_change) {
     let $proj = $(to_change);
     $proj.mouseenter(function () {
@@ -102,6 +134,56 @@ $(document).ready(function () {
     $(window).resize(function () {
         ajdustWindow();
     });
+
+    //complex ordered fade-in and slide up animation
+    if ($(window).width() > 1024){
+        const level1 = $("#img1 img").offset().top - 500;
+        const level2 = $("#tapeImg").offset().top - 500;
+        const level3 = $("#behance").offset().top - 500;
+        const level1_contents = ["#img1","#img2","#img3"];
+        const level2_contents = ["#img4","#tapeFace","#gotg"];
+        const level3_contents = ["#img5","#behance","#flickr"];
+        level1_contents.forEach(function (e) {
+            $(e).fadeTo(1,0.001);
+            $(e).animate({marginTop:"30px"},1);
+        });
+        level2_contents.forEach(function (e) {
+            $(e).fadeTo(1,0.001);
+            $(e).animate({marginTop:"60px"},1);
+        });
+        level3_contents.forEach(function (e) {
+            $(e).fadeTo(1,0.001);
+            $(e).animate({marginTop:"90px"},1);
+        });
+
+        $(document).scroll(function () {
+            var curr = $(this).scrollTop();
+            if (curr > level1){
+                orderedFade(level1_contents[0],0);
+                orderedSlideUp(level1_contents[0],0);
+                orderedFade(level1_contents[1],1);
+                orderedSlideUp(level1_contents[1],1);
+                orderedFade(level1_contents[2],2);
+                orderedSlideUp(level1_contents[2],2);
+            }
+            if (curr > level2){
+                orderedFade(level2_contents[0],0);
+                orderedFade(level2_contents[1],1);
+                orderedFade(level2_contents[2],2);
+                orderedSlideUp2(level2_contents[0],0);
+                orderedSlideUp2(level2_contents[1],1);
+                orderedSlideUp2(level2_contents[2],2);
+            }
+            if (curr > level3){
+                orderedFade(level3_contents[0],0);
+                orderedSlideUp3(level3_contents[0],0);
+                orderedFade(level3_contents[1],1);
+                orderedSlideUp3(level3_contents[1],1);
+                orderedFade(level3_contents[2],2);
+                orderedSlideUp3(level3_contents[2],2);
+            }
+        });
+    }
 
 });
 
