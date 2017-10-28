@@ -136,7 +136,7 @@ $(document).ready(function () {
     });
 
     //complex ordered fade-in and slide up animation
-    if ($(window).width() > 1024){
+    if ($(window).width() > 1023){
         const level1 = $("#img1 img").offset().top - 500;
         const level2 = $("#tapeImg").offset().top - 500;
         const level3 = $("#behance").offset().top - 500;

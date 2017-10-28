@@ -1,3 +1,41 @@
+@keyframes bounce {
+    0% {transform: scale(1.0);}
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.15);}
+}
+
+@-webkit-keyframes bounce {
+    0% {transform: scale(1.0);}
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1.15);}
+}
+
+@keyframes bounce-leave {
+    from {transform: scale(1.15);}
+    to {transform: scale(1.0);}
+}
+
+@-webkit-keyframes bounce-leave {
+    from {transform: scale(1.15);}
+    to {transform: scale(1.0);}
+}
+
+#personal_logo{
+    animation: bounce-leave 0.5s ;
+    animation-fill-mode: forwards;
+    -webkit-animation: bounce-leave 0.5s ;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#personal_logo:hover{
+    animation: bounce 0.5s ;
+    animation-fill-mode: forwards;
+    -webkit-animation: bounce 0.5s ;
+    -webkit-animation-fill-mode: forwards;
+}
+
 #standalone_footer{
     color: white;
 }
