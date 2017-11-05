@@ -515,20 +515,16 @@ class Board {
         }
         //vertical check
         for (var k = 0; k < this.grid.length; ++k) {
-            for (var i = 1; i < this.grid.length; ++i) {
+            for (var i = 1; i < this.grid[k].length; ++i) {
                 if (this.grid[i][k] === this.grid[i - 1][k]) {
                     return false;
                 }
             }
         }
-
         //horizontal check
         for (var x = 0; x < this.grid.length; ++x) {
             for (var j = 1; j < this.grid[x].length; ++j) {
-                if (this.grid[x][j] === 0) {
-                    return false;
-                }
-                if (this.grid[x][j] === board[x][j - 1]) {
+                if (this.grid[x][j] === this.grid[x][j - 1]) {
                     return false;
                 }
             }
