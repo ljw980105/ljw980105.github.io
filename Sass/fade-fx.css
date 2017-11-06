@@ -1,0 +1,53 @@
+ /*not yet functional: not used in the implementation of website*/
+
+
+.center_text a img:nth-child(1):hover img:nth-child(2) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(1):hover img:nth-child(3) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(1):hover img:nth-child(4) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(2):hover img:nth-child(1) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(2):hover img:nth-child(3) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(2):hover img:nth-child(4) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(3):hover img:nth-child(1) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(3):hover img:nth-child(2) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(3):hover img:nth-child(4) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(4):hover img:nth-child(1) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(4):hover img:nth-child(2) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(4):hover img:nth-child(3) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(5):hover img:nth-child(1) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(5):hover img:nth-child(2) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(5):hover img:nth-child(3) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+.center_text a img:nth-child(5):hover img:nth-child(4) {
+  filter: brightness(0.4);
+  transition: all linear 0.4s; }
+
+/*# sourceMappingURL=fade-fx.css.map */

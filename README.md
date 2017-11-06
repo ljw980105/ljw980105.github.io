@@ -16,5 +16,9 @@ This website contains:
 &nbsp;&nbsp;&nbsp;&nbsp;•  My graphic design portfolio. [link](https://ljw980105.github.io/Graphic%20Design.html)   
 &nbsp;&nbsp;&nbsp;&nbsp;•  A showcase of all my projects. [link](https://ljw980105.github.io/Projects.html)  
 
+Additional Libraries Used:
+
+&nbsp;&nbsp;&nbsp;&nbsp;• Babel (A JavaScript Compiler)    
+&nbsp;&nbsp;&nbsp;&nbsp;• bxSlider by Steven Wanderski (An Open Source jQuery Slider Library)   
 
 ### Thanks for stopping by! :)
