@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: "SFLight";
+    src: url("../fonts/SanFranciscoDisplay-Thin.otf");
+}
+
+@font-face {
     font-family: "RobotoReg";
     src: url("../fonts/Roboto-Regular.ttf");
 }

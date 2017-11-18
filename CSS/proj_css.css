@@ -41,6 +41,24 @@
     padding: 14% 10% 5% 10%;
 }
 
+#col2_item2{
+    margin-top: 14%;
+    background-image: url("../Images/litec-proj-pic.jpg");
+    background-size: 100%;
+    background-position: center bottom;
+    padding: 14% 10% 60% 10%;
+}
+
+#col2_item2 h2 {
+    margin-top: -5%;
+    color: white;
+}
+
+#col2_item2 p {
+    color: white;
+}
+
+
 #col1_item1 h2 {
     margin-top: -5%;
 }

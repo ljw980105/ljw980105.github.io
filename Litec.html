@@ -1,21 +1,20 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/common_fonts.css" rel="stylesheet" type="text/css" media="screen">
     <link href="CSS/footer_dark.css" rel="stylesheet" type="text/css" media="screen">
     <script src="JS/jquery.js"></script>
+    <script src="JS/litec.js"></script>
     <script src="JS/common_jquery.js"></script>
-    <script src="JS/proj_js.js"></script>
-    <meta charset="utf-8">
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <title>LITEC</title>
     <link rel="icon" href="Images/icon png.png">
-    <link href="CSS/proj_css.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="Sass/litec_styles.css" rel="stylesheet" type="text/css" media="screen">
     <link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
-<body>
-
+<body id="bod">
 <div id="nav" class="menu-wrap">
     <nav class="menu">
         <ul class="clearfix">
@@ -38,76 +37,57 @@
 </div>
 
 <div id="top_mobile_nav">
-    <img id="navicon" src="Images/navicon.png" height="50px" width="50px" >
+    <img id="navicon" src="Images/navicon.png" height="50px" width="50px">
 </div>
 
-<nav id="mobile_nav">
-    <div class="horizScrollDiv" style="margin-left: 20px">
-        <a href="index.html"><img src="Images/home.png" height="70" width="70"></a>
-        <li><a href="index.html">HOME</a></li>
-    </div>
-    <div class="horizScrollDiv">
-        <a href="Bio.html"><img src="Images/aboutIcon.png" height="70" width="70"></a>
-        <li><a href="Bio.html">ABOUT</a></li>
-    </div>
-    <div class="horizScrollDiv">
-        <a href="Resume.html"><img src="Images/resumelogo.png" height="70" width="70"></a>
-        <li><a href="Resume.html">RESUME</a></li>
-    </div>
-    <div class="horizScrollDiv">
-        <a href="Graphic Design.html"><img src="Images/splashIcon.png" height="70" width="70"></a>
-        <li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
-    </div>
-    <div class="horizScrollDiv">
-        <a href="Projects.html"><img src="Images/gearIcon.png"height="70"width="70"></a>
-        <li><a href="Projects.html">PROJECTS</a></li>
-    </div>
-    <div class="horizScrollDiv">
-        <a href="Games.html"><img src="Images/gameIcon.png" height="70" width="70"></a>
-        <li><a href="Games.html">GAMES</a></li>
-    </div>
-    <div class="horizScrollDiv" style="margin-right: 20px">
-        <a href="Contacts.html"><img src="Images/phone.png" height="70" width="70"></a>
-        <li><a href="Contacts.html">CONTACT</a></li>
-    </div>
-</nav>
+<header>
+    <nav id="mobile_nav">
+        <div class="horizScrollDiv" style="margin-left: 20px">
+            <a href="index.html"><img src="Images/home.png" height="70" width="70"></a>
+            <li><a href="index.html">HOME</a></li>
+        </div>
+        <div class="horizScrollDiv">
+            <a href="Bio.html"><img src="Images/aboutIcon.png" height="70" width="70"></a>
+            <li><a href="Bio.html">ABOUT</a></li>
+        </div>
+        <div class="horizScrollDiv">
+            <a href="Resume.html"><img src="Images/resumelogo.png" height="70" width="70"></a>
+            <li><a href="Resume.html">RESUME</a></li>
+        </div>
+        <div class="horizScrollDiv">
+            <a href="Graphic Design.html"><img src="Images/splashIcon.png" height="70" width="70"></a>
+            <li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
+        </div>
+        <div class="horizScrollDiv">
+            <a href="Projects.html"><img src="Images/gearIcon.png"height="70"width="70"></a>
+            <li><a href="Projects.html">PROJECTS</a></li>
+        </div>
+        <div class="horizScrollDiv">
+            <a href="Games.html"><img src="Images/gameIcon.png" height="70" width="70"></a>
+            <li><a href="Games.html">GAMES</a></li>
+        </div>
+        <div class="horizScrollDiv" style="margin-right: 20px">
+            <a href="Contacts.html"><img src="Images/phone.png" height="70" width="70"></a>
+            <li><a href="Contacts.html">CONTACT</a></li>
+        </div>
+    </nav>
+</header>
 
-<div id = "typography">
-</div>
-
-<div id = proj_contents>
-    <div id="col1" style="text-align: left">
-        <div id="col1_item1">
-            <h2>Personal Website</h2>
-            <p>Fully-responsive personal website entirely coded from scratch using HTML, CSS, JavaScript, jQuery and more. In fact, you are viewing it right now. </p>
-            <a href="index.html">View project</a>
-            <img src="Images/proj3.png">
-        </div>
-        <div id="col1_item2">
-            <h2>2048 Game</h2>
-            <p>A reimagination of the popular 2048 mobile game, completely reverse-engineered from scratch using ReactJS. </p>
-            <a href="Games.html">View project</a>
-            <img src="Images/proj5.png">
-        </div>
-    </div>
-    <div id="col2">
-        <div id="col2_item1" style="text-align: left">
-            <h2>FIRST Robotics</h2>
-            <p>A series of robotics projects I had worked on for three years, and a series of projects that left huge impact on me. </p>
-            <a href="proj_frc.html">View project</a>
-            <img src="Images/frc.png">
-        </div>
-        <div id="col2_item2" style="text-align: left">
-            <h2 style="color: white">Embedded Control</h2>
-            <p>A series of embedded systems projects engineered during Fall 2017 @ RPI, crafted from scratch using the C8051 Microcontroller.  </p>
-            <a style="color: floralwhite" href="Litec.html">View project</a>
+<div id="litec_bg">
+    <div id="text_section">
+        <h4 id="litec_title">Embedded Control</h4>
+        <h2 style="margin-top: -12%">Embedded Systems Project</h2>
+        <h2 style="margin-top: -3%">Fall 2017 @ RPI</h2>
+        <div id="litec_github">
+            <img src="Images/github.png" height="38" width="38">
+            <a href="https://github.com/ljw980105/Embedded-Control">View On GitHub</a>
         </div>
     </div>
 </div>
 
-<!--<div id="footer" class="_center">-->
-    <!--<h4> &copy; JING WEI LI 2017</h4>-->
-<!--</div>-->
+<div id="content1">
+    <h1>Under Construction</h1>
+</div>
 
 <div id="footer_container">
 
