@@ -35,8 +35,12 @@ Credit to codepen.io -- Underline from the center
 
 #litec_bg{
   background-image: url("../Images/LITEC1x.jpg");
-  background-size: 100%;
-  padding: 15% 0 33% 0;
+  background-size: 1520px 1000px;
+  padding: 15% 0 30% 0;
+
+  #first_h2{
+    margin-top: -12%;
+  }
 
   #text_section{
     margin: 0 54% 0 14%;
@@ -80,6 +84,108 @@ Credit to codepen.io -- Underline from the center
     text-align: center;
     font-family: Roboto;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  #litec_bg{
+    background-image: url("../Images/LITEC1x.jpg");
+    #text_section{
+      margin: 0 40% 0 14%;
+    }
+    #first_h2{
+      margin-top: -9%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  #litec_bg{
+    background-size: 1200px 789px;
+    padding: 15% 0 25% 0;
+  }
+}
+
+@media only screen and (max-width: 929px){
+  #litec_bg{
+    background-size: 900px 592px;
+    #text_section{
+      h4{
+        font-size: 35px;
+      }
+      h2{
+        font-size: 25px;
+      }
+      a{
+        font-size: 28px;
+        @include underline(white,24px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 655px){
+  #litec_bg{
+    padding: 15% 0 68% 0;
+    background-image: url("../Images/litec-proj-pic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+    #text_section{
+      margin: -10% 25% 0 25%;
+      h4{
+        font-size: 35px;
+      }
+      h2{
+        text-align: center;
+        font-size: 25px;
+      }
+      a{
+        font-size: 28px;
+        @include underline(white,24px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 605px){
+  #litec_bg{
+    text-align: center;
+    padding: 15% 0 68% 0;
+    #text_section{
+      margin: -10% 15% 0 15%;
+      h2{
+        text-align: center;
+      }
+      #litec_github{
+        display: block;
+        margin: -4% auto 0 auto;
+        img{
+          height: 24px;
+          width: 24px;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width: 433px){
+  #litec_bg{
+    #text_section{
+      margin: -10% 10% 0 10%;
+      h4{
+        font-size: 30px;
+      }
+      h2{
+        font-size: 21px;
+      }
+      a{
+        font-size: 22px;
+        @include underline(white,24px);
+      }
+    }
   }
 }

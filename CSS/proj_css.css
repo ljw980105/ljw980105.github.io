@@ -136,6 +136,13 @@
     }
 }
 
+@media only screen and (max-width: 837px) {
+    #col2_item2 h2{
+        font-size: 25px;
+
+    }
+}
+
 @media only screen and (max-width: 370px) {
     #proj_contents h2{
         font-size: 22px;
@@ -145,6 +152,12 @@
 @media only screen and (max-width: 300px) {
     #proj_contents h2{
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    #proj_contents p{
+        font-size: 18px;
     }
 }
 
