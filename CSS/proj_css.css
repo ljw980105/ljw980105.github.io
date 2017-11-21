@@ -120,9 +120,15 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1234px) {
     #proj_contents h2{
         font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1082px){
+    #proj_contents h2{
+        font-size: 27px;
     }
 }
 
@@ -130,9 +136,6 @@
     #typography{
         margin-top: 10%;
         background-size: 70%;
-    }
-    #proj_contents h2{
-        font-size: 27px;
     }
 }
 
