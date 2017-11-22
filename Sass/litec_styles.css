@@ -58,6 +58,22 @@ Credit to codepen.io -- Underline from the center
       #litec_bg #text_section #litec_github img {
         filter: invert(100%); }
 
+#smart_car_intro {
+  background-image: url("../Images/litec2.jpg");
+  background-size: 1520px 1000px;
+  background-position-y: 40%;
+  background-position: center;
+  padding: 5% 0 42% 0; }
+  #smart_car_intro #sc_text {
+    text-align: center; }
+    #smart_car_intro #sc_text h1 {
+      font-family: RobotoReg, serif;
+      font-size: 50px; }
+    #smart_car_intro #sc_text h2 {
+      margin-top: -1%;
+      font-family: SFLight, serif;
+      font-size: 35px; }
+
 #content1 {
   padding: 5% 0;
   background-color: black; }
@@ -67,6 +83,12 @@ Credit to codepen.io -- Underline from the center
     color: white;
     font-size: 30px; }
 
+@media only screen and (min-width: 1530px) {
+  #litec_bg {
+    background-size: 100%; }
+
+  #smart_car_intro {
+    background-size: 100%; } }
 @media only screen and (max-width: 1400px) {
   #litec_bg {
     background-image: url("../Images/LITEC1x.jpg"); }
@@ -77,7 +99,10 @@ Credit to codepen.io -- Underline from the center
 @media only screen and (max-width: 1200px) {
   #litec_bg {
     background-size: 1200px 789px;
-    padding: 15% 0 25% 0; } }
+    padding: 15% 0 25% 0; }
+
+  #smart_car_intro {
+    background-size: 1200px 789px; } }
 @media only screen and (max-width: 929px) {
   #litec_bg {
     background-size: 900px 592px; }
@@ -102,11 +127,22 @@ Credit to codepen.io -- Underline from the center
         transition: all .3s ease-in-out; }
       #litec_bg #text_section a:hover:after {
         transform: scaleX(1);
-        background-color: white; } }
+        background-color: white; }
+
+  #smart_car_intro {
+    background-color: #e0d9d2;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 110%; }
+    #smart_car_intro #sc_text h1 {
+      font-size: 35px; }
+    #smart_car_intro #sc_text h2 {
+      font-size: 25px; } }
 @media only screen and (max-width: 655px) {
   #litec_bg {
     padding: 15% 0 68% 0;
     background-image: url("../Images/litec-proj-pic.jpg");
+    background-color: #8d7d66;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center bottom; }
@@ -148,7 +184,11 @@ Credit to codepen.io -- Underline from the center
         margin: -4% auto 0 auto; }
         #litec_bg #text_section #litec_github img {
           height: 24px;
-          width: 24px; } }
+          width: 24px; }
+
+  #smart_car_intro {
+    background-size: 120%;
+    padding: 5% 10% 48% 10%; } }
 @media only screen and (max-width: 433px) {
   #litec_bg #text_section {
     margin: -10% 10% 0 10%; }
@@ -173,6 +213,11 @@ Credit to codepen.io -- Underline from the center
         transition: all .3s ease-in-out; }
       #litec_bg #text_section a:hover:after {
         transform: scaleX(1);
-        background-color: white; } }
+        background-color: white; }
+
+  #smart_car_intro #sc_text h1 {
+    font-size: 30px; }
+  #smart_car_intro #sc_text h2 {
+    font-size: 21px; } }
 
 /*# sourceMappingURL=litec_styles.css.map */

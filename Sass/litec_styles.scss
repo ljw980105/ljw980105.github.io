@@ -77,6 +77,26 @@ Credit to codepen.io -- Underline from the center
   }
 }
 
+#smart_car_intro{
+  background-image: url("../Images/litec2.jpg");
+  background-size: 1520px 1000px;
+  background-position-y: 40%;
+  background-position: center;
+  padding: 5% 0 42% 0;
+  #sc_text{
+    text-align: center;
+    h1{
+      font-family: RobotoReg, serif;
+      font-size: 50px;
+    }
+    h2{
+      margin-top: -1%;
+      font-family: SFLight, serif;
+      font-size: 35px;
+    }
+  }
+}
+
 #content1{
   padding: 5% 0;
   background-color: black;
@@ -85,6 +105,15 @@ Credit to codepen.io -- Underline from the center
     font-family: Roboto;
     color: white;
     font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1530px){
+  #litec_bg {
+    background-size: 100%;
+  }
+  #smart_car_intro{
+    background-size: 100%;
   }
 }
 
@@ -105,6 +134,9 @@ Credit to codepen.io -- Underline from the center
     background-size: 1200px 789px;
     padding: 15% 0 25% 0;
   }
+  #smart_car_intro{
+    background-size: 1200px 789px;
+  }
 }
 
 @media only screen and (max-width: 929px){
@@ -123,12 +155,27 @@ Credit to codepen.io -- Underline from the center
       }
     }
   }
+  #smart_car_intro{
+    background-color: #e0d9d2;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 110%;
+    #sc_text{
+      h1{
+        font-size: 35px;
+      }
+      h2{
+        font-size: 25px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 655px){
   #litec_bg{
     padding: 15% 0 68% 0;
     background-image: url("../Images/litec-proj-pic.jpg");
+    background-color: rgba(141,125,102,1);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center bottom;
@@ -168,7 +215,10 @@ Credit to codepen.io -- Underline from the center
 
       }
     }
-
+  }
+  #smart_car_intro{
+    background-size: 120%;
+    padding: 5% 10% 48% 10% ;
   }
 }
 
@@ -185,6 +235,16 @@ Credit to codepen.io -- Underline from the center
       a{
         font-size: 22px;
         @include underline(white,24px);
+      }
+    }
+  }
+  #smart_car_intro{
+    #sc_text{
+      h1{
+        font-size: 30px;
+      }
+      h2{
+        font-size: 21px;
       }
     }
   }
