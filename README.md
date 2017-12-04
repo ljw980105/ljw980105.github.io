@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="500" height="379" src="https://ljw980105.github.io/Images/PersonalLogoBlack.png">
+</p>
+
 # Personal-Website
 
 This is the personal website for Jing Wei Li, hosted using github pages. website url: https://ljw980105.github.io/
