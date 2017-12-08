@@ -26,6 +26,14 @@ Credit to codepen.io -- Underline from the center
   }
 }
 
+.h2styles{
+  h2{
+    margin-top: -1%;
+    font-family: SFLight, serif;
+    font-size: 35px;
+  }
+}
+
 .rotate360{
   -ms-transform: rotate(360deg); /* IE 9 */
   -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
@@ -89,11 +97,23 @@ Credit to codepen.io -- Underline from the center
       font-family: RobotoReg, serif;
       font-size: 50px;
     }
-    h2{
-      margin-top: -1%;
-      font-family: SFLight, serif;
-      font-size: 35px;
-    }
+  }
+}
+
+#flickr_album{
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: rgba(194,193,180,0.2);
+  h1{
+    font-family: RobotoReg, serif;
+    font-size: 50px;
+  }
+
+  #album_container a img{
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -155,6 +175,11 @@ Credit to codepen.io -- Underline from the center
       }
     }
   }
+  .h2styles{
+    h2 {
+      font-size: 25px;
+    }
+  }
   #smart_car_intro{
     background-color: #e0d9d2;
     background-repeat: no-repeat;
@@ -164,33 +189,39 @@ Credit to codepen.io -- Underline from the center
       h1{
         font-size: 35px;
       }
-      h2{
-        font-size: 25px;
-      }
+    }
+  }
+  #flickr_album{
+    h1{
+      font-size: 35px;
+    }
+    #album_container a img{
+      width: 100%;
+      height: 66.7%;
     }
   }
 }
 
 @media only screen and (max-width: 655px){
-  #litec_bg{
+  #litec_bg {
     padding: 15% 0 68% 0;
     background-image: url("../Images/litec-proj-pic.jpg");
-    background-color: rgba(141,125,102,1);
+    background-color: rgba(141, 125, 102, 1);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center bottom;
-    #text_section{
+    #text_section {
       margin: -10% 25% 0 25%;
-      h4{
+      h4 {
         font-size: 35px;
       }
-      h2{
+      h2 {
         text-align: center;
         font-size: 25px;
       }
-      a{
+      a {
         font-size: 28px;
-        @include underline(white,24px);
+        @include underline(white, 24px);
       }
     }
   }
@@ -243,9 +274,16 @@ Credit to codepen.io -- Underline from the center
       h1{
         font-size: 30px;
       }
-      h2{
-        font-size: 21px;
-      }
+    }
+  }
+  .h2styles{
+    h2 {
+      font-size: 21px;
+    }
+  }
+  #flickr_album{
+    h1{
+      font-size: 35px;
     }
   }
 }
