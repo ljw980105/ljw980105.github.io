@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" height="379" src="Images/PersonalLogoBlack.png">
+  <img width="498" height="299" src="Images/PersonalLogoBlack.png">
 </p>
 
 # Personal-Website
