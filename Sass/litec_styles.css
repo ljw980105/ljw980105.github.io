@@ -6,6 +6,9 @@ Credit to codepen.io -- Underline from the center
   font-family: SFLight, serif;
   font-size: 35px; }
 
+h1 {
+  font-size: 50px; }
+
 .rotate360 {
   -ms-transform: rotate(360deg);
   /* IE 9 */
@@ -19,12 +22,11 @@ Credit to codepen.io -- Underline from the center
   background-size: 1520px 1000px;
   padding: 15% 0 30% 0; }
   #litec_bg #first_h2 {
-    margin-top: -12%; }
+    margin-top: -4%; }
   #litec_bg #text_section {
     margin: 0 54% 0 14%; }
-    #litec_bg #text_section h4 {
+    #litec_bg #text_section h1 {
       font-family: RobotoReg;
-      font-size: 50px;
       color: white; }
     #litec_bg #text_section h2 {
       margin-left: 1%;
@@ -72,16 +74,14 @@ Credit to codepen.io -- Underline from the center
   #smart_car_intro #sc_text {
     text-align: center; }
     #smart_car_intro #sc_text h1 {
-      font-family: RobotoReg, serif;
-      font-size: 50px; }
+      font-family: RobotoReg, serif; }
 
 #flickr_album {
   padding-top: 2%;
   padding-bottom: 5%;
   background-color: rgba(194, 193, 180, 0.2); }
   #flickr_album h1 {
-    font-family: RobotoReg, serif;
-    font-size: 50px; }
+    font-family: RobotoReg, serif; }
   #flickr_album #album_container a img {
     width: 60%;
     height: 40%;
@@ -89,33 +89,75 @@ Credit to codepen.io -- Underline from the center
     display: block; }
 
 .features_container {
-  padding: 1% 9%;
+  padding: 1% 9% 50% 9%;
   background-color: #e0d9d2; }
   .features_container h3 {
-    font-family: RobotoReg;
-    font-size: 40px; }
+    font-family: RobotoReg; }
   .features_container p {
-    font-family: Bell MT;
+    font-family: Helvetica;
     font-size: 23px; }
 
+h3 {
+  font-size: 40px; }
+
 #features {
-  background-color: floralwhite; }
+  background-color: rgba(255, 250, 240, 0.7); }
+  #features a:visited {
+    color: white;
+    text-decoration: underline; }
+  #features a:link {
+    color: white; }
+  #features a:hover {
+    color: orange; }
   #features h1 {
-    font-family: RobotoReg, serif;
-    font-size: 50px; }
+    font-family: RobotoReg, serif; }
   #features #ft-titles {
     text-align: center;
-    padding: 3% 0; }
+    padding: 3% 8%; }
   #features #ft-wrapper {
     display: flex; }
     #features #ft-wrapper #ft-col1 {
       width: 50%;
       padding: 0 2.5% 5% 5%; }
       #features #ft-wrapper #ft-col1 div:nth-child(1) {
+        background-image: url("../Images/litec/c.png");
+        background-color: black;
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
         color: white; }
+      #features #ft-wrapper #ft-col1 div:nth-child(2) {
+        background-color: #d7cebf;
+        background-image: url("../Images/litec/protoboard.jpg");
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: black;
+        margin-top: 13%; }
+        @media only screen and (max-width: 800px) {
+          #features #ft-wrapper #ft-col1 div:nth-child(2) {
+            margin-top: 4%; } }
     #features #ft-wrapper #ft-col2 {
       width: 50%;
       padding: 0 5% 5% 2.5%; }
+      #features #ft-wrapper #ft-col2 div:nth-child(1) {
+        background-color: black;
+        background-image: url("../Images/litec/git.png");
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: white; }
+      #features #ft-wrapper #ft-col2 div:nth-child(2) {
+        background-color: #fcf2d9;
+        background-image: url("../Images/litec/c8051.jpg");
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: black;
+        margin-top: 13%; }
+        @media only screen and (max-width: 800px) {
+          #features #ft-wrapper #ft-col2 div:nth-child(2) {
+            margin-top: 4%; } }
 
 #content1 {
   padding: 5% 0;
@@ -138,19 +180,26 @@ Credit to codepen.io -- Underline from the center
     #litec_bg #text_section {
       margin: 0 40% 0 14%; }
     #litec_bg #first_h2 {
-      margin-top: -9%; } }
+      margin-top: -3%; }
+
+  h3 {
+    font-size: 35px; } }
 @media only screen and (max-width: 1200px) {
   #litec_bg {
     background-size: 1200px 789px;
     padding: 15% 0 25% 0; }
 
   #smart_car_intro {
-    background-size: 1200px 789px; } }
+    background-size: 1200px 789px; }
+
+  h3 {
+    font-size: 32px; } }
 @media only screen and (max-width: 929px) {
+  h1 {
+    font-size: 35px; }
+
   #litec_bg {
     background-size: 900px 592px; }
-    #litec_bg #text_section h4 {
-      font-size: 35px; }
     #litec_bg #text_section h2 {
       font-size: 25px; }
     #litec_bg #text_section a {
@@ -180,14 +229,21 @@ Credit to codepen.io -- Underline from the center
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 110%; }
-    #smart_car_intro #sc_text h1 {
-      font-size: 35px; }
 
   #flickr_album h1 {
     font-size: 35px; }
   #flickr_album #album_container a img {
     width: 100%;
     height: 66.7%; } }
+@media only screen and (max-width: 800px) {
+  #features #ft-wrapper {
+    display: block; }
+    #features #ft-wrapper #ft-col1 {
+      padding: 2% 0 2% 0;
+      width: 100%; }
+    #features #ft-wrapper #ft-col2 {
+      padding: 2% 0 2% 0;
+      width: 100%; } }
 @media only screen and (max-width: 655px) {
   #litec_bg {
     padding: 15% 0 68% 0;
@@ -198,8 +254,6 @@ Credit to codepen.io -- Underline from the center
     background-position: center bottom; }
     #litec_bg #text_section {
       margin: -10% 25% 0 25%; }
-      #litec_bg #text_section h4 {
-        font-size: 35px; }
       #litec_bg #text_section h2 {
         text-align: center;
         font-size: 25px; }
@@ -240,10 +294,11 @@ Credit to codepen.io -- Underline from the center
     background-size: 120%;
     padding: 5% 10% 48% 10%; } }
 @media only screen and (max-width: 433px) {
+  h1 {
+    font-size: 30px; }
+
   #litec_bg #text_section {
     margin: -10% 10% 0 10%; }
-    #litec_bg #text_section h4 {
-      font-size: 30px; }
     #litec_bg #text_section h2 {
       font-size: 21px; }
     #litec_bg #text_section a {
@@ -265,13 +320,7 @@ Credit to codepen.io -- Underline from the center
         transform: scaleX(1);
         background-color: white; }
 
-  #smart_car_intro #sc_text h1 {
-    font-size: 30px; }
-
   .h2styles h2 {
-    font-size: 21px; }
-
-  #flickr_album h1 {
-    font-size: 35px; } }
+    font-size: 21px; } }
 
 /*# sourceMappingURL=litec_styles.css.map */
