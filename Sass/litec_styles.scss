@@ -117,6 +117,45 @@ Credit to codepen.io -- Underline from the center
   }
 }
 
+.features_container{
+  padding: 1% 9%;
+  background-color: #e0d9d2;
+  h3{
+    font-family: RobotoReg;
+    font-size: 40px;
+  }
+  p{
+    font-family: Bell MT;
+    font-size: 23px;
+  }
+}
+
+#features{
+  background-color: floralwhite;
+  h1{
+    font-family: RobotoReg, serif;
+    font-size: 50px;
+  }
+  #ft-titles{
+    text-align: center;
+    padding: 3% 0;
+  }
+  #ft-wrapper{
+    display: flex;
+    #ft-col1{
+      width: 50%;
+      padding: 0 2.5% 5% 5%;
+      div:nth-child(1){
+        color: white;
+      }
+    }
+    #ft-col2{
+      width: 50%;
+      padding: 0 5% 5% 2.5%;
+    }
+  }
+}
+
 #content1{
   padding: 5% 0;
   background-color: black;

@@ -82,13 +82,40 @@ Credit to codepen.io -- Underline from the center
   #flickr_album h1 {
     font-family: RobotoReg, serif;
     font-size: 50px; }
-  #flickr_album h2 {
-    margin-top: -3%; }
   #flickr_album #album_container a img {
     width: 60%;
     height: 40%;
     margin: 0 auto;
     display: block; }
+
+.features_container {
+  padding: 1% 9%;
+  background-color: #e0d9d2; }
+  .features_container h3 {
+    font-family: RobotoReg;
+    font-size: 40px; }
+  .features_container p {
+    font-family: Bell MT;
+    font-size: 23px; }
+
+#features {
+  background-color: floralwhite; }
+  #features h1 {
+    font-family: RobotoReg, serif;
+    font-size: 50px; }
+  #features #ft-titles {
+    text-align: center;
+    padding: 3% 0; }
+  #features #ft-wrapper {
+    display: flex; }
+    #features #ft-wrapper #ft-col1 {
+      width: 50%;
+      padding: 0 2.5% 5% 5%; }
+      #features #ft-wrapper #ft-col1 div:nth-child(1) {
+        color: white; }
+    #features #ft-wrapper #ft-col2 {
+      width: 50%;
+      padding: 0 5% 5% 2.5%; }
 
 #content1 {
   padding: 5% 0;
