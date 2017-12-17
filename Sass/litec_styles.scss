@@ -187,6 +187,11 @@ h3{
         background-image: url("../Images/litec/protoboard.jpg");
         @include feature-styles(black,1);
       }
+      div:nth-child(3){
+        background-color: rgba(236,228,209,1);
+        background-image: url("../Images/litec/adc.jpg");
+        @include feature-styles(black,1);
+      }
     }
     #ft-col2{
       width: 50%;
@@ -199,6 +204,11 @@ h3{
       div:nth-child(2){
         background-color: rgba(252,242,217,1);
         background-image: url("../Images/litec/c8051.jpg");
+        @include feature-styles(black,1);
+      }
+      div:nth-child(3){
+        background-color: rgba(207,195,180,1);
+        background-image: url("../Images/litec/I2C.jpg");
         @include feature-styles(black,1);
       }
     }
