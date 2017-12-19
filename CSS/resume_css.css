@@ -576,12 +576,6 @@
     text-decoration: underline;
 }
 
-
-#awards2 div p span a a:visited, #awards2 div p span a a:link{
-    text-decoration: none;
-    color: dodgerblue;
-}
-
 #footer_container{
     margin-top: 5%;
 }

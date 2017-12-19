@@ -30,7 +30,7 @@ function fadeFx(div) {
     });
 }
 
-var createImage = function (src) {
+const createImage = function (src) {
     return '<img src="' + src + '" />';
 };
 
@@ -56,8 +56,8 @@ $(document).ready(function () {
     var edu_top = $("#edu").offset().top;
     var exp_top = $("#experience").offset().top;
     var skl_top = $("#skills").offset().top;
-    var awards_top = $("#awards_wrapper").offset().top;
-    var foot_top = $("#footer").offset().top;
+    var awards_top = $("#awards").offset().top;
+    var foot_top = $("#standalone_footer").offset().top;
     var section_top = $("#progress").offset().top;
     $("#progress").hide();
 
