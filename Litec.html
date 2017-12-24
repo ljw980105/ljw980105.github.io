@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="JS/jquery.js"></script>
+    <link href="CSS/gifplayer.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="JS/jquery.gifplayer.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/common_fonts.css" rel="stylesheet" type="text/css" media="screen">
     <link href="CSS/footer_dark.css" rel="stylesheet" type="text/css" media="screen">
-    <script src="JS/jquery.js"></script>
-    <script src="JS/litec.js"></script>
     <script src="JS/common_jquery.js"></script>
     <meta charset="UTF-8">
     <title>LITEC</title>
     <link rel="icon" href="Images/icon png.png">
     <link href="Sass/litec_styles.css" rel="stylesheet" type="text/css" media="screen">
     <link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="JS/litec.js"></script>
 </head>
 
 <body>
@@ -80,9 +82,23 @@
         <h2 style="margin-top: -3%">Fall 2017 @ RPI</h2>
         <div id="litec_github">
             <img src="Images/playButton.png" height="38" width="38">
-            <a href="https://www.youtube.com/watch?v=UfkjDzoJh3E">Watch the Video</a>
+            <a href="#">Watch the Video</a>
+            <!--<h5>Watch the Video</h5>-->
         </div>
     </div>
+</div>
+
+<div id="litec-intro">
+
+    <h1 style="text-align: center">Introduction</h1>
+    <h4 style="text-align: left">An <span style="text-decoration: underline">Embedded System</span> is a computer
+        system with a dedicated function within a larger mechanical or electrical system. It is embedded as part of a
+        complete device often including hardware and mechanical parts, used to control many devices in common use
+        today, such as light dimmers, traffic lights, avionics and even hybrid vehicles.<br><br> As an RPI student, me
+        and my teammates have engineered two embedded systems successfully during the Fall 2017 semester. The first
+        is a Smart Car capable of driving, steering and course correction, and with abilities such as avoiding obstacles.
+        The second is an Upside-down Blimp capable of maintaining a constant heading with two thrust fans installed on the side
+        of it. I'm very proud of what we've accomplished in such a short semester.</h4>
 </div>
 
 <div id="features">
@@ -114,6 +130,15 @@
                     potentiometer, we are able to adjust software parameters with on-board hardware.
                 </p>
             </div>
+            <div id="pwm_wrapper" class="features_container">
+                <h3>Pulse Width Modulation</h3>
+                <p>
+                    Pulse Width Modulation (PWM) is a type of digital signal sent in pulses, allowing the practitioner to
+                    control the power supplied to electrical devices. In the context of our embedded systems, PWM is utilized
+                    to control the speed and direction of motors on both the Blimp and the Smart Car.
+                </p>
+                <img class="pwm" src="Images/litec/pwm.png" height="100%" width="100%">
+            </div>
         </div>
         <div id="ft-col2">
             <div class="features_container">
@@ -138,6 +163,15 @@
                     of the power of ranger, compass and accelerometer for use on our embedded systems.
                 </p>
             </div>
+            <div id="algo_wrapper" class="features_container">
+                <h3>Control Algorithms</h3>
+                <p>
+                    Control algorithms involving PID (Proportional-Integral-Derivative) are deployed extensively on our
+                    embedded systems to enable course correction and heading adjustment. Without it, our Blimp and Smart Car
+                    would crash into the obstacles mercilessly.
+                </p>
+                <img class="algo" src="Images/litec/damping.png" height="100%" width="100%">
+            </div>
         </div>
     </div>
 </div>
@@ -159,6 +193,13 @@
             <img src="https://farm5.staticflickr.com/4541/37851130024_956d96289c_b.jpg" alt="Embedded Control (LITEC) Project @ RPI">
         </a>
     </div>
+</div>
+
+<div id="yt" class="h2styles">
+    <h2>Wanna See It for Yourself?</h2>
+    <h1 style="margin-top: -1%">Then Watch the Video.</h1>
+    <iframe style="text-align: center" width="560" height="315" src="https://www.youtube.com/embed/UfkjDzoJh3E"
+            frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 </div>
 
 <div id="content1">

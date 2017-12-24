@@ -7,6 +7,7 @@ Credit to codepen.io -- Underline from the center
   font-size: 35px; }
 
 h1 {
+  font-family: RobotoReg;
   font-size: 50px; }
 
 .rotate360 {
@@ -38,7 +39,6 @@ h1 {
       margin-left: 1%;
       display: flex;
       margin-top: -2%;
-      vertical-align: middle;
       transition: all .5s ease-in-out; }
       #litec_bg #text_section #litec_github a {
         margin-left: 2%;
@@ -92,9 +92,9 @@ h1 {
   padding: 1% 9% 50% 9%;
   background-color: #e0d9d2; }
   .features_container h3 {
-    font-family: RobotoReg; }
+    font-family: RobotoReg,serif; }
   .features_container p {
-    font-family: Helvetica;
+    font-family: Helvetica,serif;
     font-size: 23px; }
 
 h3 {
@@ -148,6 +148,17 @@ h3 {
         @media only screen and (max-width: 800px) {
           #features #ft-wrapper #ft-col1 div:nth-child(3) {
             margin-top: 4%; } }
+      #features #ft-wrapper #ft-col1 div:nth-child(4) {
+        background-color: black;
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: white;
+        margin-top: 13%;
+        padding: 1% 9% 2% 9%; }
+        @media only screen and (max-width: 800px) {
+          #features #ft-wrapper #ft-col1 div:nth-child(4) {
+            margin-top: 4%; } }
     #features #ft-wrapper #ft-col2 {
       width: 50%;
       padding: 0 5% 5% 2.5%; }
@@ -180,6 +191,34 @@ h3 {
         @media only screen and (max-width: 800px) {
           #features #ft-wrapper #ft-col2 div:nth-child(3) {
             margin-top: 4%; } }
+      #features #ft-wrapper #ft-col2 div:nth-child(4) {
+        background-color: black;
+        background-size: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        color: white;
+        margin-top: 13%;
+        padding: 1% 9% 2% 9%; }
+        @media only screen and (max-width: 800px) {
+          #features #ft-wrapper #ft-col2 div:nth-child(4) {
+            margin-top: 4%; } }
+
+#yt {
+  background-color: #fcf2d9;
+  padding: 3% 0;
+  text-align: center; }
+
+#litec-intro {
+  background-image: url("../Images/litec/introbg.jpg");
+  padding: 3% 12% 25% 12%;
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #f5eee6; }
+
+h4 {
+  font-family: SFLight,serif;
+  font-size: 25px; }
 
 #content1 {
   padding: 5% 0;
@@ -246,6 +285,9 @@ h3 {
   .h2styles h2 {
     font-size: 25px; }
 
+  #litec-intro {
+    padding: 3% 7.5% 25% 7.5%; }
+
   #smart_car_intro {
     background-color: #e0d9d2;
     background-repeat: no-repeat;
@@ -265,7 +307,10 @@ h3 {
       width: 100%; }
     #features #ft-wrapper #ft-col2 {
       padding: 2% 0 2% 0;
-      width: 100%; } }
+      width: 100%; }
+
+  h4 {
+    font-size: 20px; } }
 @media only screen and (max-width: 655px) {
   #litec_bg {
     padding: 15% 0 68% 0;
@@ -298,6 +343,9 @@ h3 {
           transform: scaleX(1);
           background-color: white; } }
 @media only screen and (max-width: 605px) {
+  #yt iframe {
+    width: 100%; }
+
   #litec_bg {
     text-align: center;
     padding: 15% 0 68% 0; }
@@ -343,6 +391,9 @@ h3 {
         background-color: white; }
 
   .h2styles h2 {
-    font-size: 21px; } }
+    font-size: 21px; }
+
+  h4 {
+    font-size: 17px; } }
 
 /*# sourceMappingURL=litec_styles.css.map */
