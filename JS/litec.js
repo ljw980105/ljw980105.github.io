@@ -44,6 +44,7 @@ $(document).ready(function () {
     $algo.gifplayer();
 
     animatedScroll("#litec_github a","#yt");
+    animatedScroll("#gond","#yt");
 
     //reload the flickr div upon resizing
     $(window).resize(function () {

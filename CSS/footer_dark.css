@@ -54,6 +54,7 @@
 /*h4 must be a direct descendant of footer */
 #standalone_footer{
     font-family: Roboto;
+    font-size: 17px;
 }
 
 #footer_container{

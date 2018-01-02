@@ -93,9 +93,10 @@ h1 {
   background-color: #e0d9d2; }
   .features_container h3 {
     font-family: RobotoReg,serif; }
-  .features_container p {
-    font-family: Helvetica,serif;
-    font-size: 23px; }
+
+p {
+  font-family: Helvetica,serif;
+  font-size: 23px; }
 
 h3 {
   font-size: 40px; }
@@ -220,14 +221,45 @@ h4 {
   font-family: SFLight,serif;
   font-size: 25px; }
 
-#content1 {
-  padding: 5% 0;
-  background-color: black; }
-  #content1 h1 {
-    text-align: center;
-    font-family: Roboto;
-    color: white;
-    font-size: 30px; }
+#smart-car-contents {
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../Images/litec/litecContent.jpg");
+  padding: 3% 0 9% 0;
+  background-color: #dcd2b8; }
+  #smart-car-contents #text {
+    width: 40%;
+    margin-left: 50%; }
+
+#gondola-intro {
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  background-color: #d0dacf;
+  padding: 4% 10% 48% 10%;
+  background-image: url("../Images/litec/gondola1.jpg"); }
+
+#gondola {
+  background-size: 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../Images/litec/gondola2.jpg");
+  padding: 7% 0 12% 0;
+  background-color: #e3decb; }
+  #gondola #text-gondola {
+    width: 40%;
+    margin-left: 50%; }
+
+#gondola a:link, #gondola a:visited {
+  color: black;
+  text-decoration: underline; }
+#gondola a:hover {
+  color: orange; }
 
 @media only screen and (min-width: 1530px) {
   #litec_bg {
@@ -245,6 +277,12 @@ h4 {
 
   h3 {
     font-size: 35px; } }
+@media only screen and (max-width: 1294px) {
+  #smart-car-contents {
+    background-position-y: -100px;
+    padding: 2% 0 2% 0; }
+    #smart-car-contents #text {
+      width: 45%; } }
 @media only screen and (max-width: 1200px) {
   #litec_bg {
     background-size: 1200px 789px;
@@ -254,7 +292,27 @@ h4 {
     background-size: 1200px 789px; }
 
   h3 {
-    font-size: 32px; } }
+    font-size: 32px; }
+
+  #gondola {
+    padding: 4% 0 9% 0; }
+
+  #smart-car-contents {
+    background-position-y: 0;
+    padding: 1% 0 1% 0;
+    background-color: #dcd2b7; } }
+@media only screen and (max-width: 1100px) {
+  #smart-car-contents {
+    background-position: center top;
+    background-image: url("../Images/litec/litecContent-Mobile.jpg");
+    padding: 60% 6% 2% 6%;
+    background-color: #dcd2b8; }
+    #smart-car-contents #text {
+      width: 88%;
+      margin-left: 6%; } }
+@media only screen and (max-width: 1050px) {
+  #gondola {
+    padding: 1% 0 1% 0; } }
 @media only screen and (max-width: 929px) {
   h1 {
     font-size: 35px; }
@@ -299,6 +357,15 @@ h4 {
   #flickr_album #album_container a img {
     width: 100%;
     height: 66.7%; } }
+@media only screen and (max-width: 920px) {
+  #gondola {
+    background-position: center top;
+    background-image: url("../Images/litec/gondola2-Mobile.jpg");
+    padding: 80% 6% 6% 6%;
+    background-color: #dcd8cf; }
+    #gondola #text-gondola {
+      width: 88%;
+      margin-left: 6%; } }
 @media only screen and (max-width: 800px) {
   #features #ft-wrapper {
     display: block; }
@@ -341,7 +408,10 @@ h4 {
           transition: all .3s ease-in-out; }
         #litec_bg #text_section a:hover:after {
           transform: scaleX(1);
-          background-color: white; } }
+          background-color: white; }
+
+  #gondola-intro h1 {
+    color: black; } }
 @media only screen and (max-width: 605px) {
   #yt iframe {
     width: 100%; }
@@ -394,6 +464,21 @@ h4 {
     font-size: 21px; }
 
   h4 {
-    font-size: 17px; } }
+    font-size: 17px; }
+
+  #gondola {
+    padding: 80% 2.5% 6% 2.5%; }
+    #gondola #text-gondola {
+      width: 92%;
+      margin-left: 4%; }
+
+  #smart-car-contents {
+    padding: 60% 2.5% 2% 2.5%; }
+    #smart-car-contents #text {
+      width: 92%;
+      margin-left: 4%; } }
+@media only screen and (max-width: 290px) {
+  #gondola-intro h2 {
+    color: black; } }
 
 /*# sourceMappingURL=litec_styles.css.map */

@@ -30,6 +30,7 @@
                     <li><a href="Projects.html">All</a></li>
                     <li><a href="proj_frc.html">FIRST Robotics</a></li>
                     <li><a href="index.html">Personal Website</a></li>
+                    <li><a href="Litec.html">EmbeddedControl</a></li>
                 </ul>
             </li>
             <li><a href="Games.html">GAMES</a></li>
@@ -183,6 +184,45 @@
     </div>
 </div>
 
+<div id="smart-car-contents">
+    <div id="text">
+        <h4>
+            For the smart car, we engineered it to perform driving tasks by developing hardware and software simultaneously.
+            The driving speed of the car is altered via manipulating PWM pulsewidths, and control algorithms determine the
+            course correction behavior of the car. Three peripheral devices also played important roles in this project: compass,
+            ranger and accelerometer. In order to make these work correctly, we wired up I2C hardware on the protoboard.<br><br>
+            In Lab 4 and 5, our hardware and software are put to test. In Lab 4, the smart car must be able to detect obstacles,
+            stop and turn until the obstacle is out of the way, the resume driving. We use the ranger to detect obstacles: obstacle
+            is present when the distance read by the ranger is less than a threshold we specified. When such condition is true,
+            the car turns around while checking compass readings to make sure it does not turn too far. When the ranger reading is
+            normal again, the embedded system exits the turning states and resumes normal driving. In Lab 5, the smart car utilizes
+            accelerometer readings to provide data to the control algorithm which ensures the car would drive up the ramp reversely.
+        </h4>
+    </div>
+</div>
+
+<div id="gondola-intro">
+    <div class="h2styles">
+        <h1>Target System #2: Gondola</h1>
+        <h2>Upside-down Blimp w/ Heading Correction</h2>
+    </div>
+</div>
+
+<div id="gondola">
+    <div id="text-gondola">
+        <h4>
+            For the Gondola, it's a little bit eccentric: it's intended to fly, but it has to be placed upside down on the
+            turntable for safety reasons. The only thing it does is to spin. It has two thrust fans and one tail fan, both of which are used to control the heading
+            of the soon-to-be blimp. In Lab 6, our task is to maintain heading. In order to do so, two thrust fans, which are
+            installed on the side of the blimp, has to rotate in the opposite direction. Hence, we implemented code which
+            successfully set the pulsewidth of both fans in a reversed fashion. With the help of compass, we implemented the
+            PD (Proportional-Derivative) control algorithm to make sure the gondola faces a desired direction (maintain heading).
+            A ranger is installed atop the gondola. Our code is also capable of changing the direction the gondola faces
+            based on the reading of ranger. Please see the <a id="gond" href="#">video</a> to see how it works.
+        </h4>
+    </div>
+</div>
+
 <div id ="flickr_album" class="h2styles">
     <h1 style="text-align: center">Flickr Gallery</h1>
     <h2 style="text-align: center; margin: -1.5% 5% 5% 5%">High-quality Images of the Smart Car</h2>
@@ -200,10 +240,6 @@
     <h1 style="margin-top: -1%">Then Watch the Video.</h1>
     <iframe style="text-align: center" width="560" height="315" src="https://www.youtube.com/embed/UfkjDzoJh3E"
             frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
-
-<div id="content1">
-    <h1>Under Construction</h1>
 </div>
 
 <div id="footer_container">
@@ -234,6 +270,7 @@
                         <li><a href="Games.html">2048 Game</a></li>
                         <li><a href="proj_frc.html">FIRST Robotics</a></li>
                         <li><a href="index.html">Personal Website</a></li>
+                        <li><a href="Litec.html">Embedded Control</a></li>
                     </div>
                 </ul>
             </div>
@@ -272,7 +309,7 @@
         <img src="Images/PersonalLogo.png">
     </div>
 </div>
-<h4 id="standalone_footer" style="text-align: center; margin: 3% 5%"> &copy; JING WEI LI 2017. Proudly Created from Scratch</h4>
+<h4 id="standalone_footer" style="text-align: center; margin: 3% 5%"> &copy; JING WEI LI 2017-2018. Proudly Created from Scratch</h4>
 
 </body>
 </html>

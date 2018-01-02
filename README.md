@@ -22,7 +22,8 @@ This website contains:
 
 Additional Libraries Used:
 
-&nbsp;&nbsp;&nbsp;&nbsp;• [Babel](https://babeljs.io/) (A JSX to JavaScript Compiler)    
-&nbsp;&nbsp;&nbsp;&nbsp;• [bxSlider](https://github.com/stevenwanderski/bxslider-4) by Steven Wanderski (An Open Source jQuery Slider Library)   
+&nbsp;&nbsp;&nbsp;&nbsp;•  [Babel](https://babeljs.io/) (A JSX to JavaScript Compiler)    
+&nbsp;&nbsp;&nbsp;&nbsp;•  [bxSlider](https://github.com/stevenwanderski/bxslider-4) by Steven Wanderski (An Open Source jQuery Slider Library)   
+&nbsp;&nbsp;&nbsp;&nbsp;•  [gifPlayer](https://github.com/rubentd/gifplayer) by Ruben Torres (A Customizable JavaScript GIF Player) 
 
 ### Thanks for stopping by! :)
