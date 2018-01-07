@@ -46,9 +46,11 @@ $(document).ready(function () {
     animatedScroll("#litec_github a","#yt");
     animatedScroll("#gond","#yt");
 
-    //reload the flickr div upon resizing
+    //reload the flickr div upon resizing only when width is > 600
     $(window).resize(function () {
-        $("#flickr_album").load(location.href + " #flickr_album");
+        if($(window).width > 600){
+            $("#flickr_album").load(location.href + " #flickr_album");
+        }
     });
 
     $(document).scroll(function () {
