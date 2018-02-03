@@ -35,6 +35,23 @@
     padding: 14% 10% 5% 10%;
 }
 
+#col1_item3{
+    margin-top: 14%;
+    background-color: rgba(40,121,4,1);
+    padding: 14% 10% 60% 10%;
+    background-image: url("../Images/3dvisualizerGraphics.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+#col1_item3 h2 {
+    margin-top: -5%;
+}
+#col1_item3 p {
+    color: white;
+}
+
 
 #col2_item1{
     background-color: rgba(0,0,0,0.05);
@@ -197,6 +214,10 @@
         background-image: url("../Images/Projects Typography DesignMobile.jpg");
         margin-top: 5%;
         padding: 60% 0;
+    }
+
+    #proj_contents{
+        margin: -5% 3% 0 3% ;
     }
 
     #col1_item1{

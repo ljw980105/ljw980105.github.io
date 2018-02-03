@@ -337,9 +337,8 @@
 #experience{
 
     /*use to be 55%*/
-    padding: 67% 0;
-    /*background-image: url("../Images/ExperienceBg_Vector.svg");*/
-    background-image: url("../Images/ExperienceBg_Final_FullyExpanded.svg");
+    padding: 75% 0;
+    background-image: url("../Images/ResumeGraphicWithResearch.svg");
     background-size: 100%;
     background-position-y: -2px;
     width: auto;
@@ -588,7 +587,7 @@
 
 @media only screen and (max-width: 1400px) {
     #experience{
-        padding: 73% 0;
+        padding: 83% 0;
         background-size: 110%;
         background-position:top;
         background-position-y: -4px;
@@ -604,7 +603,7 @@
 
 @media only screen and (max-width: 1200px) {
     #experience{
-        padding: 78% 0;
+        padding: 88% 0;
         background-size: 118%;
         background-position-x: 44%;
     }
@@ -660,7 +659,7 @@
         margin: 0 8%;
     }
 
-    #ex4{
+    #ex5{
         background-color: rgba(40,38,39,1);
         padding-bottom: 3%;
     }
