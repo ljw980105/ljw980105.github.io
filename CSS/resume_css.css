@@ -336,8 +336,8 @@
 
 #experience{
 
-    /*use to be 55%*/
-    padding: 75% 0;
+    /*use to be 75%*/
+    padding: 78% 0;
     background-image: url("../Images/ResumeGraphicWithResearch.svg");
     background-size: 100%;
     background-position-y: -2px;
@@ -587,7 +587,7 @@
 
 @media only screen and (max-width: 1400px) {
     #experience{
-        padding: 83% 0;
+        padding: 85.5% 0;
         background-size: 110%;
         background-position:top;
         background-position-y: -4px;
@@ -603,7 +603,7 @@
 
 @media only screen and (max-width: 1200px) {
     #experience{
-        padding: 88% 0;
+        padding: 91.5% 0;
         background-size: 118%;
         background-position-x: 44%;
     }
