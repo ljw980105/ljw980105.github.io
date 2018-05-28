@@ -193,10 +193,10 @@
             course correction behavior of the car. Three peripheral devices also played important roles in this project: compass,
             ranger and accelerometer. In order to make these work correctly, we wired up I2C hardware on the protoboard.<br><br>
             In Lab 4 and 5, our hardware and software are put to test. In Lab 4, the smart car must be able to detect obstacles,
-            stop and turn until the obstacle is out of the way, the resume driving. We use the ranger to detect obstacles: obstacle
+            stop and turn until the obstacle is out of the way, then resume driving. We use the ranger to detect obstacles: obstacle
             is present when the distance read by the ranger is less than a threshold we specified. When such condition is true,
             the car turns around while checking compass readings to make sure it does not turn too far. When the ranger reading is
-            normal again, the embedded system exits the turning states and resumes normal driving. In Lab 5, the smart car utilizes
+            normal again, the embedded system exits the turning state and resumes normal driving. In Lab 5, the smart car utilizes
             accelerometer readings to provide data to the control algorithm which ensures the car would drive up the ramp reversely.
         </h4>
     </div>
@@ -213,13 +213,14 @@
     <div id="text-gondola">
         <h4>
             For the Gondola, it's a little bit eccentric: it's intended to fly, but it has to be placed upside down on the
-            turntable for safety reasons. The only thing it does is to spin. It has two thrust fans and one tail fan, both of which are used to control the heading
-            of the soon-to-be blimp. In Lab 6, our task is to maintain heading. In order to do so, two thrust fans, which are
-            installed on the side of the blimp, has to rotate in the opposite direction. Hence, we implemented code which
-            successfully set the pulsewidth of both fans in a reversed fashion. With the help of compass, we implemented the
-            PD (Proportional-Derivative) control algorithm to make sure the gondola faces a desired direction (maintain heading).
-            A ranger is installed atop the gondola. Our code is also capable of changing the direction the gondola faces
-            based on the reading of ranger. Please see the <a id="gond" href="#">video</a> to see how it works.
+            turntable for safety reasons. The only thing it does is to spin. It has two thrust fans and one tail fan, both
+            of which are used to control the heading of the soon-to-be blimp. In Lab 6, our task is to maintain heading.
+            In order to do so, two thrust fans, which are installed on the side of the blimp, have to rotate in the opposite
+            direction. Hence, we implemented code which successfully set the pulsewidth of both fans in a reversed fashion.
+            With the help of compass, we implemented the PD (Proportional-Derivative) control algorithm to make sure the
+            gondola faces a desired direction (maintain heading). A ranger is installed atop the gondola. Our code is also
+            capable of changing the direction the gondola faces based on the reading of ranger.
+            Please see the <a id="gond" href="#">video</a> to the gondola in action!
         </h4>
     </div>
 </div>
