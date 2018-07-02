@@ -1,0 +1,74 @@
+#title {
+  padding: 4% 0;
+  text-align: center;
+  border-bottom: 1px solid #888888; }
+  #title h1 {
+    font-family: RobotoReg, serif;
+    font-size: 40px; }
+  #title h2 {
+    font-family: RobotoReg, serif;
+    color: #666666; }
+
+#beatslytics-contents {
+  padding: 3% 20%; }
+  #beatslytics-contents p {
+    font-family: Roboto,sans-serif;
+    font-size: 20px; }
+    #beatslytics-contents p a {
+      transition: all linear 0.1s;
+      font-family: Roboto,sans-serif;
+      font-size: 20px; }
+      #beatslytics-contents p a:visited {
+        color: black;
+        text-decoration: underline; }
+      #beatslytics-contents p a:link {
+        color: black; }
+      #beatslytics-contents p a:hover {
+        color: orangered; }
+  #beatslytics-contents h3 {
+    font-family: RobotoReg,sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: orangered; }
+  #beatslytics-contents h4 {
+    font-family: RobotoReg,sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: black; }
+  #beatslytics-contents li {
+    list-style-type: disc;
+    font-family: Roboto, sans-serif;
+    font-size: 17px; }
+    #beatslytics-contents li a {
+      transition: all linear 0.1s; }
+      #beatslytics-contents li a:visited {
+        color: black;
+        text-decoration: underline; }
+      #beatslytics-contents li a:link {
+        color: black; }
+      #beatslytics-contents li a:hover {
+        color: orangered; }
+  #beatslytics-contents #policies {
+    display: flex; }
+    #beatslytics-contents #policies div {
+      width: 50%; }
+      #beatslytics-contents #policies div a {
+        transition: all linear 0.1s;
+        font-family: Roboto,sans-serif;
+        font-size: 20px; }
+        #beatslytics-contents #policies div a:visited {
+          color: black;
+          text-decoration: underline; }
+        #beatslytics-contents #policies div a:link {
+          color: black; }
+        #beatslytics-contents #policies div a:hover {
+          color: orangered; }
+
+.center_img {
+  font-family: inherit; }
+
+.center_img img {
+  display: block;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=beatslytics_styles.css.map */

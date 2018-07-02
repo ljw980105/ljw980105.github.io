@@ -1,0 +1,84 @@
+
+@mixin paragraph-style {
+  font-family: Roboto,sans-serif;
+  font-size: 20px;
+}
+
+@mixin anchor-tag-style{
+  a{
+    transition:all linear 0.1s;
+    @include paragraph-style;
+    &:visited{
+      color: black;
+      text-decoration: underline;
+    }
+    &:link{  color: black;  }
+    &:hover{  color: orangered;  }
+  }
+}
+
+#title {
+  padding: 4% 0;
+  text-align: center;
+  border-bottom: 1px solid #888888;;
+  h1{
+    font-family: RobotoReg, serif;
+    font-size: 40px;
+  }
+  h2{
+    font-family: RobotoReg, serif;
+    color: #666666;
+  }
+}
+
+#beatslytics-contents {
+  padding: 3% 20%;
+  p{
+    @include paragraph-style;
+    @include anchor-tag-style;
+  }
+  h3{
+    font-family: RobotoReg,sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: orangered;
+  }
+  h4 {
+    font-family: RobotoReg,sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+  }
+  li {
+    list-style-type: disc;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    a {
+      transition: all linear 0.1s;
+      &:visited{
+        color: black;
+        text-decoration: underline;
+      }
+      &:link{  color: black;  }
+      &:hover{  color: orangered;  }
+    }
+  }
+
+  #policies{
+    display: flex;
+    div{
+      width: 50%;
+      @include anchor-tag-style;
+    }
+  }
+}
+
+.center_img{
+  font-family: inherit;
+}
+
+.center_img img {
+  display: block;
+  margin: 0 auto;
+}
+
