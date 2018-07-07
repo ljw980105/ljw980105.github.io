@@ -17,6 +17,7 @@ $(document).ready(function () {
     $item3 = $("#col1_item2");
     $item4 = $("#col2_item2");
     $item5 = $("#col1_item3");
+    $item6 = $("#col2_item3");
 
     $typ.fadeTo(1,0.001);
     $item1.fadeTo(1,0.001);
@@ -24,6 +25,7 @@ $(document).ready(function () {
     $item3.fadeTo(1,0.001);
     $item4.fadeTo(1,0.001);
     $item5.fadeTo(1,0.001);
+    $item6.fadeTo(1,0.001);
 
     var num1 = $item1.offset().top;
     var num2 = $item3.offset().top;
@@ -45,6 +47,7 @@ $(document).ready(function () {
         }
         if (curr > num3 - 600){
             orderedFade($item5,1);
+            orderedFade($item6,2);
         }
     });
 });

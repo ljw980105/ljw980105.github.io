@@ -66,6 +66,20 @@
     padding: 14% 10% 60% 10%;
 }
 
+#col2_item3{
+    margin-top: 14%;
+    background-image: url("../Images/Beatslytics/beatslytics-bg.jpg");
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: rgba(239,139,50,1);
+    padding: 14% 10% 60% 10%;
+}
+
+#col2_item3 p{ color: white; }
+
+#col2_item3 h2 { margin-top: -5%; }
+
 #col2_item2 h2 {
     margin-top: -5%;
     color: white;
