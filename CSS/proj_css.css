@@ -60,10 +60,12 @@
 
 #col2_item2{
     margin-top: 14%;
-    background-image: url("../Images/litec-proj-pic.jpg");
+    background-image: url("../Images/litec/litec-proj-pic-2.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     background-position: center bottom;
-    padding: 14% 10% 60% 10%;
+    background-color: rgba(141,125,102,1);
+    padding: 14% 10% 80% 10%;
 }
 
 #col2_item3{

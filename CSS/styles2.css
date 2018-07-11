@@ -185,9 +185,9 @@ body {
 
 #yt {
     padding: 22% 0;
-    background-image: url("../Images/litecIndexBg.jpg");
-    background-position-y: -20px;
-    background-size: 120%;
+    background-image: url("../Images/Beatslytics/Beatslytics-intro2.jpg");
+    background-position-x: -45px;
+    background-size: 140%;
     text-align: center;
     margin-right: 5px;
     transition: all 0.3s ease-in-out;
