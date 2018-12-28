@@ -96,7 +96,6 @@
 
 #personal_logo img{
     /*margin-top: 2%;*/
-    filter: invert();
     display: block;
     margin: 0 auto;
     width: 80px;
