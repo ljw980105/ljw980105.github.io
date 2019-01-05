@@ -53,16 +53,17 @@
     font-weight: 300;
 }
 
-#intro a {
-    text-align: center;
-    padding: 0 10%;
+#intro p {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
 }
+
 
 #intro a:link, #intro a:visited {
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     text-decoration: none;
-    color: white;
+    color: floralwhite;
     font-weight: 300;
 }
 
@@ -70,7 +71,7 @@
     font-size: 20px;
     font-family: -apple-system, BlinkMacSystemFont,"Roboto", sans-serif;
     text-decoration: underline;
-    color: white;
+    color: floralwhite;
     font-weight: 300;
 }
 
@@ -339,7 +340,7 @@
     /*use to be 75%*/
     padding: 110% 0;
     /*background-image: url("../Images/ResumeGraphicWithResearch.svg");*/
-    background-image: url("../Images/ExperienceSept18.svg");
+    background-image: url("../Images/ExperienceJan19.svg");
     background-size: 100%;
     background-position-y: -2px;
     width: auto;
