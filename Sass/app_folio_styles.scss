@@ -1,0 +1,73 @@
+@mixin anchor-style {
+  a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+    &:link, &:visited {
+      color: white;
+    }
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+body {
+  background-color: black;
+}
+
+.app {
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Mohave, sans-serif;
+    color: white;
+
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  margin-bottom: 15%;
+}
+
+p {
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: #888888;
+}
+
+#appFolio_bg {
+  padding: 20% 0;
+  background-image: url("../Images/AppFolio/AppFolioBg.svg");
+  background-size: 100%;
+  background-position-y: 120%;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  background-position-y: 60%;
+  font-size: 45px;
+}
+
+#apps {
+  display: flex;
+  padding: 0 15% 5% 15%;
+  background-size: 100% auto;
+  @include anchor-style;
+
+  #col1 {
+    width: 80%;
+    margin-right: 15%;
+  }
+
+  #col2 {
+    width: 80%;
+  }
+}

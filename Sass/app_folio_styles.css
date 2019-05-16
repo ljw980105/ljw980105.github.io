@@ -1,0 +1,54 @@
+body {
+  background-color: black; }
+
+.app {
+  margin-bottom: 15%; }
+  .app h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Mohave, sans-serif;
+    color: white; }
+  .app img {
+    display: block;
+    margin: 0 auto; }
+
+p {
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: #888888; }
+
+#appFolio_bg {
+  padding: 20% 0;
+  background-image: url("../Images/AppFolio/AppFolioBg.svg");
+  background-size: 100%;
+  background-position-y: 120%; }
+
+h1 {
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  background-position-y: 60%;
+  font-size: 45px; }
+
+#apps {
+  display: flex;
+  padding: 0 15% 5% 15%;
+  background-size: 100% auto; }
+  #apps a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 20px;
+    text-align: center; }
+    #apps a:link, #apps a:visited {
+      color: white; }
+    #apps a:hover {
+      color: white;
+      text-decoration: underline; }
+  #apps #col1 {
+    width: 80%;
+    margin-right: 15%; }
+  #apps #col2 {
+    width: 80%; }
+
+/*# sourceMappingURL=app_folio_styles.css.map */
