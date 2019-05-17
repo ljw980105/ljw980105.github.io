@@ -31,24 +31,47 @@ h1 {
   background-position-y: 60%;
   font-size: 45px; }
 
-#apps {
+.dual_columns {
   display: flex;
   padding: 0 15% 5% 15%;
   background-size: 100% auto; }
-  #apps a {
+  .dual_columns a {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 20px;
     text-align: center; }
-    #apps a:link, #apps a:visited {
+    .dual_columns a:link, .dual_columns a:visited {
       color: white; }
-    #apps a:hover {
+    .dual_columns a:hover {
       color: white;
       text-decoration: underline; }
-  #apps #col1 {
+  .dual_columns .col1 {
     width: 80%;
     margin-right: 15%; }
-  #apps #col2 {
+  .dual_columns .col2 {
     width: 80%; }
+
+#modmed {
+  padding: 0 20%; }
+
+.experience-style {
+  margin-top: 4%;
+  display: flex; }
+  .experience-style div {
+    padding: 0 3%;
+    display: block;
+    text-align: left; }
+  .experience-style h2 {
+    margin-top: 0.5%;
+    color: white;
+    font-family: Mohave, serif; }
+  .experience-style h3 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: RobotoReg, serif; }
+  .experience-style h4 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: Roboto, sans-serif; }
 
 /*# sourceMappingURL=app_folio_styles.css.map */

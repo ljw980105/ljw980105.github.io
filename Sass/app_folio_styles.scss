@@ -56,18 +56,53 @@ h1 {
   font-size: 45px;
 }
 
-#apps {
+.col1 {}
+.col2 {}
+
+.dual_columns {
   display: flex;
   padding: 0 15% 5% 15%;
   background-size: 100% auto;
   @include anchor-style;
 
-  #col1 {
+  .col1 {
     width: 80%;
     margin-right: 15%;
   }
 
-  #col2 {
+  .col2 {
     width: 80%;
+  }
+}
+
+#modmed {
+  padding: 0 20%;
+}
+
+.experience-style {
+  margin-top: 4%;
+  display: flex;
+  div {
+    padding: 0 3%;
+    display: block;
+    text-align: left;
+  }
+
+  h2 {
+    margin-top: 0.5%;
+    color: white;
+    font-family: Mohave, serif;
+  }
+
+  h3 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: RobotoReg, serif;
+  }
+
+  h4 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: Roboto, sans-serif;
   }
 }
