@@ -1,9 +1,9 @@
-@mixin anchor-style {
+@mixin anchor-style($alignment) {
   a {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 20px;
-    text-align: center;
+    text-align: $alignment;
 
     &:link, &:visited {
       color: white;
@@ -63,7 +63,7 @@ h1 {
   display: flex;
   padding: 0 15% 5% 15%;
   background-size: 100% auto;
-  @include anchor-style;
+  @include anchor-style(left);
 
   .col1 {
     width: 80%;
@@ -104,5 +104,44 @@ h1 {
     margin-top: -1%;
     color: #888888;
     font-family: Roboto, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .dual_columns {
+    padding: 0 10% 5% 10%;
+
+    .col1 {
+      margin-right: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dual_columns {
+    padding: 0 5% 2% 5%;
+
+    .col1 {
+      margin-right: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dual_columns {
+    padding: 0 15% 5% 15%;
+    display: block;
+    @include anchor-style(center);
+    .col1 {
+      width: 100%;
+      margin-right: 0;
+    }
+    .col2 {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 35px;
   }
 }

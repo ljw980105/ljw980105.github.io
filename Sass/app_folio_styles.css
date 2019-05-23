@@ -39,7 +39,7 @@ h1 {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 20px;
-    text-align: center; }
+    text-align: left; }
     .dual_columns a:link, .dual_columns a:visited {
       color: white; }
     .dual_columns a:hover {
@@ -73,5 +73,38 @@ h1 {
     margin-top: -1%;
     color: #888888;
     font-family: Roboto, sans-serif; }
+
+@media only screen and (max-width: 1200px) {
+  .dual_columns {
+    padding: 0 10% 5% 10%; }
+    .dual_columns .col1 {
+      margin-right: 10%; } }
+@media only screen and (max-width: 1000px) {
+  .dual_columns {
+    padding: 0 5% 2% 5%; }
+    .dual_columns .col1 {
+      margin-right: 5%; } }
+@media only screen and (max-width: 900px) {
+  .dual_columns {
+    padding: 0 15% 5% 15%;
+    display: block; }
+    .dual_columns a {
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      font-size: 20px;
+      text-align: center; }
+      .dual_columns a:link, .dual_columns a:visited {
+        color: white; }
+      .dual_columns a:hover {
+        color: white;
+        text-decoration: underline; }
+    .dual_columns .col1 {
+      width: 100%;
+      margin-right: 0; }
+    .dual_columns .col2 {
+      width: 100%; }
+
+  h1 {
+    font-size: 35px; } }
 
 /*# sourceMappingURL=app_folio_styles.css.map */
