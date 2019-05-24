@@ -113,18 +113,18 @@ body {
 #proj {
     padding: 22% 0;
     /*background-image: url("../images/FRC.jpg");*/
-    background-image: url("../Images/indexbg2.jpg");
-    background-size: 130%;
+    background-image: url("../Images/AppFolio/AppFolioBg.svg");
+    background-size: 250%;
     text-align: center;
-    background-position: 50% 18%;
+    background-position: 20% 100%;
     margin-right: 5px;
     transition: all 0.3s ease-in-out;
 }
 
 #resume {
     padding: 22% 0;
-    background-image: url("../Images/indexbg3.jpg");
-    /*background-size: 120%;*/
+    background-image: url("../Images/indexbg2.jpg");
+    background-size: 130%;
     text-align: center;
     background-position: 50% 18%;
     transition: all 0.3s ease-in-out;

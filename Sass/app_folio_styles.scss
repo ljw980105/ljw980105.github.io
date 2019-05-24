@@ -1,9 +1,11 @@
-@mixin anchor-style($alignment) {
+$base-padding: 0 15% 5% 15%;
+$narrow-padding: 0 10% 5% 10%;
+
+@mixin anchor-style {
   a {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-size: 20px;
-    text-align: $alignment;
 
     &:link, &:visited {
       color: white;
@@ -13,6 +15,10 @@
       text-decoration: underline;
     }
   }
+}
+
+.anchor-tag-alignment {
+  text-align: center;
 }
 
 body {
@@ -58,12 +64,13 @@ h1 {
 
 .col1 {}
 .col2 {}
+.title {}
 
 .dual_columns {
   display: flex;
-  padding: 0 15% 5% 15%;
+  padding: $base-padding;
   background-size: 100% auto;
-  @include anchor-style(left);
+  @include anchor-style;
 
   .col1 {
     width: 80%;
@@ -125,13 +132,13 @@ h1 {
       margin-right: 5%;
     }
   }
+  #modmed { padding: 0 15%}
 }
 
 @media only screen and (max-width: 900px) {
   .dual_columns {
     padding: 0 15% 5% 15%;
     display: block;
-    @include anchor-style(center);
     .col1 {
       width: 100%;
       margin-right: 0;
@@ -141,7 +148,27 @@ h1 {
     }
   }
 
-  h1 {
-    font-size: 35px;
+  .app img { display: initial; }
+
+  h1, h2, p { text-align: left; }
+
+  h1 { font-size: 35px; }
+  .app h2 { text-align: left; }
+
+  .title { padding: $base-padding; }
+
+  .anchor-tag-alignment { text-align: left; }
+
+  .experience-style {
+    display: block;
+    div { padding: 0 0; }
   }
+  #modmed { padding: 0 15%; }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .dual_columns { padding: $narrow-padding; }
+  .title { padding:  $narrow-padding; }
+  #modmed { padding: 0 10%; }
 }

@@ -1,3 +1,6 @@
+.anchor-tag-alignment {
+  text-align: center; }
+
 body {
   background-color: black; }
 
@@ -38,8 +41,7 @@ h1 {
   .dual_columns a {
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-    font-size: 20px;
-    text-align: left; }
+    font-size: 20px; }
     .dual_columns a:link, .dual_columns a:visited {
       color: white; }
     .dual_columns a:hover {
@@ -83,28 +85,53 @@ h1 {
   .dual_columns {
     padding: 0 5% 2% 5%; }
     .dual_columns .col1 {
-      margin-right: 5%; } }
+      margin-right: 5%; }
+
+  #modmed {
+    padding: 0 15%; } }
 @media only screen and (max-width: 900px) {
   .dual_columns {
     padding: 0 15% 5% 15%;
     display: block; }
-    .dual_columns a {
-      text-decoration: none;
-      font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
-      font-size: 20px;
-      text-align: center; }
-      .dual_columns a:link, .dual_columns a:visited {
-        color: white; }
-      .dual_columns a:hover {
-        color: white;
-        text-decoration: underline; }
     .dual_columns .col1 {
       width: 100%;
       margin-right: 0; }
     .dual_columns .col2 {
       width: 100%; }
 
+  .app img {
+    display: initial; }
+
+  h1, h2, p {
+    text-align: left; }
+
   h1 {
-    font-size: 35px; } }
+    font-size: 35px; }
+
+  .app h2 {
+    text-align: left; }
+
+  .title {
+    padding: 0 15% 5% 15%; }
+
+  .anchor-tag-alignment {
+    text-align: left; }
+
+  .experience-style {
+    display: block; }
+    .experience-style div {
+      padding: 0 0; }
+
+  #modmed {
+    padding: 0 15%; } }
+@media only screen and (max-width: 650px) {
+  .dual_columns {
+    padding: 0 10% 5% 10%; }
+
+  .title {
+    padding: 0 10% 5% 10%; }
+
+  #modmed {
+    padding: 0 10%; } }
 
 /*# sourceMappingURL=app_folio_styles.css.map */
