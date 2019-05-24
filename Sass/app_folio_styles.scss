@@ -1,0 +1,174 @@
+$base-padding: 0 15% 5% 15%;
+$narrow-padding: 0 10% 5% 10%;
+
+@mixin anchor-style {
+  a {
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    font-size: 20px;
+
+    &:link, &:visited {
+      color: white;
+    }
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.anchor-tag-alignment {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+.app {
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    font-family: Mohave, sans-serif;
+    color: white;
+
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  margin-bottom: 15%;
+}
+
+p {
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  color: #888888;
+}
+
+#appFolio_bg {
+  padding: 20% 0;
+  background-image: url("../Images/AppFolio/AppFolioBg.svg");
+  background-size: 100%;
+  background-position-y: 120%;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  color: white;
+  text-align: center;
+  background-position-y: 60%;
+  font-size: 45px;
+}
+
+.col1 {}
+.col2 {}
+.title {}
+
+.dual_columns {
+  display: flex;
+  padding: $base-padding;
+  background-size: 100% auto;
+  @include anchor-style;
+
+  .col1 {
+    width: 80%;
+    margin-right: 15%;
+  }
+
+  .col2 {
+    width: 80%;
+  }
+}
+
+#modmed {
+  padding: 0 20%;
+}
+
+.experience-style {
+  margin-top: 4%;
+  display: flex;
+  div {
+    padding: 0 3%;
+    display: block;
+    text-align: left;
+  }
+
+  h2 {
+    margin-top: 0.5%;
+    color: white;
+    font-family: Mohave, serif;
+  }
+
+  h3 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: RobotoReg, serif;
+  }
+
+  h4 {
+    margin-top: -1%;
+    color: #888888;
+    font-family: Roboto, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .dual_columns {
+    padding: 0 10% 5% 10%;
+
+    .col1 {
+      margin-right: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dual_columns {
+    padding: 0 5% 2% 5%;
+
+    .col1 {
+      margin-right: 5%;
+    }
+  }
+  #modmed { padding: 0 15%}
+}
+
+@media only screen and (max-width: 900px) {
+  .dual_columns {
+    padding: 0 15% 5% 15%;
+    display: block;
+    .col1 {
+      width: 100%;
+      margin-right: 0;
+    }
+    .col2 {
+      width: 100%;
+    }
+  }
+
+  .app img { display: initial; }
+
+  h1, h2, p { text-align: left; }
+
+  h1 { font-size: 35px; }
+  .app h2 { text-align: left; }
+
+  .title { padding: $base-padding; }
+
+  .anchor-tag-alignment { text-align: left; }
+
+  .experience-style {
+    display: block;
+    div { padding: 0 0; }
+  }
+  #modmed { padding: 0 15%; }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .dual_columns { padding: $narrow-padding; }
+  .title { padding:  $narrow-padding; }
+  #modmed { padding: 0 10%; }
+}

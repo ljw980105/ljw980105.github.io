@@ -36,6 +36,11 @@
     src: url("../fonts/Helvetica-Normal.ttf");
 }
 
+@font-face {
+    font-family: "Mohave";
+    src: url("../fonts/Mohave-Regular.otf");
+}
+
 /*For selection color*/
 ::-moz-selection { /* Code for Firefox */
     color: white;

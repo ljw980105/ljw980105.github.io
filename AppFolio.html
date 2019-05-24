@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/common_fonts.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="CSS/footer_light.css" rel="stylesheet" type="text/css" media="screen">
+    <script src="JS/jquery.js"></script>
+    <script src="JS/common_jquery.js"></script>
+    <meta charset="utf-8">
+    <title>AppFolio</title>
+    <link rel="icon" href="Images/icon png.png">
+    <link href="Sass/app_folio_styles.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="CSS/common.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+
+<div id="nav" class="menu-wrap">
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Bio.html">ABOUT</a></li>
+            <li><a href="Resume.html">RESUME</a></li>
+            <li><a href="AppFolio.html">APPS</a></li>
+            <li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
+            <li>
+                <a id="nav_proj" href="Projects.html">PROJECTS</a>
+                <ul class="sub-menu">
+                    <li><a href="Projects.html">All</a></li>
+                    <li><a href="proj_frc.html">FIRST Robotics</a></li>
+                    <li><a href="Beatslytics.html">Beatslytics</a></li>
+                    <li><a href="Litec.html">EmbeddedControl</a></li>
+                    <li><a href="https://github.com/CSDTs/3D_Visualizer/tree/3D-Visualizer-iOS">3D Visualizer</a></li>
+                </ul>
+            </li>
+            <li><a href="Games.html">GAMES</a></li>
+            <li><a href="Contacts.html">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="top_mobile_nav">
+    <img id="navicon" src="Images/navicon.png" height="50px" width="50px" >
+</div>
+
+<nav id="mobile_nav">
+    <div class="horizScrollDiv" style="margin-left: 20px">
+        <a href="index.html"><img src="Images/home.png" height="70" width="70"></a>
+        <li><a href="index.html">HOME</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="Bio.html"><img src="Images/aboutIcon.png" height="70" width="70"></a>
+        <li><a href="Bio.html">ABOUT</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="Resume.html"><img src="Images/resumelogo.png" height="70" width="70"></a>
+        <li><a href="Resume.html">RESUME</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="AppFolio.html"><img src="Images/apps.png" height="70" width="70"></a>
+        <li><a href="AppFolio.html">APPS</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="Graphic Design.html"><img src="Images/splashIcon.png" height="70" width="70"></a>
+        <li><a href="Graphic Design.html">GRAPHIC DESIGN</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="Projects.html"><img src="Images/gearIcon.png"height="70"width="70"></a>
+        <li><a href="Projects.html">PROJECTS</a></li>
+    </div>
+    <div class="horizScrollDiv">
+        <a href="Games.html"><img src="Images/gameIcon.png" height="70" width="70"></a>
+        <li><a href="Games.html">GAMES</a></li>
+    </div>
+    <div class="horizScrollDiv" style="margin-right: 20px">
+        <a href="Contacts.html"><img src="Images/phone.png" height="70" width="70"></a>
+        <li><a href="Contacts.html">CONTACT</a></li>
+    </div>
+</nav>
+
+<div id="appFolio_bg"></div>
+
+<div id="title" class="title">
+    <h1>The Definitive App Portfolio</h1>
+    <p>App development is in my genes. Here's why.</p>
+    <h1> <br/>  Apps I've Made<br/></h1>
+</div>
+
+<div id="apps" class="dual_columns">
+
+    <div class="col1">
+        <div id="app1" class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/BeatslyticsIcon.png">
+            <h2>BEATSLYTICS</h2>
+            <p> A kick-ass iOS music analytics app that produces analytics data based on the user's listening
+            habits. <br/> <strong>Currently published on the App Store.</strong></p>
+            <p><strong>Frameworks: MediaPlayer</strong></p>
+            <div class="anchor-tag-alignment"><a href="Beatslytics.html">View App ></a></div>
+        </div>
+
+        <div id="app3" class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/3DVisualizerIcon.png">
+            <h2>3D VISUALIZER</h2>
+            <p> An app for viewing CAD models on iOS devices, with options to adjust lighting effects,
+                execute animations and project models into the real world with <strong>Augmented Reality.</strong></p>
+            <p><strong>Frameworks: ARKit</strong></p>
+            <div class="anchor-tag-alignment"><a href="https://github.com/CSDTs/3D_Visualizer/tree/3D-Visualizer-iOS">View App ></a></div>
+        </div>
+
+        <div id="app5" class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/SmoreIcon.png">
+            <h2>S'MORE</h2>
+            <p> A one of a kind mixed-service iOS music streaming app that combines Apple Music, Spotify and YouTube into one
+            app, so you don't have to switch between apps to listen to music. </p>
+            <p><strong>Frameworks: RxSwift, Apple Music API & Alamofire</strong></p>
+            <div class="anchor-tag-alignment"><a href="https://github.com/s-more/Smore">View App ></a></div>
+        </div>
+    </div>
+
+    <div class="col2">
+        <div id="app2" class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/SmartDeskIcon.png">
+            <h2>SMARTDESK</h2>
+            <p>An innovative smart home iOS app that harnesses the power of Bluetooth Low Energy (BLE) to remote control
+                a smart desk.</p>
+            <p><strong>Frameworks: CoreBluetooth & Lottie</strong></p>
+            <div class="anchor-tag-alignment"><a href="https://github.com/ljw980105/SmartDesk">View App ></a></div>
+        </div>
+
+        <div id="app4" class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/ADCIcon.png">
+            <h2>AUTOMATIC DOOR CONTROL</h2>
+            <p>An open source iOS app that enables students with disability to open accessible doors.
+            It uses BLE to communicate with hardware attached to the door to open it.</p>
+            <p><strong>Frameworks: CoreBluetooth, Lottie & Alamofire</strong></p>
+            <div class="anchor-tag-alignment"><a href="https://github.com/AutomaticDoorControl/AutoDoorCtrl-iOS">View App ></a></div>
+        </div>
+    </div>
+</div>
+
+<h1 style="margin-top: -4%" class="title">Work Experience</h1>
+
+<div id="experience">
+    <div id="modmed" class="experience-style">
+        <img width="200px" height="200px" src="Images/AppFolio/ModMedIcon.png">
+        <div>
+            <h2> Mobile Software Engineering Intern</h2>
+            <h3> Summer 2018 @ Modernizing Medicine</h3>
+            <h4> Worked as an iOS developer to maintain three apps from Modernizing Medicine: PocketEMA, Telehealth and Kiosk,
+                with Swift and Objective-C. These apps directly improve the lives of more than 160 million patients.
+            </h4>
+            <h4> Designed and implemented new features, new UI elements and carried out bug fixes while collaborating
+                closely with a full-scale Scrum team.
+            </h4>
+        </div>
+    </div>
+</div>
+
+<h1 style="margin-top: 3%" class="title">Tech Stack</h1>
+
+<div id="teck_stack" class="dual_columns">
+    <div class="col1">
+        <div class="app">
+            <img width="300px" height="300px" src="Images/AppFolio/AppleTechIcon.png">
+            <h2>iOS Development</h2>
+            <p> I am a proficient iOS & watchOS developer, having made 5 apps and successfully completed an iOS internship.
+                I am also proficient in Xcode, Swift & Objective C. </p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/xdIcon.png">
+            <h2>UI / UX Design</h2>
+            <p> I'm both a designer and an engineer. As a graphic designer of the RPI Union, I have 2.5+ years of graphic design experience.
+            That leads to my ability in UI/UX design with Adobe XD. </p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/ARIcon.png">
+            <h2>Augmented Reality</h2>
+            <p> Through the production of the 3D Visualizer app, I've gained experience producing Augmented Reality applications
+                in iOS with the iOS framework ARKit and SceneKit. </p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/BluetoothIcon.png">
+            <h2>Bluetooth</h2>
+            <p> I have built Arduino hardware that establishes a Bluetooth Low Energy signal and produced apps to send and receive
+            information from the hardware. </p>
+        </div>
+    </div>
+    <div class="col2">
+        <div class="app">
+            <img width="300px" height="300px" src="Images/AppFolio/AndroidTechIcon.png">
+            <h2>Android Development</h2>
+            <p> While Android Development is not where my focus is, I do have a good understanding of making Android apps with
+            Java and Kotlin.</p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/RxIcon.png">
+            <h2>Reactive Programming</h2>
+            <p> After reading an RxSwift book by Ray Wenderlich, I gained knowledge in Reactive Programming, in the form of
+            RxSwift, and was able to apply this skill in building the S'more App.</p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/AlamofireIcon.png">
+            <h2>Networking</h2>
+            <p> I have experience in iOS Networking through the uses of frameworks including Alamofire and NSURLSession. With them,
+            I've produced apps that interact with the Internet via REST APIs.</p>
+        </div>
+        <div class="app">
+            <img width="200px" height="200px" src="Images/AppFolio/musicIcon.png">
+            <h2>Music Streaming</h2>
+            <p> I've built two music streaming apps that either access the user's music library to play music or pull data from
+            the Apple Music API to browse and play the latest addition from any artists. </p>
+        </div>
+    </div>
+</div>
+
+<div id="footer_container">
+
+    <div id="footerx">
+        <div id="personal_logo">
+            <img style="margin-top: 18px" src="Images/PersonalLogo.png">
+        </div>
+        <div id="section1">
+            <div id="navigation">
+                <ul>
+                    <li><h4>Pages</h4></li>
+                    <div class="slideContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Bio.html">About</a></li>
+                        <li><a href="Resume.html">Resume</a></li>
+                        <li><a href="Graphic%20Design.html">Graphic Design </a></li>
+                        <li><a href="Games.html">Games</a></li>
+                        <li><a href="Contacts.html">Contact Me</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="projects_footer">
+                <ul>
+                    <li><h4>Projects</h4></li>
+                    <div class="slideContents">
+                        <li><a href="Projects.html">All Projects</a></li>
+                        <li><a href="Games.html">2048 Game</a></li>
+                        <li><a href="AppFolio.html">Apps</a></li>
+                        <li><a href="Beatslytics.html">Beatslytics</a></li>
+                        <li><a href="Litec.html">Embedded Control</a></li>
+                        <li><a href="https://github.com/CSDTs/3D_Visualizer/tree/3D-Visualizer-iOS">3D Visualizer</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="graphics_footer">
+                <ul>
+                    <li><h4>Designs</h4></li>
+                    <div class="slideContents">
+                        <li><a href="https://www.behance.net/gallery/47281675/2026-Time-Capsule">Time Capsule</a></li>
+                        <li><a href="https://www.behance.net/gallery/52343049/RPI-Class-of-2021-Sticker-Design">2021 Stickers</a></li>
+                        <li><a href=Regular_Art.html>Regular Art</a></li>
+                        <li><a href=https://www.behance.net/gallery/47687973/Robotics-Recruitment-Poster>Robotcs Poster</a></li>
+                        <li><a href="https://www.behance.net/MrProLi">Behance</a></li>
+                        <li><a href="https://www.flickr.com/photos/154270674@N02/">Flickr</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div id="social_media_footer">
+                <ul>
+                    <li><h4>Social</h4></li>
+                    <div class="slideContents">
+                        <li><a href="https://www.facebook.com/li.jingwei.94">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/ljw980105">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/jingweili2/">LinkedIn</a></li>
+                        <li><a href="https://twitter.com/MrProLi">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/channel/UC33WP6-Af8Oy7SGzZm5mxng">Youtube</a></li>
+                        <li><a href="https://github.com/ljw980105/">GitHub</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile_logo">
+        <img src="Images/PersonalLogo.png">
+    </div>
+</div>
+<h4 id="standalone_footer" style="text-align: center; margin: 3% 5%"> &copy; JING WEI LI 2017-2019. Proudly Created from Scratch</h4>
+
+</body>
+</html>
