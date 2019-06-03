@@ -15,15 +15,16 @@ HTML, CSS, Sass, JavaScript, jQuery and ReactJS.
 
 This website contains:
 
-&nbsp;&nbsp;&nbsp;&nbsp;•  A reverse-engineered version of the popular mobile game 2048, coded using ReactJS. [link](https://ljw980105.github.io/Games.html)  
-&nbsp;&nbsp;&nbsp;&nbsp;•  My digital resume. [link](https://ljw980105.github.io/Resume.html)   
-&nbsp;&nbsp;&nbsp;&nbsp;•  My graphic design portfolio. [link](https://ljw980105.github.io/Graphic%20Design.html)   
-&nbsp;&nbsp;&nbsp;&nbsp;•  A showcase of all my projects. [link](https://ljw980105.github.io/Projects.html)  
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  A portfolio for all the app's I've made so far. [link](https://ljw980105.github.io/AppFolio.html)
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  A reverse-engineered version of the popular mobile game 2048, coded using ReactJS. [link](https://ljw980105.github.io/Games.html)  
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  My digital resume. [link](https://ljw980105.github.io/Resume.html)   
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  My graphic design portfolio. [link](https://ljw980105.github.io/Graphic%20Design.html)   
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  A showcase of all my projects. [link](https://ljw980105.github.io/Projects.html)  
 
 Additional Libraries Used:
 
-&nbsp;&nbsp;&nbsp;&nbsp;•  [Babel](https://babeljs.io/) (A JSX to JavaScript Compiler)    
-&nbsp;&nbsp;&nbsp;&nbsp;•  [bxSlider](https://github.com/stevenwanderski/bxslider-4) by Steven Wanderski (An Open Source jQuery Slider Library)   
-&nbsp;&nbsp;&nbsp;&nbsp;•  [gifPlayer](https://github.com/rubentd/gifplayer) by Ruben Torres (A Customizable JavaScript GIF Player) 
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  [Babel](https://babeljs.io/) (A JSX to JavaScript Compiler)    
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  [bxSlider](https://github.com/stevenwanderski/bxslider-4) by Steven Wanderski (An Open Source jQuery Slider Library)   
+&nbsp;&nbsp;&nbsp;&nbsp;ï¿½  [gifPlayer](https://github.com/rubentd/gifplayer) by Ruben Torres (A Customizable JavaScript GIF Player) 
 
 ### Thanks for stopping by! :)
