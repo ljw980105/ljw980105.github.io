@@ -1,5 +1,8 @@
 $base-padding: 0 15% 5% 15%;
 $narrow-padding: 0 10% 5% 10%;
+$experience-paddding: 0 20%;
+$experience-paddding-medium: 0 15%;
+$experience-paddding-small: 0 10%;
 
 @mixin anchor-style {
   a {
@@ -83,7 +86,11 @@ h1 {
 }
 
 #modmed {
-  padding: 0 20%;
+  padding: $experience-paddding;
+}
+
+#dk {
+  padding: $experience-paddding;
 }
 
 .experience-style {
@@ -132,7 +139,8 @@ h1 {
       margin-right: 5%;
     }
   }
-  #modmed { padding: 0 15%}
+  #modmed { padding: $experience-paddding-medium; }
+  #dk { padding: $experience-paddding-medium; }
 }
 
 @media only screen and (max-width: 900px) {
@@ -163,12 +171,14 @@ h1 {
     display: block;
     div { padding: 0 0; }
   }
-  #modmed { padding: 0 15%; }
+  #modmed { padding: $experience-paddding-medium; }
+  #dk { padding: $experience-paddding-medium; }
 
 }
 
 @media only screen and (max-width: 650px) {
   .dual_columns { padding: $narrow-padding; }
   .title { padding:  $narrow-padding; }
-  #modmed { padding: 0 10%; }
+  #modmed { padding: $experience-paddding-small; }
+  #dk { padding: $experience-paddding-small; }
 }
