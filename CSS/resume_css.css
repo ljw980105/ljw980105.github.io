@@ -338,9 +338,8 @@
 #experience{
 
     /*use to be 75%*/
-    padding: 110% 0;
-    /*background-image: url("../Images/ResumeGraphicWithResearch.svg");*/
-    background-image: url("../Images/ExperienceJan19.svg");
+    padding: 124% 0;
+    background-image: url("../Images/ExperienceAug19.svg");
     background-size: 100%;
     background-position-y: -2px;
     width: auto;
@@ -589,7 +588,7 @@
 
 @media only screen and (max-width: 1400px) {
     #experience{
-        padding: 121.2% 0;
+        padding: 136% 0;
         background-size: 110%;
         background-position:top;
         background-position-y: -4px;
@@ -605,7 +604,7 @@
 
 @media only screen and (max-width: 1200px) {
     #experience{
-        padding: 130% 0;
+        padding: 146% 0;
         background-size: 118%;
         background-position-x: 44%;
     }
@@ -661,7 +660,7 @@
         margin: 0 8%;
     }
 
-    #ex7{
+    #ex8{
         background-color: rgba(40,38,39,1);
         padding-bottom: 3%;
     }
@@ -715,10 +714,6 @@
         width: 90%;
         margin: 0 5% 0 5%;
     }
-}
-
-@media only screen and (max-width: 846px) {
-
 }
 
 @media only screen and (max-width: 800px){
