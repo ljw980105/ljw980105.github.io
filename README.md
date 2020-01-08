@@ -4,7 +4,7 @@
 
 # Personal Website
 
-This is the personal website for Jing Wei Li, hosted using github pages. website url: https://ljw980105.github.io/
+This is the personal website for Jing Wei Li, hosted using github pages. website url: https://jingweili.me
 
 ## Introduction
 
@@ -15,12 +15,12 @@ HTML, CSS, Sass, JavaScript, jQuery and ReactJS.
 
 This website contains:
 
-* A portfolio for all the app's I've made so far. [link](https://ljw980105.github.io/AppFolio.html)
-* A reverse-engineered version of the popular mobile game 2048, coded using ReactJS. [link](https://ljw980105.github.io/Games.html)  
-* My digital resume. [link](https://ljw980105.github.io/Resume.html)   
-* My graphic design portfolio. [link](https://ljw980105.github.io/Graphic%20Design.html)   
-* A showcase of all my projects. [link](https://ljw980105.github.io/Projects.html) 
-* A portfolio for all the apps I've made. [link](https://ljw980105.github.io/AppFolio.html) 
+* A portfolio for all the app's I've made so far. [link](https://jingweili.me/AppFolio.html)
+* A reverse-engineered version of the popular mobile game 2048, coded using ReactJS. [link](https://jingweili.me/Games.html)  
+* My digital resume. [link](https://jingweili.me/Resume.html)   
+* My graphic design portfolio. [link](https://jingweili.me/Graphic%20Design.html)   
+* A showcase of all my projects. [link](https://jingweili.me/Projects.html) 
+* A portfolio for all the apps I've made. [link](https://jingweili.me/AppFolio.html) 
 
 Additional Libraries Used:
 
