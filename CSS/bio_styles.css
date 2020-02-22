@@ -5,7 +5,7 @@ body {
     background-repeat: repeat;
 }
 
-#name{
+#name {
     text-align: center;
     font-family: "Helvetica","Adobe Caslon Pro Bold",serif;
     font-weight: bold;
@@ -14,7 +14,7 @@ body {
     margin-top: 10%;
 }
 
-#intro{
+#intro {
     padding: 1% 18%;
     font-family: "Bell MT","Helvetica","Adobe Caslon Pro Bold",serif;
     font-size: 20px;
