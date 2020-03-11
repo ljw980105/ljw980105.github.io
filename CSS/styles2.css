@@ -37,10 +37,26 @@ body {
 
 #intro h2 {
     font-size: 40px;
-    margin-left: 3%;
     font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
     font-weight: 300;
     line-height: 70%;
+}
+
+#intro h4 {
+    margin-top: -1%;
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+    font-weight: normal;
+}
+
+#intro a:visited, #intro a:link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#intro a:hover {
+    text-decoration: underline;
 }
 
 ._center {
@@ -53,7 +69,7 @@ body {
 }
 
 #social_media {
-    margin-top: 6%;
+    margin-top: 3%;
     margin-left: -7%;
 
 }
