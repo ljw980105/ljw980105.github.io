@@ -127,14 +127,14 @@ $(document).ready(function () { // wait until webpage is ready
 
     $("#bg").fadeTo(1,0.001);
     $("#intro h1").fadeTo(1,0.001);
-    $("#intro h2").fadeTo(1,0.001);
+    $("#sub-intro").fadeTo(1,0.001);
     for(var i = 1; i <= 5; i++){
         $("#sm"+i.toString()).fadeTo(1,0.001);
     }
 
     delayedFadeIn("#bg",500);
     delayedFadeIn("#intro h1",800);
-    delayedFadeIn("#intro h2",1100);
+    delayedFadeIn("#sub-intro",1100);
     for(var j = 1; j <= 5; j++){
         delayedFadeIn2("#sm"+j.toString(),1200+220*j);
     }
