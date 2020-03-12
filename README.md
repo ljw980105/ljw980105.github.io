@@ -28,4 +28,4 @@ Additional Libraries Used:
 * [bxSlider](https://github.com/stevenwanderski/bxslider-4) by Steven Wanderski (An Open Source jQuery Slider Library)   
 *  [gifPlayer](https://github.com/rubentd/gifplayer) by Ruben Torres (A Customizable JavaScript GIF Player) 
 
-### Thanks for stopping by! :)
+### Thanks for stopping by! :) :+1:
